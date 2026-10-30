@@ -222,3 +222,6 @@ __marimo__/
 # LibreOffice / MS Office lock files
 .~lock.*#
 ~$*
+
+# Downloaded papers (third-party licenses; list and links in papers/README.md)
+papers/*.pdf
