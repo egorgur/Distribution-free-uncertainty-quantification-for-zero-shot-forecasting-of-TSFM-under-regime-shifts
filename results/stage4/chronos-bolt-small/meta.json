@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-01 17:04",
+  "model": "amazon/chronos-bolt-small",
+  "cache": "results/cache/synth_v1",
+  "dataset_hash": "fe05ceb1dac3",
+  "n_per_cell": 10,
+  "L": 512,
+  "horizons": [
+    16,
+    64
+  ],
+  "d_eval_min": -112,
+  "n_boot": 1000,
+  "seed": 0,
+  "worst": 0.1,
+  "coverages": [
+    0.9,
+    0.8
+  ],
+  "s2_h0": [
+    16,
+    8
+  ],
+  "ks_w": [
+    64,
+    32,
+    128
+  ],
+  "spread_sets": {
+    "s4": [
+      "L512",
+      "L256",
+      "L128",
+      "L64"
+    ],
+    "s4_k1_256": [
+      "L512",
+      "L256"
+    ],
+    "s4_k1_128": [
+      "L512",
+      "L128"
+    ],
+    "s4_k1_64": [
+      "L512",
+      "L64"
+    ],
+    "s4_k2": [
+      "L512",
+      "L256",
+      "L128"
+    ],
+    "s7": [
+      "L512",
+      "tail-9",
+      "tail-3",
+      "tail+3",
+      "tail+9",
+      "noise1"
+    ],
+    "s7_tail3": [
+      "L512",
+      "tail-3",
+      "tail+3"
+    ],
+    "s7_tails": [
+      "L512",
+      "tail-9",
+      "tail-3",
+      "tail+3",
+      "tail+9"
+    ],
+    "s7_noise1": [
+      "L512",
+      "noise1"
+    ],
+    "s7_noise2": [
+      "L512",
+      "noise1",
+      "noise2"
+    ],
+    "s7_all": [
+      "L512",
+      "tail-9",
+      "tail-3",
+      "tail+3",
+      "tail+9",
+      "noise1",
+      "noise2"
+    ]
+  },
+  "env": "python 3.13.9, numpy 2.5.4, pandas 3.1.0",
+  "cache_env": "python 3.13.9, torch 2.15.0+cpu, transformers 5.22.1, chronos-forecasting 2.3.2"
+}

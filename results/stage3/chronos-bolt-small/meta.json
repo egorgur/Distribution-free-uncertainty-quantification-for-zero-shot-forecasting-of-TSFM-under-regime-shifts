@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-30 20:58",
+  "model": "amazon/chronos-bolt-small",
+  "cache": "results/cache/synth_v1",
+  "dataset_hash": "fe05ceb1dac3",
+  "n_cells": 34,
+  "n_series": 340,
+  "n_windows": 32980,
+  "n_per_cell": 10,
+  "tau": 648,
+  "d_min": -128,
+  "d_max": 640,
+  "d_step": 8,
+  "drift_duration": 128,
+  "L_main": 512,
+  "L_variants": [
+    "L512",
+    "L256",
+    "L128",
+    "L64"
+  ],
+  "horizons": [
+    16,
+    64
+  ],
+  "thresholds": [
+    1.1,
+    1.25
+  ],
+  "smooth": 3,
+  "n_boot": 1000,
+  "seed": 0,
+  "env": "python 3.13.9, numpy 2.5.4, pandas 3.1.0",
+  "cache_meta": "python 3.13.9, torch 2.15.0+cpu, transformers 5.22.1, chronos-forecasting 2.3.2"
+}

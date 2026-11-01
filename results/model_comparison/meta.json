@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-30 16:37",
+  "env": "python 3.13.9, torch 2.15.0+cpu, transformers 5.22.1, chronos-forecasting 2.3.2, numpy 2.5.4, pandas 3.1.0",
+  "cpu": "11th Gen Intel(R) Core(TM) i3-1125G4 @ 2.00GHz",
+  "torch_threads": 4,
+  "device": "cpu",
+  "seed": 0,
+  "n_per_family": 50,
+  "n_windows": 250,
+  "config": {
+    "L": 512,
+    "horizons": [
+      16,
+      64
+    ],
+    "families": [
+      "sine",
+      "ar1",
+      "two_seasons",
+      "trend_sine",
+      "random_walk"
+    ],
+    "s4_lengths": [
+      256,
+      128,
+      64
+    ],
+    "s7_tail_k": [
+      3,
+      9
+    ],
+    "s7_noise_alpha": 0.1,
+    "s7_noise_draws": 2,
+    "n_boot": 2000,
+    "reference": "amazon/chronos-bolt-small"
+  },
+  "models": [
+    {
+      "model": "amazon/chronos-bolt-tiny",
+      "params_m": 8.652672,
+      "weights_mb": 33.00732421875,
+      "enc_layers": 4,
+      "dec_layers": 4,
+      "d_model": 256,
+      "max_horizon": 64,
+      "ms_per_forecast": 1.597362468743313,
+      "eval_seconds": 3.416871273000652
+    },
+    {
+      "model": "amazon/chronos-bolt-mini",
+      "params_m": 21.236096,
+      "weights_mb": 81.00927734375,
+      "enc_layers": 4,
+      "dec_layers": 4,
+      "d_model": 384,
+      "max_horizon": 64,
+      "ms_per_forecast": 2.9465479531154415,
+      "eval_seconds": 9.539246533999176
+    },
+    {
+      "model": "amazon/chronos-bolt-small",
+      "params_m": 47.718016,
+      "weights_mb": 182.02978515625,
+      "enc_layers": 6,
+      "dec_layers": 6,
+      "d_model": 512,
+      "max_horizon": 64,
+      "ms_per_forecast": 6.630258171895775,
+      "eval_seconds": 27.41923520399905
+    },
+    {
+      "model": "amazon/chronos-bolt-base",
+      "params_m": 205.292928,
+      "weights_mb": 783.13037109375,
+      "enc_layers": 12,
+      "dec_layers": 12,
+      "d_model": 768,
+      "max_horizon": 64,
+      "ms_per_forecast": 26.85821660938359,
+      "eval_seconds": 102.94959251599903
+    },
+    {
+      "model": "autogluon/chronos-2-small",
+      "params_m": 27.934624,
+      "weights_mb": 106.5621337890625,
+      "enc_layers": 6,
+      "dec_layers": 0,
+      "d_model": 512,
+      "max_horizon": 1024,
+      "ms_per_forecast": 9.245658374993582,
+      "eval_seconds": 35.05202358299903
+    },
+    {
+      "model": "amazon/chronos-2",
+      "params_m": 119.477664,
+      "weights_mb": 455.7711181640625,
+      "enc_layers": 12,
+      "dec_layers": 0,
+      "d_model": 768,
+      "max_horizon": 1024,
+      "ms_per_forecast": 37.59119681248535,
+      "eval_seconds": 114.32652824399884
+    }
+  ]
+}

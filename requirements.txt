@@ -1,0 +1,12 @@
+# Версии, на которых проверен scripts/check_chronos.py (2026-10-30, Python 3.13).
+# Локально (CPU): сначала torch без CUDA, потом остальное — см. README.
+# В Colab torch уже стоит: достаточно `pip install chronos-forecasting==2.3.2`;
+# фактические версии печатает scripts/check_chronos.py.
+chronos-forecasting==2.3.2
+torch==2.15.0
+transformers==5.22.1
+accelerate==1.15.0
+numpy==2.5.4
+pandas==3.1.0
+pyyaml==6.0.3
+matplotlib==3.11.2
