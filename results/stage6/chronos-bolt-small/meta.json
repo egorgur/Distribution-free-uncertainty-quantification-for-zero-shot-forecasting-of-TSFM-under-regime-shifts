@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-02 01:12",
+  "model": "amazon/chronos-bolt-small",
+  "signal": "s4b",
+  "tune_cache": "results/cache/synth_v1_seed1",
+  "report_cache": "results/cache/synth_v1",
+  "tune_hash": "816e98e9289b",
+  "report_hash": "fe05ceb1dac3",
+  "q": 0.2,
+  "q_curve": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "far": 0.05,
+  "delta": 32,
+  "harm": 1.1,
+  "min_crop_ablation": 64,
+  "s2_h0": 16,
+  "s4_variants": [
+    "L512",
+    "L256",
+    "L128",
+    "L64"
+  ],
+  "n_boot": 1000,
+  "seed": 0,
+  "d_eval_min": -112,
+  "n_eval": 32300,
+  "thresholds": {
+    "16": {
+      "a": 0.9140939289599308,
+      "b": 0.04040854289913655,
+      "bm": 0.07241551335409896,
+      "p2": 0.052803465445285,
+      "level": "block6",
+      "flagged_tune": 0.2,
+      "flagged_report": 0.20226006191950463,
+      "crops_p1_tune": 1364,
+      "crops_p2m_tune": 1364,
+      "n_mae0_zero": 0
+    },
+    "64": {
+      "a": 1.2112191393250489,
+      "b": 0.04040854289913655,
+      "bm": 0.06837151725934681,
+      "p2": 0.052803465445285,
+      "level": "block6",
+      "flagged_tune": 0.2,
+      "flagged_report": 0.19427244582043343,
+      "crops_p1_tune": 1572,
+      "crops_p2m_tune": 1572,
+      "n_mae0_zero": 0
+    }
+  },
+  "criterion": [
+    "amazon/chronos-bolt-small",
+    64
+  ],
+  "criteria": [
+    {
+      "H": 64,
+      "K1_value": 1.0489281844096046,
+      "K1_lo": 1.0307145162609204,
+      "K1_hi": 1.0701194429214431,
+      "K1": false,
+      "K2_value": -0.2166138767029704,
+      "K2_lo": -0.35758723820931604,
+      "K2_hi": -0.09298829699267473,
+      "K2": true,
+      "is_criterion": true
+    },
+    {
+      "H": 16,
+      "K1_value": 1.0254515526492467,
+      "K1_lo": 1.0151004139721977,
+      "K1_hi": 1.0368871883450326,
+      "K1": false,
+      "K2_value": -0.3649307222433743,
+      "K2_lo": -0.5229306310579029,
+      "K2_hi": -0.21528425302742613,
+      "K2": true,
+      "is_criterion": false
+    }
+  ],
+  "cascade_cache": {
+    "date": "2026-11-02 01:00",
+    "n_forecasts": {
+      "all": 83133
+    },
+    "crops": {
+      "all": {
+        "own": 32980,
+        "p2": 32980,
+        "oracle": 16200,
+        "rag": 8892
+      }
+    },
+    "checks": {
+      "full_vs_cache_max_std": 1.9970174692284137e-06,
+      "single_vs_batch_max_std": 1.1530469291507538e-06
+    },
+    "device": "cpu",
+    "seconds": 256
+  },
+  "seconds": 7
+}

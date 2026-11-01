@@ -12,6 +12,17 @@ uv pip install --python .venv/bin/python torch --index-url https://download.pyto
 uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
+Локально, с GPU NVIDIA. torch 2.15.0 с CUDA выпущен только под CUDA 13.2 и 13.4, а там нет поддержки старых карт (Pascal, например GTX 10xx). Для них — torch 2.14.1 под CUDA 12.6, остальные пакеты как в `requirements.txt`:
+
+```bash
+uv venv .venv --python 3.13
+uv pip install --python .venv/bin/python torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
+grep -v '^torch==' requirements.txt > /tmp/req.txt && echo 'torch==2.14.1+cu126' > /tmp/torch.txt
+uv pip install --python .venv/bin/python -r /tmp/req.txt --constraint /tmp/torch.txt \
+    --extra-index-url https://download.pytorch.org/whl/cu126 --index-strategy unsafe-best-match
+.venv/bin/python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_arch_list())"
+```
+
 В Google Colab (torch уже установлен; пока не проверялось), в ячейке ноутбука:
 
 ```
@@ -89,4 +100,31 @@ python -m scripts.stage4_signals --n-boot 200    # быстрее, интерв�
 python -m scripts.cache_forecasts --seed 1 --model amazon/chronos-bolt-small   # ~1 ч → results/cache/synth_v1_seed1/
 python -m scripts.cache_s5 --cache results/cache/synth_v1_seed1
 python -m scripts.stage4_signals --cache results/cache/synth_v1_seed1
+```
+
+## Этап B: локализация точки смены (H4)
+
+Детекторы одной точки смены в контексте (`src/localization.py`) на каждом уровне энкодера и на сырых значениях. Эмбеддинги не сохраняются: детекторы считаются в том же проходе энкодера, на диск идут только счёт и τ′. Нужны оба seed: по seed 1 подбираются пороги и выбирается уровень, на seed 0 считается отчёт. Время — на GTX 1070 и 12 ядрах CPU, для каждого seed:
+
+```bash
+python -m scripts.cache_localization --model raw                                  # ~5 мин (PELT в 10 процессах)
+python -m scripts.cache_localization --model amazon/chronos-bolt-small            # ~11 мин на CPU
+python -m scripts.cache_localization --model amazon/chronos-2 --device cuda       # ~16 мин, оба горизонта
+# то же с --cache results/cache/synth_v1_seed1
+python -m scripts.stage5_localization                                             # таблицы и графики → results/stage5/
+```
+
+Пробный прогон на части ячеек: `--cells change-mean-strong,none --out /tmp/stage5_pilot`.
+
+## Каскад (H5)
+
+Этап A (S4б или S2) отмечает 20% окон, этап B ищет в них τ′, прогноз пересчитывается по [τ′, t]; сравнение с постоянной детекцией, reset-and-grow и обрезкой по истинной τ. Нужны кеши обоих seed, этап B и `results/stage5/meta.json` (пороги). У Chronos-2 на seed 1 достаточно четырёх вариантов контекста:
+
+```bash
+python -m scripts.cache_forecasts --seed 1 --model amazon/chronos-2 --device cuda --variants L512 L256 L128 L64   # ~13 мин
+python -m scripts.cache_cascade --model amazon/chronos-bolt-small            # ~4 мин на CPU → …/signals/cascade.npz
+python -m scripts.cache_cascade --model amazon/chronos-2 --device cuda       # ~5 мин, оба горизонта
+python -m scripts.stage6_cascade                                             # таблицы → results/stage6/chronos-bolt-small/, ~10 с
+python -m scripts.stage6_cascade --model amazon/chronos-2
+python -m scripts.stage6_cascade --signal s2                                 # этап A — S2 → results/stage6/s2/<модель>/
 ```

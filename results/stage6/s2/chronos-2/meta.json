@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-02 01:16",
+  "model": "amazon/chronos-2",
+  "signal": "s2",
+  "tune_cache": "results/cache/synth_v1_seed1",
+  "report_cache": "results/cache/synth_v1",
+  "tune_hash": "816e98e9289b",
+  "report_hash": "fe05ceb1dac3",
+  "q": 0.2,
+  "q_curve": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "far": 0.05,
+  "delta": 32,
+  "harm": 1.1,
+  "min_crop_ablation": 64,
+  "s2_h0": 16,
+  "s4_variants": [
+    "L512",
+    "L256",
+    "L128",
+    "L64"
+  ],
+  "n_boot": 1000,
+  "seed": 0,
+  "d_eval_min": -112,
+  "n_eval": 32300,
+  "thresholds": {
+    "16": {
+      "a": 1.5268317711153339,
+      "b": 0.03813880998268284,
+      "bm": 0.06228963720727554,
+      "p2": 0.052803465445285,
+      "level": "block8",
+      "flagged_tune": 0.2,
+      "flagged_report": 0.19030959752321983,
+      "crops_p1_tune": 1918,
+      "crops_p2m_tune": 1918,
+      "n_mae0_zero": 0
+    },
+    "64": {
+      "a": 1.5268317711153339,
+      "b": 0.03902995081001749,
+      "bm": 0.06279498253817073,
+      "p2": 0.052803465445285,
+      "level": "block8",
+      "flagged_tune": 0.2,
+      "flagged_report": 0.19030959752321983,
+      "crops_p1_tune": 1883,
+      "crops_p2m_tune": 1883,
+      "n_mae0_zero": 0
+    }
+  },
+  "criterion": [
+    "amazon/chronos-bolt-small",
+    64
+  ],
+  "criteria": [
+    {
+      "H": 64,
+      "K1_value": 1.0165322110074169,
+      "K1_lo": 1.007142949635637,
+      "K1_hi": 1.026193624981115,
+      "K1": false,
+      "K2_value": -0.4969171779320784,
+      "K2_lo": -0.59764516325358,
+      "K2_hi": -0.39263781872312353,
+      "K2": true,
+      "is_criterion": false
+    },
+    {
+      "H": 16,
+      "K1_value": 1.0171299758172232,
+      "K1_lo": 1.0085007735182603,
+      "K1_hi": 1.0256706326716756,
+      "K1": false,
+      "K2_value": -0.5044970176114689,
+      "K2_lo": -0.5994781349961804,
+      "K2_hi": -0.4031037319291154,
+      "K2": true,
+      "is_criterion": false
+    }
+  ],
+  "cascade_cache": {
+    "date": "2026-11-02 01:09",
+    "n_forecasts": {
+      "H64": 81144,
+      "H16": 81000
+    },
+    "crops": {
+      "H64": {
+        "own": 32980,
+        "p2": 32980,
+        "oracle": 16200,
+        "rag": 9868
+      },
+      "H16": {
+        "own": 32980,
+        "p2": 32980,
+        "oracle": 16200,
+        "rag": 9924
+      }
+    },
+    "checks": {
+      "full_vs_cache_max_std": 2.17969011603558e-06,
+      "single_vs_batch_max_std": 2.4803295012912946e-06
+    },
+    "device": "cuda",
+    "seconds": 300
+  },
+  "seconds": 4
+}

@@ -2,8 +2,9 @@
 
 Поддержаны Chronos-Bolt (основная модель работы) и Chronos-2 — обе из пакета
 chronos-forecasting. Создавать модель через load_forecaster(model_id).
-Эмбеддинги патчей для S5 (encode_patches) — пока только у Chronos-Bolt: вход энкодера и выход
-последнего слоя. Эмбеддинги всех слоёв (этап B, H4) добавим, когда до них дойдём.
+Эмбеддинги патчей для S5 (encode_patches) — у обеих моделей: вход энкодера и выход
+последнего слоя. Эмбеддинги всех уровней энкодера для этапа B, H4 (encode_layers) — тоже
+у обеих: промежуточные слои пакет не отдаёт, они снимаются хуками на блоки энкодера.
 
 Общее (chronos-forecasting 2.3.2, проверено по исходникам и config.json):
 - квантили детерминированы, без сэмплирования;
@@ -23,12 +24,33 @@ chronos-forecasting. Создавать модель через load_forecaster(
 
 from __future__ import annotations
 
+import contextlib
+import math
+
 import numpy as np
 import torch
 from chronos import BaseChronosPipeline
+from einops import rearrange
 
 # Квантили, которые отдают все обёртки (у Chronos-Bolt это все её квантили).
 QUANTILE_LEVELS = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+
+
+@contextlib.contextmanager
+def capture_block_outputs(blocks: torch.nn.ModuleList, n_patch: int):
+    """Пока контекст открыт, выход каждого блока энкодера на патчах контекста добавляется
+    в список (по одному тензору (батч, n_patch, d_model) на блок, по порядку вызова).
+
+    У обеих моделей скрытые состояния — первый элемент выхода блока: у T5Block (Bolt) это
+    кортеж, у Chronos2EncoderBlock — ModelOutput с полем hidden_states.
+    """
+    captured: list[torch.Tensor] = []
+    hooks = [b.register_forward_hook(lambda _m, _inp, out: captured.append(out[0][:, :n_patch])) for b in blocks]
+    try:
+        yield captured
+    finally:
+        for h in hooks:
+            h.remove()
 
 
 def load_forecaster(model_id: str, device: str = "cpu") -> "ChronosForecaster":
@@ -54,6 +76,9 @@ class ChronosForecaster:
     # True, если прогноз на h шагов совпадает с началом прогноза на max_horizon шагов.
     # Тогда короткий горизонт не нужно считать отдельно.
     short_horizon_is_prefix = False
+    # True, если эмбеддинги патчей контекста зависят от горизонта прогноза. Тогда S5
+    # считается отдельно для каждого горизонта — из того же прохода, что и прогноз.
+    embeddings_depend_on_horizon = False
 
     def __init__(self, model_id: str, device: str = "cpu"):
         self.model_id = model_id
@@ -106,9 +131,43 @@ class ChronosForecaster:
     def _predict_batch(self, batch: list[torch.Tensor], horizon: int) -> np.ndarray:
         raise NotImplementedError
 
-    def encode_patches(self, contexts: np.ndarray, batch_size: int = 256) -> tuple[np.ndarray, np.ndarray]:
-        """Эмбеддинги патчей контекста (S5). Реализовано только у Chronos-Bolt."""
+    def encode_patches(
+        self, contexts: np.ndarray, batch_size: int = 256, horizon: int | None = None
+    ) -> tuple[np.ndarray, np.ndarray]:
+        """Эмбеддинги патчей контекста (S5): (вход энкодера, выход последнего слоя)."""
         raise NotImplementedError(f"{self.model_id}: эмбеддинги пока не поддержаны")
+
+    @property
+    def n_blocks(self) -> int:
+        """Число блоков (слоёв) энкодера."""
+        return len(self.pipeline.model.encoder.block)
+
+    @property
+    def layer_names(self) -> list[str]:
+        """Уровни encode_layers по порядку: input, block1 … blockN, final."""
+        return ["input"] + [f"block{i + 1}" for i in range(self.n_blocks)] + ["final"]
+
+    @property
+    def layer_depths(self) -> list[float]:
+        """Нормированная глубина уровней: input — 0, блок i — i / N, final — 1 (как блок N)."""
+        n = self.n_blocks
+        return [0.0] + [(i + 1) / n for i in range(n)] + [1.0]
+
+    def encode_layers(self, contexts: np.ndarray, batch_size: int = 256, horizon: int | None = None) -> np.ndarray:
+        """Эмбеддинги патчей контекста на всех уровнях энкодера (этап B, H4).
+
+        contexts: (окна, L) без NaN, L кратно 16. Возвращает (окна, уровни, L / 16, d_model),
+        float32; уровни — layer_names: вход энкодера, выход каждого блока, выход последнего блока
+        после итоговой layer norm (= encode_patches()[1]). Патч i — точки 16·i … 16·i + 15 контекста.
+        """
+        raise NotImplementedError(f"{self.model_id}: эмбеддинги пока не поддержаны")
+
+    def _check_encode_input(self, contexts: np.ndarray) -> np.ndarray:
+        contexts = np.asarray(contexts, dtype=np.float32)
+        L = contexts.shape[1]
+        if L % self.patch_size or L > self.max_context or np.isnan(contexts).any():
+            raise ValueError(f"нужны контексты без NaN длины, кратной {self.patch_size}; получено L = {L}")
+        return contexts
 
 
 class ChronosBoltForecaster(ChronosForecaster):
@@ -128,10 +187,13 @@ class ChronosBoltForecaster(ChronosForecaster):
         return q.numpy()
 
     @torch.no_grad()
-    def encode_patches(self, contexts: np.ndarray, batch_size: int = 256) -> tuple[np.ndarray, np.ndarray]:
+    def encode_patches(
+        self, contexts: np.ndarray, batch_size: int = 256, horizon: int | None = None
+    ) -> tuple[np.ndarray, np.ndarray]:
         """Эмбеддинги патчей контекста: (вход энкодера, выход последнего слоя энкодера).
 
         contexts: (окна, L) без NaN, L кратно длине патча (16) и не больше max_context.
+        horizon: не нужен — энкодер Bolt будущего не видит (горизонт задаёт только декодер).
         Возвращает два массива (окна, L / 16, d_model), float32. Патч i покрывает точки
         16·i … 16·i + 15 контекста, последний кончается в t. Токен [REG] отброшен.
         - вход энкодера — эмбеддинг каждого патча по отдельности (после нормировки по всему
@@ -140,10 +202,8 @@ class ChronosBoltForecaster(ChronosForecaster):
           внимания каждый токен зависит от всего контекста.
         Это тот же проход энкодера, что и в прогнозе, поэтому в работе S5 не требует доп. прогонов.
         """
-        contexts = np.asarray(contexts, dtype=np.float32)
+        contexts = self._check_encode_input(contexts)
         n, L = contexts.shape
-        if L % self.patch_size or L > self.max_context or np.isnan(contexts).any():
-            raise ValueError(f"нужны контексты без NaN длины, кратной {self.patch_size}; получено L = {L}")
         model = self.pipeline.model
         n_patch = L // self.patch_size
         inputs, finals = [], []
@@ -153,6 +213,25 @@ class ChronosBoltForecaster(ChronosForecaster):
             inputs.append(input_embeds[:, :n_patch].float().cpu().numpy())
             finals.append(final[:, :n_patch].float().cpu().numpy())
         return np.concatenate(inputs), np.concatenate(finals)
+
+    @torch.no_grad()
+    def encode_layers(self, contexts: np.ndarray, batch_size: int = 256, horizon: int | None = None) -> np.ndarray:
+        """См. ChronosForecaster.encode_layers. horizon не нужен: энкодер Bolt будущего не видит.
+
+        Тот же проход, что и в прогнозе (model.encode); выходы блоков снимаются хуками.
+        """
+        contexts = self._check_encode_input(contexts)
+        model = self.pipeline.model
+        n_patch = contexts.shape[1] // self.patch_size
+        out = []
+        for start in range(0, len(contexts), batch_size):
+            x = torch.as_tensor(contexts[start : start + batch_size], device=model.device)
+            with capture_block_outputs(model.encoder.block, n_patch) as blocks:
+                final, _, input_embeds, _ = model.encode(context=x)
+            assert len(blocks) == self.n_blocks, (len(blocks), self.n_blocks)
+            levels = [input_embeds[:, :n_patch], *blocks, final[:, :n_patch]]
+            out.append(torch.stack(levels, dim=1).float().cpu().numpy())
+        return np.concatenate(out)
 
 
 class Chronos2Forecaster(ChronosForecaster):
@@ -179,3 +258,99 @@ class Chronos2Forecaster(ChronosForecaster):
         )
         q = torch.stack([p[0] for p in preds])
         return q[:, self._idx, :].numpy()
+
+    # Внимание по времени двунаправленное, а после патчей контекста и токена [REG] модель
+    # дописывает токены будущего — по одному на 16 шагов горизонта. Поэтому выход энкодера
+    # на патчах контекста зависит от горизонта (вход энкодера — нет).
+    embeddings_depend_on_horizon = True
+
+    def encode_patches(
+        self, contexts: np.ndarray, batch_size: int = 256, horizon: int | None = None
+    ) -> tuple[np.ndarray, np.ndarray]:
+        """Эмбеддинги патчей контекста: (вход энкодера, выход последнего слоя энкодера).
+
+        contexts: (окна, L) без NaN, L кратно длине патча (16) и не больше max_context.
+        horizon: обязателен — от него зависит число токенов будущего в том же проходе.
+        Возвращает два массива (окна, L / 16, d_model), float32. Патч i покрывает точки
+        16·i … 16·i + 15 контекста, последний кончается в t. Токены [REG] и будущего отброшены.
+        - вход энкодера — эмбеддинг каждого патча по отдельности (нормировка по всему контексту,
+          arcsinh, кодировка времени), до трансформера; от горизонта не зависит;
+        - выход последнего слоя (после итоговой layer norm) — из того же прохода, что и прогноз
+          на horizon шагов; из-за внимания каждый токен зависит от всего контекста и от числа
+          токенов будущего.
+        """
+        inputs, finals, _ = self._encode(contexts, horizon, batch_size)
+        return inputs, finals
+
+    def encode_patches_with_forecast(
+        self, contexts: np.ndarray, horizon: int, batch_size: int = 256
+    ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+        """То же, что encode_patches, плюс квантильный прогноз (окна, 9, horizon) из того же прохода.
+        Нужен для проверки: прогноз должен совпасть с predict_quantiles, то есть эмбеддинги взяты
+        именно из прохода прогноза."""
+        return self._encode(contexts, horizon, batch_size)
+
+    @torch.no_grad()
+    def _encode(
+        self, contexts: np.ndarray, horizon: int | None, batch_size: int
+    ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+        contexts = self._check_encode_input(contexts)
+        n_out = self._n_output_patches(horizon)
+        inputs, finals, quantiles = [], [], []
+        for start in range(0, len(contexts), batch_size):
+            inp, fin, q = self._encode_batch(contexts[start : start + batch_size], n_out, horizon)
+            inputs.append(inp.float().cpu().numpy())
+            finals.append(fin.float().cpu().numpy())
+            quantiles.append(q.float().cpu().numpy())
+        return np.concatenate(inputs), np.concatenate(finals), np.concatenate(quantiles)
+
+    def encode_layers(self, contexts: np.ndarray, batch_size: int = 256, horizon: int | None = None) -> np.ndarray:
+        """См. ChronosForecaster.encode_layers. horizon обязателен: выход энкодера от него зависит."""
+        return self.encode_layers_with_forecast(contexts, horizon, batch_size)[0]
+
+    @torch.no_grad()
+    def encode_layers_with_forecast(
+        self, contexts: np.ndarray, horizon: int, batch_size: int = 256
+    ) -> tuple[np.ndarray, np.ndarray]:
+        """encode_layers плюс квантильный прогноз (окна, 9, horizon) из того же прохода — для проверки,
+        что уровни сняты именно с прохода прогноза."""
+        contexts = self._check_encode_input(contexts)
+        n_out = self._n_output_patches(horizon)
+        n_patch = contexts.shape[1] // self.patch_size
+        layers, quantiles = [], []
+        for start in range(0, len(contexts), batch_size):
+            with capture_block_outputs(self.pipeline.model.encoder.block, n_patch) as blocks:
+                inp, fin, q = self._encode_batch(contexts[start : start + batch_size], n_out, horizon)
+            assert len(blocks) == self.n_blocks, (len(blocks), self.n_blocks)
+            layers.append(torch.stack([inp, *blocks, fin], dim=1).float().cpu().numpy())
+            quantiles.append(q.float().cpu().numpy())
+        return np.concatenate(layers), np.concatenate(quantiles)
+
+    def _n_output_patches(self, horizon: int | None) -> int:
+        if horizon is None or not 0 < horizon <= self.max_horizon:
+            raise ValueError(f"нужен горизонт 1…{self.max_horizon}, получено {horizon}")
+        # Как в Chronos2Pipeline._predict_batch.
+        return math.ceil(horizon / self.pipeline.model.chronos_config.output_patch_size)
+
+    def _encode_batch(
+        self, contexts: np.ndarray, n_out: int, horizon: int
+    ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+        """Один проход энкодера: (вход энкодера, выход после итоговой layer norm) на патчах контекста
+        и квантили (батч, 9, horizon) из того же прохода."""
+        model = self.pipeline.model
+        n_patch = contexts.shape[1] // self.patch_size
+        out_patch = model.chronos_config.output_patch_size
+        x = torch.as_tensor(contexts, device=model.device)
+        # Каждый ряд — своя группа: обмена между рядами батча нет (cross_learning выключен).
+        group_ids = torch.arange(len(x), device=model.device)
+        enc, loc_scale, _, n_ctx = model.encode(context=x, group_ids=group_ids, num_output_patches=n_out)
+        assert n_ctx == n_patch, (n_ctx, n_patch)
+        hidden = enc.last_hidden_state  # (батч, патчи контекста + [REG] + n_out, d_model)
+        # Вход энкодера: тот же расчёт, что внутри model.encode, до трансформера.
+        patched, _, _ = model._prepare_patched_context(x)
+        inputs = model.input_patch_embedding(patched)
+        # Прогноз из того же прохода — как в Chronos2Model.forward.
+        q = model.output_patch_embedding(hidden[:, -n_out:])
+        q = rearrange(q, "b n (q p) -> b (q n p)", q=model.num_quantiles, p=out_patch)
+        q = rearrange(model.instance_norm.inverse(q, loc_scale), "b (q h) -> b q h", q=model.num_quantiles)
+        return inputs, hidden[:, :n_patch], q[:, self._idx, :horizon]

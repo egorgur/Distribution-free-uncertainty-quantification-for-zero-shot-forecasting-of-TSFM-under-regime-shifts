@@ -10,3 +10,5 @@ numpy==2.5.4
 pandas==3.1.0
 pyyaml==6.0.3
 matplotlib==3.11.2
+ruptures==1.1.10   # этап B: сверка детекторов (scripts/cache_localization.py)
+scipy==1.18.1      # зависимость ruptures

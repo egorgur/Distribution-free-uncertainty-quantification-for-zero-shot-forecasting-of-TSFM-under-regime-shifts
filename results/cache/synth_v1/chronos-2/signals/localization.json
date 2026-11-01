@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-01 23:24",
+  "model": "amazon/chronos-2",
+  "dataset_hash": "fe05ceb1dac3",
+  "L": 512,
+  "min_points": 32,
+  "n_windows": 32980,
+  "cells": null,
+  "layers": [
+    "input",
+    "block1",
+    "block2",
+    "block3",
+    "block4",
+    "block5",
+    "block6",
+    "block7",
+    "block8",
+    "block9",
+    "block10",
+    "block11",
+    "block12",
+    "final"
+  ],
+  "depths": [
+    0.0,
+    0.08333333333333333,
+    0.16666666666666666,
+    0.25,
+    0.3333333333333333,
+    0.4166666666666667,
+    0.5,
+    0.5833333333333334,
+    0.6666666666666666,
+    0.75,
+    0.8333333333333334,
+    0.9166666666666666,
+    1.0,
+    1.0
+  ],
+  "horizons": [
+    16,
+    64
+  ],
+  "n_blocks": 12,
+  "seconds": 952,
+  "device": "cuda",
+  "checks": {
+    "binseg_max_rel": 6.484680257082133e-07,
+    "binseg_max_dk": 0,
+    "single_vs_batch_max_rel": 6.484680257082133e-07,
+    "single_vs_batch_dk": 0,
+    "forecast_max_diff_std": 2.31109243031824e-06,
+    "input_final_vs_encode_patches": 0.0,
+    "forecast_reference": "кеш"
+  },
+  "env": "python 3.13.7, numpy 2.5.4, ruptures 1.1.10, scipy 1.18.1, torch 2.14.1+cu126, transformers 5.22.1, chronos-forecasting 2.3.2"
+}

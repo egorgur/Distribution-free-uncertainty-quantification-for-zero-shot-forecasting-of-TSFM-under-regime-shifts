@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-02 01:09",
+  "model": "amazon/chronos-2",
+  "dataset_hash": "fe05ceb1dac3",
+  "stage5_meta": "results/stage5/meta.json",
+  "L": 512,
+  "min_points": 32,
+  "n_windows": 32980,
+  "thresholds": {
+    "p2": 0.052803465445285
+  },
+  "levels": {
+    "H64": {
+      "stage5_config": "chronos-2",
+      "level": "block8",
+      "threshold": 0.03902995081001749
+    },
+    "H16": {
+      "stage5_config": "chronos-2-H16",
+      "level": "block8",
+      "threshold": 0.03813880998268284
+    }
+  },
+  "n_forecasts": {
+    "H64": 81144,
+    "H16": 81000
+  },
+  "crops": {
+    "H64": {
+      "own": 32980,
+      "p2": 32980,
+      "oracle": 16200,
+      "rag": 9868
+    },
+    "H16": {
+      "own": 32980,
+      "p2": 32980,
+      "oracle": 16200,
+      "rag": 9924
+    }
+  },
+  "seconds_forecast": {
+    "H64": 149.7,
+    "H16": 127.2
+  },
+  "seconds": 300,
+  "device": "cuda",
+  "batch_size": 256,
+  "checks": {
+    "full_vs_cache_max_std": 2.17969011603558e-06,
+    "single_vs_batch_max_std": 2.4803295012912946e-06
+  },
+  "env": "python 3.13.7, numpy 2.5.4, torch 2.14.1+cu126, transformers 5.22.1, chronos-forecasting 2.3.2"
+}

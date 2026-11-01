@@ -6,10 +6,13 @@
     series.npz, series.csv  — сами ряды (ячейка × номер) и их параметры;
     windows.csv             — одна строка на окно: ячейка, номер ряда, t, d, …;
     <модель>/<ячейка>.npz   — квантили q{H}: (окна ячейки, варианты, 9 квантилей, H)
-                              и row — номера строк windows.csv для этих окон;
+                              и row — номера строк windows.csv для этих окон; если посчитаны не все
+                              варианты (cache_forecasts --variants), ещё variants — их имена по порядку;
     <модель>/meta.json      — версии, время, short_horizon_is_prefix;
     <модель>/signals/      — сигналы, для которых нужен отдельный прогон модели
-                              (s5.npz — scripts/cache_s5.py); не путать с файлами ячеек.
+                              (s5.npz — scripts/cache_s5.py, localization.npz — scripts/cache_localization.py);
+                              не путать с файлами ячеек;
+    signals/                — величины без модели (localization_raw.npz — детекторы этапа B на сырых значениях).
 
 Пример:
     from src.cache import load_windows, load_forecasts
@@ -37,6 +40,11 @@ def signals_path(root: Path | str, model_id: str, name: str) -> Path:
     return model_dir(root, model_id) / "signals" / f"{name}.npz"
 
 
+def dataset_signals_path(root: Path | str, name: str) -> Path:
+    """Файл величины, которая не зависит от модели (например, детекторы этапа B на сырых значениях)."""
+    return Path(root) / "signals" / f"{name}.npz"
+
+
 def load_dataset_meta(root: Path | str) -> dict:
     return json.loads((Path(root) / "dataset.json").read_text())
 
@@ -56,7 +64,8 @@ def load_forecasts(
     """Квантили для всех окон windows.csv: (окна, варианты, 9, horizon), float32.
 
     variants — номера вариантов (порядок из dataset.json["variants"]); None — все.
-    Окна ячеек, которые ещё не посчитаны, заполнены NaN.
+    Окна ячеек, которые ещё не посчитаны, заполнены NaN. Если в файле ячейки посчитаны не все
+    варианты, а запрошен отсутствующий, — KeyError.
     """
     root = Path(root)
     ds = load_dataset_meta(root)
@@ -68,10 +77,17 @@ def load_forecasts(
     out = np.full((ds["n_windows"], len(v_idx), 9, horizon), np.nan, dtype=np.float32)
     for f in sorted(model_dir(root, model_id).glob("*.npz")):
         with np.load(f) as z:
+            pos = v_idx
+            if "variants" in z:  # посчитана только часть вариантов: номер в dataset.json → номер в файле
+                stored = list(z["variants"])
+                missing = [ds["variants"][i] for i in v_idx if ds["variants"][i] not in stored]
+                if missing:
+                    raise KeyError(f"{f}: нет вариантов {missing} (посчитаны {stored})")
+                pos = [stored.index(ds["variants"][i]) for i in v_idx]
             if key in z:
-                q = z[key][:, v_idx]
+                q = z[key][:, pos]
             elif meta["short_horizon_is_prefix"]:
-                q = z[f"q{max_h}"][:, v_idx, :, :horizon]  # у Chronos-Bolt короткий горизонт = начало длинного
+                q = z[f"q{max_h}"][:, pos, :, :horizon]  # у Chronos-Bolt короткий горизонт = начало длинного
             else:
                 raise KeyError(f"{f}: нет {key}")
             out[z["row"]] = q

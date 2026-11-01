@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01 21:08",
+  "model": "amazon/chronos-2",
+  "dataset_hash": "fe05ceb1dac3",
+  "L": 512,
+  "layers": [
+    "final",
+    "input"
+  ],
+  "m_patches": [
+    4,
+    2,
+    8
+  ],
+  "keys": [
+    "s5_final_m4_a",
+    "s5_final_m4_b",
+    "s5_final_m2_a",
+    "s5_final_m2_b",
+    "s5_final_m8_a",
+    "s5_final_m8_b",
+    "s5_input_m4_a",
+    "s5_input_m4_b",
+    "s5_input_m2_a",
+    "s5_input_m2_b",
+    "s5_input_m8_a",
+    "s5_input_m8_b"
+  ],
+  "horizons": [
+    16,
+    64
+  ],
+  "seconds": 253,
+  "device": "cuda",
+  "verify_max_rel_diff": 5.918381740767364e-07,
+  "verify_forecast_max_diff_std": 2.678382944573803e-06,
+  "env": "python 3.13.7, torch 2.14.1+cu126, transformers 5.22.1, chronos-forecasting 2.3.2"
+}

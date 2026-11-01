@@ -7,6 +7,8 @@ horizon,by,group,signal,n,spearman
 16,zone,до смены,s4_b,3960,0.3138
 16,zone,до смены,s7_a,3960,0.2123
 16,zone,до смены,s7_b,3960,0.2263
+16,zone,до смены,s5_a,3960,0.1883
+16,zone,до смены,s5_b,3960,-0.04624
 16,zone,смена в горизонте,s1,660,0.2767
 16,zone,смена в горизонте,s2_16,660,0.2192
 16,zone,смена в горизонте,s3_cusum,660,0.2052
@@ -15,6 +17,8 @@ horizon,by,group,signal,n,spearman
 16,zone,смена в горизонте,s4_b,660,0.2209
 16,zone,смена в горизонте,s7_a,660,0.1471
 16,zone,смена в горизонте,s7_b,660,0.1571
+16,zone,смена в горизонте,s5_a,660,0.1479
+16,zone,смена в горизонте,s5_b,660,-0.05126
 16,zone,0–63,s1,2640,0.4168
 16,zone,0–63,s2_16,2640,0.3198
 16,zone,0–63,s3_cusum,2640,0.1328
@@ -23,6 +27,8 @@ horizon,by,group,signal,n,spearman
 16,zone,0–63,s4_b,2640,0.366
 16,zone,0–63,s7_a,2640,0.1514
 16,zone,0–63,s7_b,2640,0.1516
+16,zone,0–63,s5_a,2640,0.06709
+16,zone,0–63,s5_b,2640,0.02841
 16,zone,64–127,s1,2640,0.4701
 16,zone,64–127,s2_16,2640,0.4414
 16,zone,64–127,s3_cusum,2640,0.07699
@@ -31,6 +37,8 @@ horizon,by,group,signal,n,spearman
 16,zone,64–127,s4_b,2640,0.4294
 16,zone,64–127,s7_a,2640,0.2183
 16,zone,64–127,s7_b,2640,0.2151
+16,zone,64–127,s5_a,2640,0.1085
+16,zone,64–127,s5_b,2640,0.08642
 16,zone,128–255,s1,5280,0.4739
 16,zone,128–255,s2_16,5280,0.3624
 16,zone,128–255,s3_cusum,5280,0.05785
@@ -39,6 +47,8 @@ horizon,by,group,signal,n,spearman
 16,zone,128–255,s4_b,5280,0.3793
 16,zone,128–255,s7_a,5280,0.2544
 16,zone,128–255,s7_b,5280,0.2785
+16,zone,128–255,s5_a,5280,0.1672
+16,zone,128–255,s5_b,5280,0.1222
 16,zone,256–511,s1,10560,0.5034
 16,zone,256–511,s2_16,10560,0.3571
 16,zone,256–511,s3_cusum,10560,0.1939
@@ -47,6 +57,8 @@ horizon,by,group,signal,n,spearman
 16,zone,256–511,s4_b,10560,0.35
 16,zone,256–511,s7_a,10560,0.264
 16,zone,256–511,s7_b,10560,0.2854
+16,zone,256–511,s5_a,10560,0.231
+16,zone,256–511,s5_b,10560,0.08476
 16,zone,≥512,s1,5610,0.5194
 16,zone,≥512,s2_16,5610,0.3644
 16,zone,≥512,s3_cusum,5610,0.3023
@@ -55,6 +67,8 @@ horizon,by,group,signal,n,spearman
 16,zone,≥512,s4_b,5610,0.3667
 16,zone,≥512,s7_a,5610,0.3265
 16,zone,≥512,s7_b,5610,0.3392
+16,zone,≥512,s5_a,5610,0.2698
+16,zone,≥512,s5_b,5610,0.01749
 16,zone,контроль,s1,950,0.2818
 16,zone,контроль,s2_16,950,0.1373
 16,zone,контроль,s3_cusum,950,0.005133
@@ -63,6 +77,8 @@ horizon,by,group,signal,n,spearman
 16,zone,контроль,s4_b,950,0.2487
 16,zone,контроль,s7_a,950,0.178
 16,zone,контроль,s7_b,950,0.1934
+16,zone,контроль,s5_a,950,0.08334
+16,zone,контроль,s5_b,950,0.0326
 16,kind_key,change-mean,s1,2850,0.4102
 16,kind_key,change-mean,s2_16,2850,0.2493
 16,kind_key,change-mean,s3_cusum,2850,0.162
@@ -71,6 +87,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-mean,s4_b,2850,0.3286
 16,kind_key,change-mean,s7_a,2850,0.2054
 16,kind_key,change-mean,s7_b,2850,0.2167
+16,kind_key,change-mean,s5_a,2850,0.2265
+16,kind_key,change-mean,s5_b,2850,0.07534
 16,kind_key,change-variance,s1,2850,0.4936
 16,kind_key,change-variance,s2_16,2850,0.3886
 16,kind_key,change-variance,s3_cusum,2850,0.1518
@@ -79,6 +97,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-variance,s4_b,2850,0.357
 16,kind_key,change-variance,s7_a,2850,0.1388
 16,kind_key,change-variance,s7_b,2850,0.1813
+16,kind_key,change-variance,s5_a,2850,0.3904
+16,kind_key,change-variance,s5_b,2850,0.3318
 16,kind_key,change-trend,s1,2850,0.3513
 16,kind_key,change-trend,s2_16,2850,0.1944
 16,kind_key,change-trend,s3_cusum,2850,0.02877
@@ -87,6 +107,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-trend,s4_b,2850,0.2792
 16,kind_key,change-trend,s7_a,2850,0.1594
 16,kind_key,change-trend,s7_b,2850,0.1757
+16,kind_key,change-trend,s5_a,2850,0.09079
+16,kind_key,change-trend,s5_b,2850,-0.01683
 16,kind_key,change-ar,s1,2850,0.6169
 16,kind_key,change-ar,s2_16,2850,0.4371
 16,kind_key,change-ar,s3_cusum,2850,0.4074
@@ -95,6 +117,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-ar,s4_b,2850,0.4307
 16,kind_key,change-ar,s7_a,2850,0.4101
 16,kind_key,change-ar,s7_b,2850,0.4269
+16,kind_key,change-ar,s5_a,2850,0.3847
+16,kind_key,change-ar,s5_b,2850,-0.009077
 16,kind_key,change-seasonality,s1,2850,0.5572
 16,kind_key,change-seasonality,s2_16,2850,0.4022
 16,kind_key,change-seasonality,s3_cusum,2850,0.3201
@@ -103,6 +127,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-seasonality,s4_b,2850,0.4661
 16,kind_key,change-seasonality,s7_a,2850,0.2627
 16,kind_key,change-seasonality,s7_b,2850,0.2874
+16,kind_key,change-seasonality,s5_a,2850,0.2692
+16,kind_key,change-seasonality,s5_b,2850,-0.02918
 16,kind_key,change-frequency,s1,2850,0.3749
 16,kind_key,change-frequency,s2_16,2850,0.4078
 16,kind_key,change-frequency,s3_cusum,2850,0.2198
@@ -111,6 +137,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-frequency,s4_b,2850,0.1828
 16,kind_key,change-frequency,s7_a,2850,0.2159
 16,kind_key,change-frequency,s7_b,2850,0.2249
+16,kind_key,change-frequency,s5_a,2850,0.321
+16,kind_key,change-frequency,s5_b,2850,0.04017
 16,kind_key,change-sensor_bias,s1,2850,0.361
 16,kind_key,change-sensor_bias,s2_16,2850,0.2263
 16,kind_key,change-sensor_bias,s3_cusum,2850,0.07144
@@ -119,6 +147,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,change-sensor_bias,s4_b,2850,0.3234
 16,kind_key,change-sensor_bias,s7_a,2850,0.199
 16,kind_key,change-sensor_bias,s7_b,2850,0.2217
+16,kind_key,change-sensor_bias,s5_a,2850,0.128
+16,kind_key,change-sensor_bias,s5_b,2850,-0.03304
 16,kind_key,drift-mean,s1,2850,0.2599
 16,kind_key,drift-mean,s2_16,2850,0.1966
 16,kind_key,drift-mean,s3_cusum,2850,0.1104
@@ -127,6 +157,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,drift-mean,s4_b,2850,0.2354
 16,kind_key,drift-mean,s7_a,2850,0.1187
 16,kind_key,drift-mean,s7_b,2850,0.1294
+16,kind_key,drift-mean,s5_a,2850,0.1393
+16,kind_key,drift-mean,s5_b,2850,0.05832
 16,kind_key,drift-frequency,s1,2850,0.3824
 16,kind_key,drift-frequency,s2_16,2850,0.3764
 16,kind_key,drift-frequency,s3_cusum,2850,0.1699
@@ -135,6 +167,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,drift-frequency,s4_b,2850,0.1825
 16,kind_key,drift-frequency,s7_a,2850,0.1659
 16,kind_key,drift-frequency,s7_b,2850,0.1775
+16,kind_key,drift-frequency,s5_a,2850,0.2534
+16,kind_key,drift-frequency,s5_b,2850,0.06843
 16,kind_key,anomaly-spike,s1,2850,0.4019
 16,kind_key,anomaly-spike,s2_16,2850,0.2325
 16,kind_key,anomaly-spike,s3_cusum,2850,0.2318
@@ -143,6 +177,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,anomaly-spike,s4_b,2850,0.3071
 16,kind_key,anomaly-spike,s7_a,2850,0.1888
 16,kind_key,anomaly-spike,s7_b,2850,0.2046
+16,kind_key,anomaly-spike,s5_a,2850,0.1895
+16,kind_key,anomaly-spike,s5_b,2850,-0.03526
 16,kind_key,anomaly-freeze,s1,2850,0.4952
 16,kind_key,anomaly-freeze,s2_16,2850,0.2855
 16,kind_key,anomaly-freeze,s3_cusum,2850,0.2204
@@ -151,6 +187,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,anomaly-freeze,s4_b,2850,0.3808
 16,kind_key,anomaly-freeze,s7_a,2850,0.2492
 16,kind_key,anomaly-freeze,s7_b,2850,0.2369
+16,kind_key,anomaly-freeze,s5_a,2850,0.1485
+16,kind_key,anomaly-freeze,s5_b,2850,-0.02149
 16,kind_key,none,s1,950,0.2818
 16,kind_key,none,s2_16,950,0.1373
 16,kind_key,none,s3_cusum,950,0.005133
@@ -159,6 +197,8 @@ horizon,by,group,signal,n,spearman
 16,kind_key,none,s4_b,950,0.2487
 16,kind_key,none,s7_a,950,0.178
 16,kind_key,none,s7_b,950,0.1934
+16,kind_key,none,s5_a,950,0.08334
+16,kind_key,none,s5_b,950,0.0326
 16,level,weak,s1,10450,0.4139
 16,level,weak,s2_16,10450,0.2929
 16,level,weak,s3_cusum,10450,0.1497
@@ -167,6 +207,8 @@ horizon,by,group,signal,n,spearman
 16,level,weak,s4_b,10450,0.3145
 16,level,weak,s7_a,10450,0.1992
 16,level,weak,s7_b,10450,0.2122
+16,level,weak,s5_a,10450,0.1556
+16,level,weak,s5_b,10450,-0.01139
 16,level,medium,s1,10450,0.461
 16,level,medium,s2_16,10450,0.3509
 16,level,medium,s3_cusum,10450,0.2014
@@ -175,6 +217,8 @@ horizon,by,group,signal,n,spearman
 16,level,medium,s4_b,10450,0.3564
 16,level,medium,s7_a,10450,0.2485
 16,level,medium,s7_b,10450,0.267
+16,level,medium,s5_a,10450,0.2233
+16,level,medium,s5_b,10450,0.09441
 16,level,strong,s1,10450,0.5397
 16,level,strong,s2_16,10450,0.4199
 16,level,strong,s3_cusum,10450,0.182
@@ -183,6 +227,8 @@ horizon,by,group,signal,n,spearman
 16,level,strong,s4_b,10450,0.4021
 16,level,strong,s7_a,10450,0.2958
 16,level,strong,s7_b,10450,0.3101
+16,level,strong,s5_a,10450,0.2346
+16,level,strong,s5_b,10450,0.1182
 16,level,-,s1,950,0.2818
 16,level,-,s2_16,950,0.1373
 16,level,-,s3_cusum,950,0.005133
@@ -191,6 +237,8 @@ horizon,by,group,signal,n,spearman
 16,level,-,s4_b,950,0.2487
 16,level,-,s7_a,950,0.178
 16,level,-,s7_b,950,0.1934
+16,level,-,s5_a,950,0.08334
+16,level,-,s5_b,950,0.0326
 64,zone,до смены,s1,1980,0.5426
 64,zone,до смены,s2_16,1980,0.3644
 64,zone,до смены,s3_cusum,1980,0.3165
@@ -199,6 +247,8 @@ horizon,by,group,signal,n,spearman
 64,zone,до смены,s4_b,1980,0.4759
 64,zone,до смены,s7_a,1980,0.3856
 64,zone,до смены,s7_b,1980,0.338
+64,zone,до смены,s5_a,1980,0.3009
+64,zone,до смены,s5_b,1980,-0.05916
 64,zone,смена в горизонте,s1,2640,0.4094
 64,zone,смена в горизонте,s2_16,2640,0.284
 64,zone,смена в горизонте,s3_cusum,2640,0.2702
@@ -207,6 +257,8 @@ horizon,by,group,signal,n,spearman
 64,zone,смена в горизонте,s4_b,2640,0.3768
 64,zone,смена в горизонте,s7_a,2640,0.3227
 64,zone,смена в горизонте,s7_b,2640,0.2958
+64,zone,смена в горизонте,s5_a,2640,0.2042
+64,zone,смена в горизонте,s5_b,2640,-0.07584
 64,zone,0–63,s1,2640,0.3905
 64,zone,0–63,s2_16,2640,0.3653
 64,zone,0–63,s3_cusum,2640,0.1863
@@ -215,6 +267,8 @@ horizon,by,group,signal,n,spearman
 64,zone,0–63,s4_b,2640,0.4115
 64,zone,0–63,s7_a,2640,0.2287
 64,zone,0–63,s7_b,2640,0.2156
+64,zone,0–63,s5_a,2640,0.1188
+64,zone,0–63,s5_b,2640,0.05868
 64,zone,64–127,s1,2640,0.4691
 64,zone,64–127,s2_16,2640,0.49
 64,zone,64–127,s3_cusum,2640,0.1828
@@ -223,6 +277,8 @@ horizon,by,group,signal,n,spearman
 64,zone,64–127,s4_b,2640,0.5039
 64,zone,64–127,s7_a,2640,0.3104
 64,zone,64–127,s7_b,2640,0.318
+64,zone,64–127,s5_a,2640,0.2281
+64,zone,64–127,s5_b,2640,0.2234
 64,zone,128–255,s1,5280,0.5773
 64,zone,128–255,s2_16,5280,0.4805
 64,zone,128–255,s3_cusum,5280,0.1122
@@ -231,6 +287,8 @@ horizon,by,group,signal,n,spearman
 64,zone,128–255,s4_b,5280,0.5407
 64,zone,128–255,s7_a,5280,0.4263
 64,zone,128–255,s7_b,5280,0.4403
+64,zone,128–255,s5_a,5280,0.2341
+64,zone,128–255,s5_b,5280,0.2217
 64,zone,256–511,s1,10560,0.6448
 64,zone,256–511,s2_16,10560,0.4765
 64,zone,256–511,s3_cusum,10560,0.2367
@@ -239,6 +297,8 @@ horizon,by,group,signal,n,spearman
 64,zone,256–511,s4_b,10560,0.5412
 64,zone,256–511,s7_a,10560,0.5082
 64,zone,256–511,s7_b,10560,0.5076
+64,zone,256–511,s5_a,10560,0.2741
+64,zone,256–511,s5_b,10560,0.1508
 64,zone,≥512,s1,5610,0.6771
 64,zone,≥512,s2_16,5610,0.4861
 64,zone,≥512,s3_cusum,5610,0.3664
@@ -247,6 +307,8 @@ horizon,by,group,signal,n,spearman
 64,zone,≥512,s4_b,5610,0.5616
 64,zone,≥512,s7_a,5610,0.5809
 64,zone,≥512,s7_b,5610,0.5737
+64,zone,≥512,s5_a,5610,0.3148
+64,zone,≥512,s5_b,5610,0.08191
 64,zone,контроль,s1,950,0.2903
 64,zone,контроль,s2_16,950,0.212
 64,zone,контроль,s3_cusum,950,0.07414
@@ -255,6 +317,8 @@ horizon,by,group,signal,n,spearman
 64,zone,контроль,s4_b,950,0.4952
 64,zone,контроль,s7_a,950,0.4139
 64,zone,контроль,s7_b,950,0.4088
+64,zone,контроль,s5_a,950,0.09333
+64,zone,контроль,s5_b,950,0.01404
 64,kind_key,change-mean,s1,2850,0.4998
 64,kind_key,change-mean,s2_16,2850,0.3521
 64,kind_key,change-mean,s3_cusum,2850,0.1917
@@ -263,6 +327,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-mean,s4_b,2850,0.49
 64,kind_key,change-mean,s7_a,2850,0.4124
 64,kind_key,change-mean,s7_b,2850,0.394
+64,kind_key,change-mean,s5_a,2850,0.2933
+64,kind_key,change-mean,s5_b,2850,0.06819
 64,kind_key,change-variance,s1,2850,0.6242
 64,kind_key,change-variance,s2_16,2850,0.4927
 64,kind_key,change-variance,s3_cusum,2850,0.1816
@@ -271,6 +337,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-variance,s4_b,2850,0.4959
 64,kind_key,change-variance,s7_a,2850,0.2082
 64,kind_key,change-variance,s7_b,2850,0.2679
+64,kind_key,change-variance,s5_a,2850,0.4956
+64,kind_key,change-variance,s5_b,2850,0.4228
 64,kind_key,change-trend,s1,2850,0.3677
 64,kind_key,change-trend,s2_16,2850,0.2823
 64,kind_key,change-trend,s3_cusum,2850,-0.01979
@@ -279,6 +347,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-trend,s4_b,2850,0.3089
 64,kind_key,change-trend,s7_a,2850,0.2349
 64,kind_key,change-trend,s7_b,2850,0.2275
+64,kind_key,change-trend,s5_a,2850,0.09672
+64,kind_key,change-trend,s5_b,2850,-0.008055
 64,kind_key,change-ar,s1,2850,0.8146
 64,kind_key,change-ar,s2_16,2850,0.5709
 64,kind_key,change-ar,s3_cusum,2850,0.5475
@@ -287,6 +357,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-ar,s4_b,2850,0.5841
 64,kind_key,change-ar,s7_a,2850,0.6037
 64,kind_key,change-ar,s7_b,2850,0.6055
+64,kind_key,change-ar,s5_a,2850,0.4892
+64,kind_key,change-ar,s5_b,2850,-0.01043
 64,kind_key,change-seasonality,s1,2850,0.6542
 64,kind_key,change-seasonality,s2_16,2850,0.5395
 64,kind_key,change-seasonality,s3_cusum,2850,0.4408
@@ -295,6 +367,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-seasonality,s4_b,2850,0.6353
 64,kind_key,change-seasonality,s7_a,2850,0.4374
 64,kind_key,change-seasonality,s7_b,2850,0.3907
+64,kind_key,change-seasonality,s5_a,2850,0.341
+64,kind_key,change-seasonality,s5_b,2850,-0.05107
 64,kind_key,change-frequency,s1,2850,0.5131
 64,kind_key,change-frequency,s2_16,2850,0.4522
 64,kind_key,change-frequency,s3_cusum,2850,0.134
@@ -303,6 +377,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-frequency,s4_b,2850,0.3674
 64,kind_key,change-frequency,s7_a,2850,0.33
 64,kind_key,change-frequency,s7_b,2850,0.3504
+64,kind_key,change-frequency,s5_a,2850,0.3007
+64,kind_key,change-frequency,s5_b,2850,0.06824
 64,kind_key,change-sensor_bias,s1,2850,0.4555
 64,kind_key,change-sensor_bias,s2_16,2850,0.317
 64,kind_key,change-sensor_bias,s3_cusum,2850,0.06462
@@ -311,6 +387,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,change-sensor_bias,s4_b,2850,0.4757
 64,kind_key,change-sensor_bias,s7_a,2850,0.35
 64,kind_key,change-sensor_bias,s7_b,2850,0.3548
+64,kind_key,change-sensor_bias,s5_a,2850,0.141
+64,kind_key,change-sensor_bias,s5_b,2850,-0.07857
 64,kind_key,drift-mean,s1,2850,0.415
 64,kind_key,drift-mean,s2_16,2850,0.2479
 64,kind_key,drift-mean,s3_cusum,2850,0.1468
@@ -319,6 +397,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,drift-mean,s4_b,2850,0.4025
 64,kind_key,drift-mean,s7_a,2850,0.2939
 64,kind_key,drift-mean,s7_b,2850,0.2802
+64,kind_key,drift-mean,s5_a,2850,0.2367
+64,kind_key,drift-mean,s5_b,2850,0.1278
 64,kind_key,drift-frequency,s1,2850,0.4611
 64,kind_key,drift-frequency,s2_16,2850,0.4386
 64,kind_key,drift-frequency,s3_cusum,2850,0.107
@@ -327,6 +407,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,drift-frequency,s4_b,2850,0.328
 64,kind_key,drift-frequency,s7_a,2850,0.3086
 64,kind_key,drift-frequency,s7_b,2850,0.3215
+64,kind_key,drift-frequency,s5_a,2850,0.2417
+64,kind_key,drift-frequency,s5_b,2850,0.09302
 64,kind_key,anomaly-spike,s1,2850,0.5424
 64,kind_key,anomaly-spike,s2_16,2850,0.3396
 64,kind_key,anomaly-spike,s3_cusum,2850,0.3582
@@ -335,6 +417,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,anomaly-spike,s4_b,2850,0.4856
 64,kind_key,anomaly-spike,s7_a,2850,0.4309
 64,kind_key,anomaly-spike,s7_b,2850,0.4084
+64,kind_key,anomaly-spike,s5_a,2850,0.312
+64,kind_key,anomaly-spike,s5_b,2850,-0.05534
 64,kind_key,anomaly-freeze,s1,2850,0.5217
 64,kind_key,anomaly-freeze,s2_16,2850,0.3108
 64,kind_key,anomaly-freeze,s3_cusum,2850,0.3324
@@ -343,6 +427,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,anomaly-freeze,s4_b,2850,0.4602
 64,kind_key,anomaly-freeze,s7_a,2850,0.4159
 64,kind_key,anomaly-freeze,s7_b,2850,0.4065
+64,kind_key,anomaly-freeze,s5_a,2850,0.3021
+64,kind_key,anomaly-freeze,s5_b,2850,0.08855
 64,kind_key,none,s1,950,0.2903
 64,kind_key,none,s2_16,950,0.212
 64,kind_key,none,s3_cusum,950,0.07414
@@ -351,6 +437,8 @@ horizon,by,group,signal,n,spearman
 64,kind_key,none,s4_b,950,0.4952
 64,kind_key,none,s7_a,950,0.4139
 64,kind_key,none,s7_b,950,0.4088
+64,kind_key,none,s5_a,950,0.09333
+64,kind_key,none,s5_b,950,0.01404
 64,level,weak,s1,10450,0.5337
 64,level,weak,s2_16,10450,0.3993
 64,level,weak,s3_cusum,10450,0.2051
@@ -359,6 +447,8 @@ horizon,by,group,signal,n,spearman
 64,level,weak,s4_b,10450,0.4546
 64,level,weak,s7_a,10450,0.4091
 64,level,weak,s7_b,10450,0.3893
+64,level,weak,s5_a,10450,0.2177
+64,level,weak,s5_b,10450,0.0144
 64,level,medium,s1,10450,0.5545
 64,level,medium,s2_16,10450,0.4519
 64,level,medium,s3_cusum,10450,0.235
@@ -367,6 +457,8 @@ horizon,by,group,signal,n,spearman
 64,level,medium,s4_b,10450,0.5125
 64,level,medium,s7_a,10450,0.4425
 64,level,medium,s7_b,10450,0.4371
+64,level,medium,s5_a,10450,0.2596
+64,level,medium,s5_b,10450,0.1514
 64,level,strong,s1,10450,0.605
 64,level,strong,s2_16,10450,0.503
 64,level,strong,s3_cusum,10450,0.2201
@@ -375,6 +467,8 @@ horizon,by,group,signal,n,spearman
 64,level,strong,s4_b,10450,0.5535
 64,level,strong,s7_a,10450,0.4321
 64,level,strong,s7_b,10450,0.4439
+64,level,strong,s5_a,10450,0.2781
+64,level,strong,s5_b,10450,0.178
 64,level,-,s1,950,0.2903
 64,level,-,s2_16,950,0.212
 64,level,-,s3_cusum,950,0.07414
@@ -383,3 +477,5 @@ horizon,by,group,signal,n,spearman
 64,level,-,s4_b,950,0.4952
 64,level,-,s7_a,950,0.4139
 64,level,-,s7_b,950,0.4088
+64,level,-,s5_a,950,0.09333
+64,level,-,s5_b,950,0.01404

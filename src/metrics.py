@@ -1,11 +1,11 @@
-"""Метрики качества прогноза одного окна (определения — CLAUDE.md, раздел 8).
+"""Метрики качества прогноза одного окна (определения — docs/implementation.md, «Метрики»).
 
 Все функции работают с одним окном: future — факт на горизонте (H,),
 quantiles — квантильный прогноз (число квантилей, H), levels — уровни квантилей.
 Масштаб `scale` считается по контексту (см. seasonal_naive_scale) и делает
 метрики безразмерными, чтобы их можно было усреднять по рядам разного масштаба.
 
-Метрики этапа A (AURC, AUROC, AUPRC, Спирмен) — в конце файла; метрики этапа B добавим позже.
+Метрики этапа A (AURC, AUROC, AUPRC, Спирмен) и этапа B (F1 с допуском, задержка) — в конце файла.
 """
 
 from __future__ import annotations
@@ -178,3 +178,36 @@ def _ranks(w: np.ndarray, order: np.ndarray) -> np.ndarray:
     ranks = np.empty_like(sorted_ranks)
     ranks[..., order] = sorted_ranks
     return ranks
+
+
+# ---------- этап B: локализация точки смены ----------
+#
+# Окно «со сменой» (positive) — в контексте есть точка смены; «без смены» (negative) — весь контекст
+# в одном устойчивом режиме. detected — детектор сработал (счёт выше порога), hit — сработал и τ′ попала
+# в допуск. Срабатывание в окне со сменой, но мимо допуска — и ложная тревога, и пропуск.
+
+
+def detection_counts(positive, negative, detected, hit, weights=None) -> tuple:
+    """(TP, FP, P): попадания, ложные тревоги, окна со сменой. weights — (n,) или (B, n), как в этапе A."""
+    w = np.ones(len(positive)) if weights is None else np.asarray(weights, dtype=np.float64)
+    tp = (w * (positive & hit)).sum(axis=-1)
+    fp = (w * ((negative & detected) | (positive & detected & ~hit))).sum(axis=-1)
+    return tp, fp, (w * positive).sum(axis=-1)
+
+
+def f1_from_counts(tp, fp, p):
+    """F1 = 2·TP / (2·TP + FP + FN), FN = P − TP. Без срабатываний и без смен — 0."""
+    denom = 2 * tp + fp + (p - tp)
+    return np.divide(2 * tp, denom, out=np.zeros_like(np.asarray(denom, dtype=np.float64)), where=denom > 0)
+
+
+def first_hit_delay(series: np.ndarray, d: np.ndarray, hit: np.ndarray, d_max: float) -> tuple[np.ndarray, np.ndarray]:
+    """Задержка обнаружения по рядам: первое d ∈ [0, d_max] с попаданием; inf — попаданий нет.
+
+    series, d, hit — по окнам со сменой. Возвращает (номера рядов, задержка) в порядке np.unique(series).
+    """
+    uniq, codes = np.unique(series, return_inverse=True)
+    delay = np.full(len(uniq), np.inf)
+    ok = hit & (d >= 0) & (d <= d_max)
+    np.minimum.at(delay, codes[ok], d[ok].astype(np.float64))
+    return uniq, delay

@@ -6,6 +6,8 @@
     python -m scripts.cache_forecasts --model amazon/chronos-2 --device cuda   # Colab с GPU
     python -m scripts.cache_forecasts --n-per-cell 1                       # пробный прогон, отдельная папка
     python -m scripts.cache_forecasts --seed 1 --model amazon/chronos-bolt-small  # та же сетка на новых рядах
+    python -m scripts.cache_forecasts --seed 1 --model amazon/chronos-2 --device cuda \
+        --variants L512 L256 L128 L64                                      # только часть вариантов контекста
 
 Что делает:
 1. По конфигу генерирует ряды (src/synth.py) и таблицу окон (src/windows.py).
@@ -80,19 +82,23 @@ def build_dataset(cfg: dict, root: Path) -> None:
     print(f"Данные: {len(series)} рядов длины {n}, {len(w_rows)} окон, τ = {tau} → {root}/")
 
 
-def contexts_for(rows: pd.DataFrame, x_all: np.ndarray, cfg: dict) -> list[np.ndarray]:
-    """Контексты всех вариантов для строк таблицы окон, подряд: окно 0 (все варианты), окно 1, …"""
+def contexts_for(rows: pd.DataFrame, x_all: np.ndarray, cfg: dict, keep: list[int]) -> list[np.ndarray]:
+    """Контексты вариантов keep (номера из variant_names) для строк таблицы окон, подряд:
+    окно 0 (все варианты keep), окно 1, … Шум S7 строится всегда, чтобы он не зависел от keep."""
     out = []
     for r in rows.itertuples():
         rng = noise_rng(cfg["seed"], r.cell, r.series, r.t)
-        out += window_contexts(x_all[r.series_idx], r.t, cfg, rng)
+        ctxs = window_contexts(x_all[r.series_idx], r.t, cfg, rng)
+        out += [ctxs[i] for i in keep]
     return out
 
 
-def predict_rows(model, rows: pd.DataFrame, x_all: np.ndarray, cfg: dict, batch_size: int) -> dict[str, np.ndarray]:
-    """{"q64": (окна, варианты, 9, 64), "q16": …}; q16 не хранится, если он равен началу q64."""
-    n_var = len(variant_names(cfg))
-    ctxs = contexts_for(rows, x_all, cfg)
+def predict_rows(
+    model, rows: pd.DataFrame, x_all: np.ndarray, cfg: dict, batch_size: int, keep: list[int]
+) -> dict[str, np.ndarray]:
+    """{"q64": (окна, варианты keep, 9, 64), "q16": …}; q16 не хранится, если он равен началу q64."""
+    n_var = len(keep)
+    ctxs = contexts_for(rows, x_all, cfg, keep)
     horizons = sorted(cfg["windows"]["horizons"], reverse=True)
     out = {}
     for h in horizons:
@@ -107,14 +113,16 @@ def calls_per_window(model, cfg: dict) -> int:
     return 1 if model.short_horizon_is_prefix else len(cfg["windows"]["horizons"])
 
 
-def verify(model, mdir: Path, windows: pd.DataFrame, x_all: np.ndarray, cfg: dict, n: int, seed: int) -> None:
+def verify(
+    model, mdir: Path, windows: pd.DataFrame, x_all: np.ndarray, cfg: dict, n: int, seed: int, keep: list[int]
+) -> None:
     """Пересчитывает n случайных окон из уже посчитанных ячеек и сверяет с кешем."""
     done = {f.stem for f in mdir.glob("*.npz")}
     pool = windows[windows.cell.isin(done)]
     if pool.empty or n == 0:
         return
     sample = pool.sample(min(n, len(pool)), random_state=seed)
-    fresh = predict_rows(model, sample, x_all, cfg, batch_size=256)
+    fresh = predict_rows(model, sample, x_all, cfg, batch_size=256, keep=keep)
     worst = 0.0
     for j, r in enumerate(sample.itertuples()):
         with np.load(mdir / f"{r.cell}.npz") as z:
@@ -139,6 +147,8 @@ def main() -> None:
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--batch-size", type=int, default=256)
     parser.add_argument("--verify", type=int, default=8, help="сколько окон пересчитать для сверки")
+    parser.add_argument("--variants", nargs="+",
+                        help="считать только эти варианты контекста (имена из dataset.json), например L512 L256")
     args = parser.parse_args()
 
     cfg = yaml.safe_load(args.config.read_text())
@@ -166,7 +176,16 @@ def main() -> None:
 
     windows = pd.read_csv(root / "windows.csv")
     x_all = np.load(root / "series.npz")["x"]
-    n_var = len(variant_names(cfg))
+    names = variant_names(cfg)
+    if args.variants:
+        unknown_v = [v for v in args.variants if v not in names]
+        if unknown_v:
+            raise SystemExit(f"неизвестные варианты {unknown_v}; есть {names}")
+        keep = [names.index(v) for v in args.variants]  # порядок — как в аргументах
+    else:
+        keep = list(range(len(names)))
+    subset = len(keep) < len(names)
+    n_var = len(keep)
     all_cells = [c.cell_id for c in grid(cfg)]
     cells = args.cells or all_cells
     unknown = set(cells) - set(all_cells)
@@ -182,6 +201,12 @@ def main() -> None:
             f.unlink()
         meta_file = mdir / "meta.json"
         meta = json.loads(meta_file.read_text()) if meta_file.exists() else {"cells": {}}
+        # Все файлы ячеек одной модели — с одним набором вариантов (у полного кеша ключа нет).
+        stored_variants = meta.get("variants", names if meta["cells"] else None)
+        if stored_variants is not None and stored_variants != [names[i] for i in keep]:
+            raise SystemExit(f"{mdir}/ уже посчитан с вариантами {stored_variants}, сейчас {[names[i] for i in keep]}")
+        if subset:
+            meta["variants"] = [names[i] for i in keep]
         meta.update({
             "model": model_id, "short_horizon_is_prefix": model.short_horizon_is_prefix,
             "device": args.device, "torch_threads": torch.get_num_threads(),
@@ -197,12 +222,13 @@ def main() -> None:
         for c in todo:
             rows = windows[windows.cell == c]
             t0 = time.perf_counter()
-            q = predict_rows(model, rows, x_all, cfg, args.batch_size)
+            q = predict_rows(model, rows, x_all, cfg, args.batch_size, keep)
             sec = time.perf_counter() - t0
             if not all(np.isfinite(a).all() for a in q.values()):
                 raise RuntimeError(f"{c}: в прогнозе есть NaN")
             tmp = mdir / f"{c}.tmp.npz"
-            np.savez(tmp, row=rows.row.to_numpy(), **q)
+            extra = {"variants": np.array([names[i] for i in keep])} if subset else {}
+            np.savez(tmp, row=rows.row.to_numpy(), **q, **extra)
             os.replace(tmp, mdir / f"{c}.npz")  # файл ячейки появляется только целиком
             n_fc = len(rows) * per_window
             spent, made = spent + sec, made + n_fc
@@ -211,7 +237,7 @@ def main() -> None:
             eta = spent / made * (total - made)
             print(f"  {c}: {sec:.0f} с, {sec / n_fc * 1e3:.1f} мс на прогноз; осталось ~{eta / 60:.0f} мин")
 
-        verify(model, mdir, windows, x_all, cfg, args.verify, cfg["seed"])
+        verify(model, mdir, windows, x_all, cfg, args.verify, cfg["seed"], keep)
 
         # Оценка полной сетки по измеренной скорости этой модели.
         timed = meta["cells"].values()
