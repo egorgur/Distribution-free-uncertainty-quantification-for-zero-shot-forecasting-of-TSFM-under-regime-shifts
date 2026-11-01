@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-01 17:12",
+  "model": "amazon/chronos-bolt-small",
+  "dataset_hash": "fe05ceb1dac3",
+  "L": 512,
+  "layers": [
+    "final",
+    "input"
+  ],
+  "m_patches": [
+    4,
+    2,
+    8
+  ],
+  "keys": [
+    "s5_final_m4_a",
+    "s5_final_m4_b",
+    "s5_final_m2_a",
+    "s5_final_m2_b",
+    "s5_final_m8_a",
+    "s5_final_m8_b",
+    "s5_input_m4_a",
+    "s5_input_m4_b",
+    "s5_input_m2_a",
+    "s5_input_m2_b",
+    "s5_input_m8_a",
+    "s5_input_m8_b"
+  ],
+  "seconds": 1051,
+  "device": "cpu",
+  "verify_max_rel_diff": 9.801195730811551e-08,
+  "env": "python 3.13.9, torch 2.15.0+cpu, transformers 5.22.1, chronos-forecasting 2.3.2"
+}

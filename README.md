@@ -36,7 +36,7 @@ python -m scripts.check_chronos --model amazon/chronos-bolt-base   # друго�
 python -m scripts.plot_synth
 ```
 
-Прогнозы всех окон и всех вариантов контекста (S4, S7) сохраняются в `results/cache/synth_v1/` (в git не попадает). Если прогон прервался, та же команда продолжит его с места остановки:
+Прогнозы всех окон и всех вариантов контекста (S4, S7) сохраняются в `results/cache/synth_v1/`. Кеш хранится в git (~1.1 ГБ), поэтому после `git clone` его пересчитывать не нужно. Если прогон прервался, та же команда продолжит его с места остановки:
 
 ```bash
 python -m scripts.cache_forecasts --model amazon/chronos-bolt-small   # ~1 ч на CPU

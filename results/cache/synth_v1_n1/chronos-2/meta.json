@@ -1,0 +1,18 @@
+{
+  "cells": {
+    "change-mean-strong": {
+      "seconds": 108.0,
+      "forecasts": 1940
+    },
+    "none": {
+      "seconds": 111.2,
+      "forecasts": 1940
+    }
+  },
+  "model": "amazon/chronos-2",
+  "short_horizon_is_prefix": false,
+  "device": "cpu",
+  "torch_threads": 4,
+  "env": "python 3.13.9, torch 2.15.0+cpu, transformers 5.22.1, chronos-forecasting 2.3.2",
+  "ms_per_forecast": 56.49
+}

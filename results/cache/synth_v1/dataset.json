@@ -1,0 +1,26 @@
+{
+  "hash": "fe05ceb1dac3",
+  "name": "synth_v1",
+  "tau": 648,
+  "length": 1353,
+  "horizons": [
+    16,
+    64
+  ],
+  "variants": [
+    "L512",
+    "L256",
+    "L128",
+    "L64",
+    "tail-9",
+    "tail-3",
+    "tail+3",
+    "tail+9",
+    "noise1",
+    "noise2"
+  ],
+  "n_cells": 34,
+  "n_series": 340,
+  "n_windows": 32980,
+  "created": "2026-10-30 19:29"
+}

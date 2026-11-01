@@ -15,8 +15,8 @@
 Модель вызывается заново, потому что кеш хранит только квантили. В работе S5 берётся из того же
 прохода энкодера, что и основной прогноз, то есть дополнительных прогонов не требует.
 
-Результат: results/cache/<name>/<модель>/signals/s5.npz и s5.json (в git не попадают, как и весь
-кеш). Читает scripts/stage4_signals.py.
+Результат: results/cache/<name>/<модель>/signals/s5.npz и s5.json (хранятся в git вместе с кешем).
+Читает scripts/stage4_signals.py.
 """
 
 from __future__ import annotations

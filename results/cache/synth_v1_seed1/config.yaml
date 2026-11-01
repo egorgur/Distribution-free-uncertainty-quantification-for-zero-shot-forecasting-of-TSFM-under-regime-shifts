@@ -1,0 +1,92 @@
+name: synth_v1
+seed: 1
+n_per_cell: 10
+base:
+  ar_phi:
+  - 0.6
+  - 0.8
+  season_amp:
+  - 1.0
+  - 3.0
+  season_period:
+  - 12
+  - 24
+  - 48
+  log10_scale:
+  - -2
+  - 2
+  offset:
+  - -20
+  - 20
+windows:
+  context: 512
+  horizons:
+  - 16
+  - 64
+  d_min: -128
+  d_max: 640
+  d_step: 8
+variants:
+  s4_lengths:
+  - 256
+  - 128
+  - 64
+  s7_tail_k:
+  - -9
+  - -3
+  - 3
+  - 9
+  s7_noise_alpha: 0.1
+  s7_noise_draws: 2
+change:
+  mean:
+  - 0.5
+  - 1.0
+  - 2.0
+  variance:
+  - 1.5
+  - 2.0
+  - 3.0
+  trend:
+  - 0.5
+  - 1.0
+  - 2.0
+  ar:
+  - 0.2
+  - 0.4
+  - 0.6
+  seasonality:
+  - 0.5
+  - 1.0
+  - 2.0
+  frequency:
+  - 1.03
+  - 1.07
+  - 1.25
+  sensor_bias:
+  - 0.5
+  - 1.0
+  - 2.0
+drift:
+  duration: 128
+  mean:
+  - 0.5
+  - 1.0
+  - 2.0
+  frequency:
+  - 1.03
+  - 1.07
+  - 1.25
+anomaly:
+  spike:
+  - 4.0
+  - 8.0
+  - 16.0
+  freeze:
+  - 16
+  - 48
+  - 128
+none: true
+models:
+- amazon/chronos-bolt-small
+- amazon/chronos-2

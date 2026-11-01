@@ -1,0 +1,146 @@
+{
+  "cells": {
+    "change-mean-weak": {
+      "seconds": 16.9,
+      "forecasts": 970
+    },
+    "change-mean-medium": {
+      "seconds": 13.9,
+      "forecasts": 970
+    },
+    "change-mean-strong": {
+      "seconds": 12.5,
+      "forecasts": 970
+    },
+    "change-variance-weak": {
+      "seconds": 12.1,
+      "forecasts": 970
+    },
+    "change-variance-medium": {
+      "seconds": 13.2,
+      "forecasts": 970
+    },
+    "change-variance-strong": {
+      "seconds": 12.4,
+      "forecasts": 970
+    },
+    "change-trend-weak": {
+      "seconds": 12.2,
+      "forecasts": 970
+    },
+    "change-trend-medium": {
+      "seconds": 12.3,
+      "forecasts": 970
+    },
+    "change-trend-strong": {
+      "seconds": 13.0,
+      "forecasts": 970
+    },
+    "change-ar-weak": {
+      "seconds": 12.0,
+      "forecasts": 970
+    },
+    "change-ar-medium": {
+      "seconds": 12.1,
+      "forecasts": 970
+    },
+    "change-ar-strong": {
+      "seconds": 12.4,
+      "forecasts": 970
+    },
+    "change-seasonality-weak": {
+      "seconds": 12.5,
+      "forecasts": 970
+    },
+    "change-seasonality-medium": {
+      "seconds": 12.1,
+      "forecasts": 970
+    },
+    "change-seasonality-strong": {
+      "seconds": 12.5,
+      "forecasts": 970
+    },
+    "change-frequency-weak": {
+      "seconds": 11.9,
+      "forecasts": 970
+    },
+    "change-frequency-medium": {
+      "seconds": 12.3,
+      "forecasts": 970
+    },
+    "change-frequency-strong": {
+      "seconds": 11.6,
+      "forecasts": 970
+    },
+    "change-sensor_bias-weak": {
+      "seconds": 11.6,
+      "forecasts": 970
+    },
+    "change-sensor_bias-medium": {
+      "seconds": 11.4,
+      "forecasts": 970
+    },
+    "change-sensor_bias-strong": {
+      "seconds": 11.2,
+      "forecasts": 970
+    },
+    "drift-mean-weak": {
+      "seconds": 11.1,
+      "forecasts": 970
+    },
+    "drift-mean-medium": {
+      "seconds": 11.0,
+      "forecasts": 970
+    },
+    "drift-mean-strong": {
+      "seconds": 11.0,
+      "forecasts": 970
+    },
+    "drift-frequency-weak": {
+      "seconds": 12.2,
+      "forecasts": 970
+    },
+    "drift-frequency-medium": {
+      "seconds": 12.8,
+      "forecasts": 970
+    },
+    "drift-frequency-strong": {
+      "seconds": 11.7,
+      "forecasts": 970
+    },
+    "anomaly-spike-weak": {
+      "seconds": 14.0,
+      "forecasts": 970
+    },
+    "anomaly-spike-medium": {
+      "seconds": 12.3,
+      "forecasts": 970
+    },
+    "anomaly-spike-strong": {
+      "seconds": 12.9,
+      "forecasts": 970
+    },
+    "anomaly-freeze-weak": {
+      "seconds": 10.7,
+      "forecasts": 970
+    },
+    "anomaly-freeze-medium": {
+      "seconds": 13.7,
+      "forecasts": 970
+    },
+    "anomaly-freeze-strong": {
+      "seconds": 12.1,
+      "forecasts": 970
+    },
+    "none": {
+      "seconds": 11.5,
+      "forecasts": 970
+    }
+  },
+  "model": "amazon/chronos-bolt-small",
+  "short_horizon_is_prefix": true,
+  "device": "cpu",
+  "torch_threads": 4,
+  "env": "python 3.13.9, torch 2.15.0+cpu, transformers 5.22.1, chronos-forecasting 2.3.2",
+  "ms_per_forecast": 12.71
+}
