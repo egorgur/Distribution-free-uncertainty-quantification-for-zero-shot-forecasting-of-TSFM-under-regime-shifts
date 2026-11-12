@@ -1,0 +1,478 @@
+member,size,compressed_size,crc32,header_offset
+PRONTO benchmark case study/,0,0,00000000,0
+PRONTO benchmark case study/C0 Normal and Slugging conditions/,0,0,00000000,58
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/,0,0,00000000,150
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Alarms and Events/,0,0,00000000,249
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Alarms and Events/0912Testday4_AlmEvt.txt,97336,6301,5c787a6b,366
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/,0,0,00000000,6807
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_100_1.csv,24062340,3437414,58956c9d,6930
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_100_2.csv,28416871,4268813,202e9b6e,3444487
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_100_35.csv,28418079,4459374,ee1c1807,7713443
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_200_1.csv,28420899,4197253,efa8782a,12172961
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_20_05.csv,28416835,3979064,80f9aa8e,16370357
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_20_1.csv,28422647,4039259,3d688253,20349564
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_20_2.csv,28425567,4151498,6f07e1be,24388965
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_50_1.csv,28417007,4041474,460c5228,28540605
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_50_2.csv,28416885,4208982,a5cd9dc0,32582221
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/High Frequency Pressure/0912Test10_50_35.csv,28409547,4411425,8ff23dfb,36791345
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Process Data/,0,0,00000000,41202913
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Process Data/0912Testday4.csv,4920870,1487131,93744c28,41203025
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/,0,0,00000000,42690284
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_100_1_UT.csv,19576122,3302797,16f7474b,42690401
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_100_2_UT.csv,19618787,3340604,905ebf96,45993338
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_100_35_UT.csv,19549225,3378300,9ec88283,49334082
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_200_1_UT.csv,19661661,3282552,7703edd9,52712523
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_20_05_UT.csv,19623994,3268127,ab4eb8ac,55995215
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_20_1_UT.csv,19596744,3345146,d8904b4f,59263482
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_20_2_UT.csv,19435162,3373088,ca707310,62608767
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_50_1_UT.csv,19638098,3343249,92d1acab,65981994
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_50_2_UT.csv,19534033,3344230,65f99501,69325382
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Ultrasonic Sensor/0912Test10_50_35_UT.csv,19440714,3382616,deaed066,72669751
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/,0,0,00000000,76052507
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_100_1_VID.mp4,14063718,13654031,59b56688,76052613
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_100_2_VID.mp4,21950188,21539935,41a6a3b9,89706774
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_100_2_VID_risebase.mp4,2301448,2294910,2007b7f1,111246839
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_100_2_VID_sshape.mp4,2211510,2205261,4b7687af,113541888
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_100_35_VID.mp4,22132587,21708113,70e4ed42,115747286
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_200_1_VID.mp4,20845416,20436814,198154f9,137455530
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_20_05_VID.mp4,33918738,33514160,e9b2ff7d,157892474
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_20_1_VID.mp4,53464620,53057961,3996c849,191406764
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_20_2_VID.mp4,26688620,26283437,4d7a7890,244464854
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_50_1_VID.mp4,17226772,16819228,ee6a3c6d,270748420
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_50_2_VID.mp4,18815077,18404138,f7319935,287567777
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_50_2_VID_risebase.mp4,2333585,2326820,12015631,305972044
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_50_2_VID_sshape.mp4,1944690,1939024,c1e77a5c,308299002
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Videos/0912Test10_50_35_VID.mp4,16108959,15697228,41d4d2dc,310238162
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/,0,0,00000000,325935520
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Alarms and Events/,0,0,00000000,325935619
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Alarms and Events/0626TestDay5_AlmChn.txt,23281,2621,19746951,325935736
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Alarms and Events/0626TestDay5_AlmEvt.txt,575485,34560,d1c3839d,325938497
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Process Data/,0,0,00000000,325973197
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Process Data/0626Testday5.csv,1197062,308034,d8626a48,325973309
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/,0,0,00000000,326281471
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Alarms and Events/,0,0,00000000,326281569
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Alarms and Events/0912Testday4_AlmEvt.txt,97336,6301,5c787a6b,326281685
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/,0,0,00000000,326288125
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_100_01.csv,28391784,3891185,820d5519,326288247
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_100_05.csv,28421632,3988909,fc451ff5,330179574
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_200_01.csv,28378125,3717364,962d557d,334168625
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_200_05.csv,28425900,3992486,f2781555,337886131
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_20_01.csv,28411959,3875785,808ee862,341878759
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_20_35.csv,28422913,4316805,63fb04ed,345754685
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_50_01.csv,28418224,3789789,c978360c,350071631
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/High Frequency Pressure/0912Test9_50_05.csv,28422120,3949347,f797663a,353861561
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Process Data/,0,0,00000000,357811049
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Process Data/0912Testday4.csv,4920870,1487131,93744c28,357811160
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/,0,0,00000000,359298418
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Tes9_100_01_UT.csv,19456118,3241698,2ebeedeb,359298534
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_100_05_UT.csv,19674630,3259322,11d2d5b3,362540370
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_200_01_UT.csv,19572772,3241481,0b74b6a3,365799831
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_200_05_UT.csv,19449728,3236466,d486f2e5,369041451
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_20_01_UT.csv,19409206,2997753,09bb23b1,372278056
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_20_35_UT.csv,19643454,3384593,bfd6279e,375275947
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_50_01_UT.csv,19619180,3283524,52803bbb,378660678
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Ultrasonic Sensor/0912Test9_50_05_UT.csv,19673596,3332257,0bfc9420,381944340
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/,0,0,00000000,385276735
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_100_01_VID.mp4,26015907,25605277,ae962e49,385276840
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_100_05_VID.mp4,15309782,14900024,4c4f711f,410882246
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_200_01_VID.mp4,17336349,16926790,849941e4,425782399
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_200_05_VID.mp4,28738418,28333403,321ef9ad,442709318
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_20_01_VID.mp4,33488005,33075962,2a45b9ba,471042850
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_20_35_VID.mp4,18834750,18412110,b095bdff,504118940
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_50_01_VID.mp4,38896510,38493626,6b4dbade,522531178
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Videos/0912Test9_50_05_VID.mp4,61744940,61345725,20b3e3fe,561024932
+PRONTO benchmark case study/C1 Air Blockage/,0,0,00000000,622370785
+PRONTO benchmark case study/C1 Air Blockage/Test2/,0,0,00000000,622370859
+PRONTO benchmark case study/C1 Air Blockage/Test2/Alarm and Events/,0,0,00000000,622370939
+PRONTO benchmark case study/C1 Air Blockage/Test2/Alarm and Events/0907Testday2_AlmEvt.txt,197591,11589,84199806,622371036
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/,0,0,00000000,622382745
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_10.csv,28388003,3801392,138a48a7,622382849
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_20.csv,28388157,3794602,bf7fd412,626184361
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_30.csv,28388059,3798594,6d404108,629979083
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_40.csv,28396259,3786280,edc9fc43,633777797
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_50.csv,28398774,3796448,dd31f4db,637564197
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_60.csv,28393010,3791716,ade40109,641360765
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_70.csv,28397896,3944036,ae69b575,645152601
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_80.csv,28392714,3941131,31a8ff3a,649096757
+PRONTO benchmark case study/C1 Air Blockage/Test2/High Frequency Pressure/0907Test2_90.csv,28387228,3944077,3c1bd425,653038008
+PRONTO benchmark case study/C1 Air Blockage/Test2/Process Data/,0,0,00000000,656982205
+PRONTO benchmark case study/C1 Air Blockage/Test2/Process Data/0907Testday2.csv,6440042,1917180,e908f67d,656982298
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/,0,0,00000000,658899587
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_10_UT.csv,19366906,3267708,a8547b4b,658899685
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_20_UT.csv,19304260,3235114,be62baf6,662167510
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_30_UT.csv,19320489,3237413,8bc452d9,665402741
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_40_UT.csv,16572871,2778396,745b219e,668640271
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_50_UT.csv,19324950,3227886,b290ca9b,671418784
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_60_UT.csv,19347315,3232782,a681b387,674646787
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_70_UT.csv,19395599,3244784,f7a92fb7,677879686
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_80_UT.csv,19341162,3227196,d5316c17,681124587
+PRONTO benchmark case study/C1 Air Blockage/Test2/Ultrasonic Sensor/0907Test2_90_UT.csv,19298436,3234962,22f251ac,684351900
+PRONTO benchmark case study/C1 Air Blockage/Test3/,0,0,00000000,687586979
+PRONTO benchmark case study/C1 Air Blockage/Test3/Alarms and Events/,0,0,00000000,687587059
+PRONTO benchmark case study/C1 Air Blockage/Test3/Alarms and Events/0907Testday2_AlmEvt.txt,197591,11589,84199806,687587157
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/,0,0,00000000,687598867
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_10.csv,28418421,3995038,d6f5d6c5,687598971
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_20.csv,28429831,4026909,ef8e34d9,691594129
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_30.csv,28426077,4027717,28e6a438,695621158
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_40.csv,28426096,4022290,8dae3f4c,699648995
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_50.csv,28423785,4021205,6af9b6b3,703671405
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_60.csv,28424825,4019829,5bff7dc1,707692730
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_70.csv,28425257,4027267,cb93f726,711712679
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_80.csv,28426103,4021488,e533c459,715740066
+PRONTO benchmark case study/C1 Air Blockage/Test3/High Frequency Pressure/0907Test3_90.csv,28427006,4024619,11a93462,719761674
+PRONTO benchmark case study/C1 Air Blockage/Test3/Process Data/,0,0,00000000,723786413
+PRONTO benchmark case study/C1 Air Blockage/Test3/Process Data/0907Testday2.csv,6440042,1917180,e908f67d,723786506
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/,0,0,00000000,725703795
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_10_UT.csv,19672090,3347508,58533e4e,725703893
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_20_UT.csv,19670471,3277769,8dfd6e63,729051518
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_30_UT.csv,19672053,3275213,e76212fa,732329404
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_40_UT.csv,19676726,3269052,944db0d7,735604734
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_50_UT.csv,19675240,3273816,71ceb827,738873903
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_60_UT.csv,19672290,3268701,2d677072,742147836
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_70_UT.csv,19674857,3271001,d0df0bd5,745416654
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_80_UT.csv,19669696,3268139,af91adff,748687772
+PRONTO benchmark case study/C1 Air Blockage/Test3/Ultrasonic Sensor/0907Test3_90_UT.csv,19673054,3271425,d797747e,751956028
+PRONTO benchmark case study/C2 Air Leakage/,0,0,00000000,755227570
+PRONTO benchmark case study/C2 Air Leakage/Test4/,0,0,00000000,755227643
+PRONTO benchmark case study/C2 Air Leakage/Test4/Alarms and Events/,0,0,00000000,755227722
+PRONTO benchmark case study/C2 Air Leakage/Test4/Alarms and Events/0907Testday2_AlmEvt.txt,197591,11589,84199806,755227819
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/,0,0,00000000,755239528
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_10.csv,28429238,4016192,5b1dac74,755239631
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_15.csv,28425506,4011543,c669b2d6,759255942
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_20.csv,28429894,3980057,f50b9cac,763267604
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_25.csv,28433994,3890926,59c9a247,767247780
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_30.csv,28436952,3878476,4150fdbe,771138825
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_40.csv,28478534,3870840,8cdf7d43,775017420
+PRONTO benchmark case study/C2 Air Leakage/Test4/High Frequency Pressure/0907Test4_90.csv,28328100,3863216,5015a525,778888379
+PRONTO benchmark case study/C2 Air Leakage/Test4/Process Data/,0,0,00000000,782751714
+PRONTO benchmark case study/C2 Air Leakage/Test4/Process Data/0907Testday2.csv,6440042,1917180,e908f67d,782751806
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/,0,0,00000000,784669094
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_10_UT.csv,19675610,3284784,2b439c24,784669191
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_15_UT.csv,19658627,3371750,6496fb15,787954091
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_20_UT.csv,17763177,2779814,1c55c8a8,791325957
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_25_UT.csv,19063406,3198828,2c471291,794105887
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_30_UT.csv,19676198,3342120,f790dfbd,797304831
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_40_UT.csv,19676561,3364725,bc0d4615,800647067
+PRONTO benchmark case study/C2 Air Leakage/Test4/Ultrasonic Sensor/0907Test4_90_UT.csv,19675944,3280148,9888e125,804011908
+PRONTO benchmark case study/C2 Air Leakage/Test5/,0,0,00000000,807292172
+PRONTO benchmark case study/C2 Air Leakage/Test5/Alarms and Events/,0,0,00000000,807292251
+PRONTO benchmark case study/C2 Air Leakage/Test5/Alarms and Events/0911Testday3_Alm_Evt.txt,119508,7754,edc12534,807292348
+PRONTO benchmark case study/C2 Air Leakage/Test5/High Frequency Pressure/,0,0,00000000,807300223
+PRONTO benchmark case study/C2 Air Leakage/Test5/High Frequency Pressure/0911Test5_0.csv,28376631,3737318,bc758bbe,807300326
+PRONTO benchmark case study/C2 Air Leakage/Test5/High Frequency Pressure/0911Test5_10.csv,28410116,3925583,3a5cc18a,811037762
+PRONTO benchmark case study/C2 Air Leakage/Test5/High Frequency Pressure/0911Test5_15.csv,28431979,3790085,b22a5b7d,814963464
+PRONTO benchmark case study/C2 Air Leakage/Test5/High Frequency Pressure/0911Test5_5.csv,28389125,3745335,c14749d1,818753668
+PRONTO benchmark case study/C2 Air Leakage/Test5/Process Data/,0,0,00000000,822499121
+PRONTO benchmark case study/C2 Air Leakage/Test5/Process Data/0911Testday3.csv,8724815,2519653,19e58b93,822499213
+PRONTO benchmark case study/C2 Air Leakage/Test5/Ultrasonic Sensor/,0,0,00000000,825018974
+PRONTO benchmark case study/C2 Air Leakage/Test5/Ultrasonic Sensor/0911Test5_0_UT.csv,19336896,3196026,bd010763,825019071
+PRONTO benchmark case study/C2 Air Leakage/Test5/Ultrasonic Sensor/0911Test5_10_UT.csv,19495379,3301359,3d084d87,828215212
+PRONTO benchmark case study/C2 Air Leakage/Test5/Ultrasonic Sensor/0911Test5_15_UT.csv,16554534,2198929,e9d3770d,831516687
+PRONTO benchmark case study/C2 Air Leakage/Test5/Ultrasonic Sensor/0911Test5_5_UT.csv,19345354,3203140,6bfe2539,833715732
+PRONTO benchmark case study/C2 Air Leakage/Test5/Videos/,0,0,00000000,836918987
+PRONTO benchmark case study/C2 Air Leakage/Test5/Videos/0911Test5_10_VID.mp4,8244549,8221609,eb516c45,836919073
+PRONTO benchmark case study/C2 Air Leakage/Test5/Videos/0911Test5_10_VID_riser1.mp4,3586068,3576059,30a71b21,845140788
+PRONTO benchmark case study/C2 Air Leakage/Test5/Videos/0911Test5_10_VID_riser2.mp4,3591418,3580663,6f1d9d4a,848716960
+PRONTO benchmark case study/C2 Air Leakage/Test5/Videos/0911Test5_15_VID.mp4,9044424,9019990,dfb9b9fa,852297736
+PRONTO benchmark case study/C2 Air Leakage/Test5/Videos/0911Test5_5_VID.mp4,4413849,4401533,14e5fe99,861317832
+PRONTO benchmark case study/C2 Air Leakage/Test6/,0,0,00000000,865719470
+PRONTO benchmark case study/C2 Air Leakage/Test6/Alarms and Events/,0,0,00000000,865719549
+PRONTO benchmark case study/C2 Air Leakage/Test6/Alarms and Events/0911Testday3_Alm_Evt.txt,119508,7754,edc12534,865719646
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/,0,0,00000000,865727521
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/0911Test6_0.csv,28423673,3983392,9444ffa3,865727624
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/0911Test6_10.csv,28422399,3966089,33ae5250,869711134
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/0911Test6_15.csv,28417244,3948645,a3494632,873677342
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/0911Test6_20.csv,28427622,3814595,a4eabd2a,877626106
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/0911Test6_25.csv,28488136,3795315,b6cf5ab8,881440820
+PRONTO benchmark case study/C2 Air Leakage/Test6/High Frequency Pressure/0911Test6_5.csv,28422186,3987275,17c7ccc8,885236254
+PRONTO benchmark case study/C2 Air Leakage/Test6/Process Data/,0,0,00000000,889223647
+PRONTO benchmark case study/C2 Air Leakage/Test6/Process Data/0911Testday3.csv,8724815,2519653,19e58b93,889223739
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/,0,0,00000000,891743500
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/0911Test6_0_UT.csv,19660846,3244222,869142dd,891743597
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/0911Test6_10_UT.csv,19673252,3245988,1a5eac5d,894987934
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/0911Test6_15_UT.csv,19669205,3334894,27c987b1,898234038
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/0911Test6_20_UT.csv,19677062,3377298,f1041abd,901569048
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/0911Test6_25_UT.csv,19676161,3295404,726f55f8,904946462
+PRONTO benchmark case study/C2 Air Leakage/Test6/Ultrasonic Sensor/0911Test6_5_UT.csv,19670744,3234167,af2e7291,908241982
+PRONTO benchmark case study/C2 Air Leakage/Test6/Videos/,0,0,00000000,911476264
+PRONTO benchmark case study/C2 Air Leakage/Test6/Videos/0911Test6_10_VID.mp4,8658404,8634873,11d6bb04,911476350
+PRONTO benchmark case study/C2 Air Leakage/Test6/Videos/0911Test6_15_VID.mp4,7651271,7630427,1cf3d2ca,920111329
+PRONTO benchmark case study/C2 Air Leakage/Test6/Videos/0911Test6_20_VID.mp4,7763470,7741377,9d88ecf8,927741862
+PRONTO benchmark case study/C2 Air Leakage/Test6/Videos/0911Test6_25_VID.mp4,8020128,7997815,46c6d14c,935483345
+PRONTO benchmark case study/C2 Air Leakage/Test6/Videos/0911Test6_5_VID.mp4,8244549,8221609,eb516c45,943481266
+PRONTO benchmark case study/C3 Diverted flow/,0,0,00000000,951702980
+PRONTO benchmark case study/C3 Diverted flow/Test7/,0,0,00000000,951703055
+PRONTO benchmark case study/C3 Diverted flow/Test7/Alarms and Events/,0,0,00000000,951703136
+PRONTO benchmark case study/C3 Diverted flow/Test7/Alarms and Events/0911Testday3_Alm_Evt.txt,119508,7754,edc12534,951703235
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/,0,0,00000000,951711112
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_10.csv,28379844,3746077,435485a6,951711217
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_15.csv,28404082,3745345,2349fd48,955457415
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_20.csv,28414695,3738996,7dba7c14,959202881
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_30.csv,28411223,3774014,ff3f2729,962941998
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_40.csv,28377449,3768077,10049207,966716133
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_5.csv,28361095,3745163,ef62cd4f,970484331
+PRONTO benchmark case study/C3 Diverted flow/Test7/High Frequency Pressure/0911Test7_60.csv,28382616,3771529,28a35878,974229614
+PRONTO benchmark case study/C3 Diverted flow/Test7/Process Data/,0,0,00000000,978001264
+PRONTO benchmark case study/C3 Diverted flow/Test7/Process Data/0911Testday3.csv,8724815,2519653,19e58b93,978001358
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/,0,0,00000000,980521121
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_10_UT.csv,19332961,3231371,0d315c4f,980521220
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_15_UT.csv,19326569,3236443,7fbe400e,983752709
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_20_UT.csv,19372469,3248063,585fd932,986989270
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_30_UT.csv,19354251,3233730,09c9574d,990237451
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_40_UT.csv,19337475,3242318,cf7733fc,993471299
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_5_UT.csv,19676161,3295404,726f55f8,996713735
+PRONTO benchmark case study/C3 Diverted flow/Test7/Ultrasonic Sensor/0911Test7_60_UT.csv,19344334,3234450,7aaec38c,1000009256
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/,0,0,00000000,1003243824
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_10_VID.mp4,10644589,10616184,69de6042,1003243912
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_15_VID.mp4,9457210,9432036,4b19e096,1013860204
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_20_VID.mp4,8181423,8159596,26f0df76,1023292348
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_30_VID.mp4,9193030,9168462,4faf8a0b,1031452052
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_30_VID_riserbase.mp4,7995008,7972517,d747cbd4,1040620622
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_40_VID.mp4,4124083,4112437,1cc70eb7,1048593257
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_50_VID.mp4,7107565,7080149,5711d0a4,1052705802
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_5_VID.mp4,9825599,9798753,93607b03,1059786059
+PRONTO benchmark case study/C3 Diverted flow/Test7/Videos/0911Test7_60_VID.mp4,7536376,7515013,445aaebf,1069584919
+PRONTO benchmark case study/C3 Diverted flow/Test8/,0,0,00000000,1077100040
+PRONTO benchmark case study/C3 Diverted flow/Test8/Alarms and Events/,0,0,00000000,1077100121
+PRONTO benchmark case study/C3 Diverted flow/Test8/Alarms and Events/0911Testday3_Alm_Evt.txt,119508,7754,edc12534,1077100220
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/,0,0,00000000,1077108097
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_10.csv,28424069,3955946,548aba66,1077108202
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_20.csv,0,0,00000000,1081064269
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_30.csv,0,0,00000000,1081064390
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_40.csv,0,0,00000000,1081064511
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_45.csv,0,0,00000000,1081064632
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_50.csv,0,0,00000000,1081064753
+PRONTO benchmark case study/C3 Diverted flow/Test8/High Frequency Pressure/0911Test8_60.csv,0,0,00000000,1081064874
+PRONTO benchmark case study/C3 Diverted flow/Test8/Process Data/,0,0,00000000,1081064995
+PRONTO benchmark case study/C3 Diverted flow/Test8/Process Data/0911Testday3.csv,8724815,2519653,19e58b93,1081065089
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/,0,0,00000000,1083584852
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_10_UT.csv,19669123,3259737,87e4f0aa,1083584951
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_20_UT.csv,19673402,3262035,11d321a3,1086844806
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_30_UT.csv,19663772,3273007,e266cdef,1090106959
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_40_UT.csv,19676368,3274987,ebe4db6d,1093380084
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_45_UT.csv,19674267,3274410,3c81929a,1096655189
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_50_UT.csv,19675590,3281250,42030bb8,1099929717
+PRONTO benchmark case study/C3 Diverted flow/Test8/Ultrasonic Sensor/0911Test8_60_UT.csv,19676092,3291066,661ae62f,1103211085
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/,0,0,00000000,1106502269
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_10_VID.mp4,6587646,6570259,e22b8df9,1106502357
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_10_VID_riserbase.mp4,1891876,1886393,9b4cf2e6,1113072724
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_20_VID.mp4,6587646,6570259,e22b8df9,1114959235
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_30_VID.mp4,9483066,9457330,26dddd0b,1121529602
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_40_VID.mp4,8541803,8518365,2c85f40b,1130987040
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_45_VID.mp4,9533554,9508502,d98c47b7,1139505513
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_50_VID.mp4,8545353,8521860,180eef15,1149014123
+PRONTO benchmark case study/C3 Diverted flow/Test8/Videos/0911Test8_60_VID.mp4,8978254,8953881,f3a9c2c9,1157536091
+PRONTO benchmark case study/Extra data/,0,0,00000000,1166490080
+PRONTO benchmark case study/Extra data/ExtraData_0907.csv,3811255,833614,646296bf,1166490149
+PRONTO benchmark case study/Extra data/ExtraData_0911.csv,5122204,1267932,705db330,1167323850
+PRONTO benchmark case study/Extra data/ExtraData_0912.csv,2936912,710847,93c966ee,1168591869
+PRONTO benchmark case study/Operation logs/,0,0,00000000,1169302803
+PRONTO benchmark case study/Operation logs/Operation log.xlsx,35692,30153,575941cc,1169302876
+PRONTO benchmark case study/Photos/,0,0,00000000,1169333120
+PRONTO benchmark case study/Photos/2-phase separator.JPG,2147649,2130258,30c634bc,1169333185
+PRONTO benchmark case study/Photos/3-phase separator.JPG,2001990,1997612,6d0dd62b,1171463529
+PRONTO benchmark case study/Photos/Fault generation/,0,0,00000000,1173461227
+PRONTO benchmark case study/Photos/Fault generation/U38_39_diverted mixed flow.jpg,1978346,1960988,530e2d80,1173461309
+PRONTO benchmark case study/Photos/Fault generation/V10_air leakage.jpg,2153372,2148883,d7394001,1175422409
+PRONTO benchmark case study/Photos/Fault generation/V11_input air blockage.jpg,2224746,2222568,ff3ea31c,1177571393
+PRONTO benchmark case study/Photos/Horizontal pipelines.JPG,2270892,2262641,195b0cd7,1179794069
+PRONTO benchmark case study/Photos/Level measurement in inches LI502.JPG,1968925,1950596,c8b2c559,1182056799
+PRONTO benchmark case study/Photos/Level measurement in inches LI504.JPG,1930950,1912280,2cb6de4f,1184007497
+PRONTO benchmark case study/Photos/Level measurement in inches LI505.JPG,1275822,1256578,d327cc21,1185919879
+PRONTO benchmark case study/Photos/Level measurement in meter of 2-phase separator.JPG,1735011,1714854,70a651ef,1187176559
+PRONTO benchmark case study/Photos/Level measurement in percent LI502.JPG,1620173,1593931,8781a32c,1188891529
+PRONTO benchmark case study/Photos/Level measurement in percent LI504.JPG,1997777,1979961,c1f096ad,1190485563
+PRONTO benchmark case study/Photos/Level measurement in percent LI505.JPG,1185991,1166315,d925f517,1192465627
+PRONTO benchmark case study/Photos/Name plate high frequency pressure sensor.JPG,1862142,1844495,8a19ae47,1193632045
+PRONTO benchmark case study/Photos/Name plate high frequency pressure.JPG,1862142,1844495,8a19ae47,1195476650
+PRONTO benchmark case study/Photos/Name plate sensor B14.JPG,1591726,1569282,d9570724,1197321248
+PRONTO benchmark case study/Photos/Outlet lines from 2-phase separator.JPG,2225546,2208193,6429a64d,1198890620
+PRONTO benchmark case study/Photos/Overview of horizontal lines.JPG,2872377,2855318,ac98dfa8,1201098917
+PRONTO benchmark case study/Photos/Overview of inlet water&air&oil lines.JPG,2253241,2231164,b1d5bb0c,1203954332
+PRONTO benchmark case study/Photos/Overview of S shape riser and vertical riser.JPG,2240992,2212615,54dc2eb2,1206185602
+PRONTO benchmark case study/Photos/Overview of S shape riser.JPG,2333006,2324064,b75be14a,1208398330
+PRONTO benchmark case study/Photos/Overview of the 3-phase separator.JPG,2298804,2279556,cb7669f6,1210722488
+PRONTO benchmark case study/Photos/Overview of vertical pipeline.JPG,2475591,2471135,636abea7,1213002146
+PRONTO benchmark case study/Photos/Pipelines after riser top.JPG,2182595,2178330,c4ecda8c,1215473379
+PRONTO benchmark case study/Photos/Riser top and data collection system for Ultrasonic sensor.JPG,2079426,2061785,f737ae84,1217651803
+PRONTO benchmark case study/Photos/Riser top and sensor B05.JPG,1681115,1662597,dee1c30e,1219713715
+PRONTO benchmark case study/Photos/S shape riser bottom and sensor B09.JPG,2268896,2250663,954e3b57,1221376405
+PRONTO benchmark case study/Photos/S shape riser top and sensor B20.JPG,2245899,2221686,b1340a9d,1223627172
+PRONTO benchmark case study/Photos/Sensor B08.JPG,2010054,2001052,c25682d2,1225848959
+PRONTO benchmark case study/Photos/Sensor B09.JPG,2298117,2280871,52c47bd6,1227850090
+PRONTO benchmark case study/Photos/Transparent pipe and sensor B11.JPG,2443188,2425544,3897001c,1230131040
+PRONTO benchmark case study/Photos/Transparent pipe and sensor B12.JPG,2307135,2305314,2002cf09,1232556684
+PRONTO benchmark case study/Photos/Vertical riser after S shape.JPG,2087464,2061976,2856c48a,1234862098
+PRONTO benchmark case study/Photos/Vertical riser after transparent pipe and sensor B11&B10.JPG,2084645,2065780,30e95f0d,1236924171
+PRONTO benchmark case study/Photos/Water and oil coalescers.JPG,2416629,2414447,11aa5a58,1238990076
+PRONTO benchmark case study/Photos/Water pump motor.JPG,2099497,2075762,b84ed342,1241404616
+PRONTO benchmark case study/Photos/Water pump name plate 2.JPG,2325623,2308128,472404ae,1243480463
+PRONTO benchmark case study/Photos/Water pump name plate.JPG,2583684,2566423,68f5e110,1245788683
+PRONTO benchmark case study/Photos/Water storage tank.JPG,2279839,2278287,9d5adc4d,1248355196
+PRONTO benchmark case study/Photos/Wtaer pump motor name plate.JPG,2881915,2864815,2bb85a18,1250633570
+PRONTO benchmark case study/Pre-processed data/,0,0,00000000,1253498481
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/,0,0,00000000,1253498558
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/alarm_process_aligned_labelled.mat,4159729,4101016,cc454208,1253498679
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/alarmsfault07092017_proc.csv,23479,1808,73abea69,1257599850
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/alarmsonly11092017_proc.csv,13813,1270,a42f782e,1257601807
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/alarmsonly12092017_proc.csv,13644,1206,4ba63e69,1257603225
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/readme.txt,1113,515,d45a4e0b,1257604579
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/Testday2_merged.csv,2964251,824125,fba5b000,1257605225
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/Testday3_merged.csv,5045921,1382584,222928a4,1258429490
+PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/Testday4_merged.csv,2737013,806483,76a2964b,1259812214
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/,0,0,00000000,1260618837
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_10.mat,4371004,4281610,df739658,1260618943
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_20.mat,4356220,4266652,c37e0a49,1264900675
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_30.mat,4347346,4257707,2b7bc992,1269167449
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_40.mat,4343780,4254650,57ee0bef,1273425278
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_50.mat,4352885,4262615,b99a3fe9,1277680050
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_60.mat,4348921,4259508,669886f5,1281942787
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_70.mat,4534571,4438969,89ce8cd0,1286202417
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_80.mat,4544715,4448701,9dd11832,1290641508
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test2_90.mat,4541305,4444902,ec910843,1295090331
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_10.mat,4688662,4594966,09b79df3,1299535355
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_20.mat,4798679,4706228,62937ef4,1304130443
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_30.mat,4811877,4718816,a3a6be60,1308836793
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_40.mat,4767606,4674019,1dc00d07,1313555731
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_50.mat,4763315,4669880,7b9c8d7f,1318229872
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_60.mat,4770725,4676972,b353c56d,1322899874
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_70.mat,4787401,4695344,d6e3d50e,1327576968
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_80.mat,4780919,4687719,aa7acd42,1332272434
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test3_90.mat,4764494,4670081,dd6be4a1,1336960275
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_10.mat,4740339,4646299,b66849d5,1341630478
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_15.mat,4696708,4600914,2fdab2b2,1346276899
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_20.mat,4563188,4466327,3824fcac,1350877935
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_25.mat,4436644,4344059,9b5e4eb3,1355344384
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_30.mat,4417368,4326667,6b05e243,1359688565
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_40.mat,4411265,4318819,76045b0f,1364015354
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0907Test4_90.mat,4402494,4310416,20414ccc,1368334295
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test5_0.mat,4292574,4206662,7bc88be5,1372644833
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test5_10.mat,4554530,4460503,cd1a1931,1376851616
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test5_15.mat,4346675,4261004,473c5e25,1381312241
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test5_5.mat,4289522,4203577,a20790ac,1385573367
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test6_0.mat,4722304,4630608,08c48f31,1389777065
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test6_10.mat,4684861,4592298,fef8c1e8,1394407794
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test6_15.mat,4604023,4509602,07b4fb4b,1399000214
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test6_20.mat,4316403,4227374,cdc5acd7,1403509938
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test6_25.mat,4302895,4210755,f3ad6832,1407737434
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test6_5.mat,4743052,4652145,ef5621de,1411948311
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_10.mat,4292764,4205459,8ab68121,1416600577
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_15.mat,4300279,4212688,db670ac9,1420806158
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_20.mat,4288194,4200889,128c3df8,1425018968
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_30.mat,4314408,4227401,d5635d65,1429219979
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_40.mat,4286253,4200827,36a01a74,1433447502
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_5.mat,4289843,4202020,66dbb008,1437648451
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test7_60.mat,4297488,4212062,68b12c6f,1441850592
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_10.mat,4650713,4558920,6369a86b,1446062776
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_20.mat,4616735,4524260,e5cb9a14,1450621818
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_30.mat,4620214,4528218,b5cc8556,1455146200
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_40.mat,4756627,4666668,ea122176,1459674540
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_45.mat,4676701,4584362,0ee88d0e,1464341330
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_50.mat,4623996,4529790,dd29cab9,1468925814
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0911Test8_60.mat,4553701,4460239,adefc786,1473455726
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_100_1.mat,4999993,4914178,108dd304,1477916087
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_100_2.mat,5487516,5411377,5f9edcc0,1482830391
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_100_35.mat,6196227,6134871,069fa001,1488241894
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_200_1.mat,5362041,5283616,995ff885,1494376892
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_20_05.mat,4603909,4511562,21932fa4,1499660634
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_20_1.mat,4685111,4590627,dd9861c2,1504172322
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_20_2.mat,4841961,4747273,7929f4ac,1508763074
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_50_1.mat,4764497,4672640,4d0bedf5,1513510472
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_50_2.mat,5131389,5048426,a9d9d308,1518183237
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test10_50_35.mat,5651243,5578542,526a4b9f,1523231788
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_100_01.mat,4495368,4400993,92eaacbe,1528810456
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_100_05.mat,4691623,4598726,f1cd928b,1533211575
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_200_01.mat,4265714,4180675,c4f21c55,1537810427
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_200_05.mat,4773352,4682825,cb53ca4c,1541991228
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_20_01.mat,4444769,4349709,626ad8ff,1546674179
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_20_35.mat,5197636,5112120,d1e172a0,1551024013
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_50_01.mat,4345595,4254864,3d9def40,1556136258
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/0912Test9_50_05.mat,4603003,4510219,a01323b4,1560391247
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/process_pressure.m,612,285,aa9e6c37,1564901591
+PRONTO benchmark case study/Pre-processed data/High frequency pressure data/scale_all_pressure_files.m,3668,291,9248c526,1564902000
+PRONTO benchmark case study/Pre-processed data/Process data/,0,0,00000000,1564902423
+PRONTO benchmark case study/Pre-processed data/Process data/Blockage_120air_01water.mat,428813,427758,0014ba5d,1564902513
+PRONTO benchmark case study/Pre-processed data/Process data/Blockage_150air_05water.mat,388724,386541,2f8d0eca,1565330388
+PRONTO benchmark case study/Pre-processed data/Process data/Diverted_120air_01water.mat,435868,434908,6af0474e,1565717046
+PRONTO benchmark case study/Pre-processed data/Process data/Diverted_150air_05water.mat,344379,343921,bd81bc92,1566152071
+PRONTO benchmark case study/Pre-processed data/Process data/HealthySet.mat,651410,650765,bdc36201,1566496109
+PRONTO benchmark case study/Pre-processed data/Process data/Leakage_120air_01water.mat,279525,278648,ed785894,1567146978
+PRONTO benchmark case study/Pre-processed data/Process data/Leakage_150air_05water.mat,549866,548763,40f56177,1567425742
+PRONTO benchmark case study/Pre-processed data/Process data/SlugSet.mat,437024,436609,7baed103,1567974621
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/,0,0,00000000,1568411331
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/100air_01_water_1209_healthy.mat,2244879,2230538,9358e12b,1568411424
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/100air_05_water_1209_healthy.mat,2242512,2227544,518c3482,1570642087
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/100air_1_water_1209_healthy.mat,2256573,2241631,6eb07ed6,1572869756
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/100air_2_water_1209_healthy.mat,2266971,2251601,7293fcec,1575111511
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/100air_35_water_1209_healthy.mat,2283575,2267259,48304c9c,1577363236
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/10air_1_water_20pc_0709.mat,2360540,2344590,ef2a900b,1579630620
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/10air_1_water_30pc_0609.mat,2318295,2303023,13bc0164,1581975330
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/10air_1water_100pc.mat,2282115,2266851,a539bf91,1584278473
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/10air_1water_50pc_0609.mat,2303484,2288424,69ef015e,1586545439
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/10air_1water_70pc.mat,2296973,2281883,f7de325d,1588833982
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_0d_1109_leak.mat,2213675,2199019,a3dc6efd,1591115979
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_10d_0709.mat,2233934,2219517,7545881f,1593315123
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_10d_1109_diverted.mat,2214132,2199698,fc49d49c,1595534761
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_10d_1109_leak.mat,2274213,2260037,70fc79bc,1597734589
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_15d_1109_diverted.mat,2215914,2201116,b74b33a1,1599994752
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_20d_0709.mat,2214695,2200008,3d4da53f,1602195998
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_20d_1109_diverted.mat,2217200,2202657,696758d9,1604396127
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_20d_1109_leak.mat,817744,795984,c3a3b3c2,1606598914
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_30d_0709.mat,2214427,2199843,e0bc1aa2,1607395024
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_30d_1109_diverted.mat,2213265,2198614,9bdb3561,1609594988
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_40d_0709.mat,1901735,1889329,907f76ad,1611793732
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_40d_1109_diverted.mat,2215495,2200930,17d42f43,1613683182
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_50d_0709.mat,2212929,2198697,c5f0e80d,1615884242
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_5d_1109_diverted.mat,2246406,2233563,d0888ee6,1618083060
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_5d_1109_leak.mat,2220947,2206458,84146a24,1620316752
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_60d_0709.mat,2218859,2204326,2eb14418,1622523335
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_60d_1109_diverted.mat,2217840,2203088,abffa4b7,1624727782
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_70d_0709.mat,2219511,2204849,7531cae4,1626931000
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_80d_0709.mat,2215084,2200602,ff381dd8,1629135970
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/120air_01_water_90d_0709.mat,2217057,2202553,429b5560,1631336693
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_0d_1109_leak.mat,2208528,2193373,1b500ca3,1633539367
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_10d_0709.mat,2263852,2249063,efe4a7f3,1635732865
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_10d_0709_leak.mat,2208367,2193228,ab4a9a18,1637982049
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_10d_1109_diverted.mat,2206679,2191282,b9f60181,1640175403
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_10d_1109_leak.mat,2212734,2197278,4265d30e,1642366815
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_15d_1109_leak.mat,2279794,2265219,640bff07,1644564219
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_20d_0709.mat,2209395,2193683,e9892e35,1646829564
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_20d_0709_leak.mat,1569990,1551331,7cc2da46,1649023368
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_20d_1109_diverted.mat,2209094,2193627,cad232de,1650574825
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_20d_1109_leak.mat,2327530,2313983,f5f2b81f,1652768582
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_25d_1109_leak.mat,2246406,2233563,784026e6,1655082691
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_30d_0709.mat,2207482,2191938,013d2d5d,1657316380
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_30d_0709_leak.mat,2265640,2252173,8e56223a,1659508439
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_30d_1109_diverted.mat,2215133,2199920,1eff902d,1661760738
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_40d_0709.mat,2203639,2188095,e2d57ec2,1663960788
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_40d_0709_leak.mat,2261019,2248530,2d11b64d,1666149004
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_40d_1109_diverted.mat,2211402,2196031,2cce58ca,1668397660
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_45d_1109_diverted.mat,2211970,2196541,78ccc064,1670593821
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_50d_0709.mat,2209102,2193618,43798414,1672790492
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_50d_1109_diverted.mat,2214760,2199047,a96f6eb5,1674984231
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_5d_1109_leak.mat,2205994,2190459,8c20a757,1677183408
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_60d_0709.mat,2206123,2190846,28e2951b,1679373992
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_60d_1109_diverted.mat,2214340,2198509,933638b3,1681564959
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_70d_0709.mat,2209442,2193884,d83378ef,1683763598
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_80d_0709.mat,2206876,2191530,5965bc18,1685957603
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/150air_05_water_90d_0709.mat,2209828,2194158,571a885c,1688149254
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/200air_01_water_1209_healthy.mat,2241337,2226422,d5de33b7,1690343533
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/200air_05_water_1209_healthy.mat,2228785,2212821,c69dea6b,1692570080
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/200air_1_water_1209_healthy.mat,2233220,2216765,07de054a,1694783026
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/20air_01_water_1209_healthy.mat,1939491,1924272,f04f10c9,1696999915
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/20air_05_water_1209_healthy.mat,2215021,2199899,f965d984,1698924311
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/20air_1_water_1209_healthy.mat,2284572,2269418,64095856,1701124334
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/20air_2_water_1209_healthy.mat,2308942,2293106,cd2a919f,1703393875
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/20air_35_water_1209_healthy.mat,2308347,2290780,e32cf9f7,1705687104
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/50air_01_water_1209_healthy.mat,2280111,2265715,7c43c217,1707978008
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/50air_05_water_1209_healthy.mat,2297064,2282437,0d23d875,1710243847
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/50air_1_water_1209_healthy.mat,2286696,2271941,eebbe989,1712526408
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/50air_2_water_1209_healthy.mat,2274212,2258793,f17758c6,1714798472
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/50air_35_water_1209_healthy.mat,2291438,2275317,de184230,1717057388
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/extract_ultrasonic_all_data.m,4168,289,8c3916c5,1719332829
+PRONTO benchmark case study/Pre-processed data/Ultrasonic data/extract_ultrasonic_data.m,170,126,d6fb5023,1719333240
+PRONTO benchmark case study/Technical documents/,0,0,00000000,1719333484
+PRONTO benchmark case study/Technical documents/Alarm settings in DeltaV.xlsx,12811,10108,71d02058,1719333562
+PRONTO benchmark case study/Technical documents/Technical report/,0,0,00000000,1719343777
+PRONTO benchmark case study/Technical documents/Technical report/Multiphase flow facility case study technical report.pdf,1347505,1135640,68e13f03,1719343872
+PRONTO benchmark case study/README.txt,1254,707,b7af597b,1720479663

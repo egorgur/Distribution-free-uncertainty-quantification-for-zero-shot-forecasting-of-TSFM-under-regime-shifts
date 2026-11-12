@@ -1,0 +1,51 @@
+{
+  "commit": "897bc5d2504980418249f98e733bfd7f61056186",
+  "archive_url": "https://huggingface.co/datasets/Samlzy/MCC5-THU-Motor/resolve/897bc5d2504980418249f98e733bfd7f61056186/MCC5-THU%20Motor_torque_circulation.zip",
+  "archive_metadata": {
+    "type": "file",
+    "oid": "ff6a33b06e18b5a7337866e980b47f2b193473ed",
+    "size": 6513549892,
+    "lfs": {
+      "oid": "cf5007378e4a28e6d7cc100bf56f144166cadb6a2607fbf38614bbfd0b8af0fb",
+      "size": 6513549892,
+      "pointerSize": 135
+    },
+    "xetHash": "986b525883960460b04ed16e44b29a693d899b4e9dd5a2695a400ada8d8fdf91",
+    "path": "MCC5-THU Motor_torque_circulation.zip"
+  },
+  "tree_url": "https://huggingface.co/api/datasets/Samlzy/MCC5-THU-Motor/tree/897bc5d2504980418249f98e733bfd7f61056186?limit=100",
+  "readme_url": "https://huggingface.co/datasets/Samlzy/MCC5-THU-Motor/raw/897bc5d2504980418249f98e733bfd7f61056186/README.md",
+  "retrieved_at_utc": "2026-11-12T20:36:28.047574+00:00",
+  "range_bytes": 26048,
+  "range_requests": [
+    {
+      "start": 6513549870,
+      "end_inclusive": 6513549891
+    },
+    {
+      "start": 6513549850,
+      "end_inclusive": 6513549869
+    },
+    {
+      "start": 6513549794,
+      "end_inclusive": 6513549849
+    },
+    {
+      "start": 6513523844,
+      "end_inclusive": 6513549793
+    }
+  ],
+  "code_sha256": {
+    "src/mcc5_download.py": "232523449a242af496ddea491b9fba880904a22ceb0b313e11183aae1974f93a",
+    "src/pronto_documents.py": "5d5630e872c3884ff377b8581665088c9dfb79217548f3d9a0db201e9fba14c9",
+    "scripts/download_mcc5.py": "4e95e2561a5a7bfb571bc84c0b83175a03474be1d7adc835cd7cf1a9245e7fb2"
+  },
+  "full_archive_downloaded": false,
+  "full_archive_lfs_sha256_verified": false,
+  "artifacts_sha256": {
+    "hf_tree.json": "5e9eb880a883ef52c645d6744a58215a497a22583321c3f14772f0bdd0b3195f",
+    "source_README.md": "1342a56b8fa38ca299474b2a46e6ff1f23fef2186dabcad1adac8e487063f988",
+    "inventory.json": "41ddb2997bc975a0d456f3af66468a22e9bc75aafa7b569ce0ebe1d1ba9ff39f",
+    "selection.json": "62b5bd9ec095c6052a548e8dd81da8039cc8263c72e40c5eedd098d8ab6ecb0c"
+  }
+}

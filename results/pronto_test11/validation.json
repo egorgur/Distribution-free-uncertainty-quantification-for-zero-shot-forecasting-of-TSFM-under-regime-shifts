@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "rows": 3601,
+  "columns": 69,
+  "nominal_grid_rounding_consistent": true,
+  "model_inference": false,
+  "stationarity_established": false
+}

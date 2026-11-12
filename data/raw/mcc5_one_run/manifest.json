@@ -1,0 +1,499 @@
+{
+  "commit": "897bc5d2504980418249f98e733bfd7f61056186",
+  "archive_url": "https://huggingface.co/datasets/Samlzy/MCC5-THU-Motor/resolve/897bc5d2504980418249f98e733bfd7f61056186/MCC5-THU%20Motor_torque_circulation.zip",
+  "selected": {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_20Nm_1000rpm_250702154813d.csv",
+    "size": 118663524,
+    "compressed_size": 44130506,
+    "crc32": "d888ea1c",
+    "header_offset": 3805351671,
+    "compression": 8
+  },
+  "local_file": "selected.csv",
+  "sha256": "f331e955f447d5511534e0f4b664b3df620321d31e82850e9c58a7b4466e2a7a",
+  "retrieved_at_utc": "2026-11-12T20:46:22.118100+00:00",
+  "range_bytes": 44156674,
+  "range_requests": [
+    {
+      "start": 6513549870,
+      "end_inclusive": 6513549891
+    },
+    {
+      "start": 6513549850,
+      "end_inclusive": 6513549869
+    },
+    {
+      "start": 6513549794,
+      "end_inclusive": 6513549849
+    },
+    {
+      "start": 6513523844,
+      "end_inclusive": 6513549793
+    },
+    {
+      "start": 3805351671,
+      "end_inclusive": 3805351700
+    },
+    {
+      "start": 3805351701,
+      "end_inclusive": 3805351790
+    },
+    {
+      "start": 3805351823,
+      "end_inclusive": 3806400398
+    },
+    {
+      "start": 3806400399,
+      "end_inclusive": 3806791335
+    },
+    {
+      "start": 3806791336,
+      "end_inclusive": 3807181336
+    },
+    {
+      "start": 3807181337,
+      "end_inclusive": 3807571241
+    },
+    {
+      "start": 3807571242,
+      "end_inclusive": 3807960580
+    },
+    {
+      "start": 3807960581,
+      "end_inclusive": 3808350066
+    },
+    {
+      "start": 3808350067,
+      "end_inclusive": 3808740404
+    },
+    {
+      "start": 3808740405,
+      "end_inclusive": 3809131595
+    },
+    {
+      "start": 3809131596,
+      "end_inclusive": 3809522526
+    },
+    {
+      "start": 3809522527,
+      "end_inclusive": 3809912968
+    },
+    {
+      "start": 3809912969,
+      "end_inclusive": 3810304048
+    },
+    {
+      "start": 3810304049,
+      "end_inclusive": 3810696121
+    },
+    {
+      "start": 3810696122,
+      "end_inclusive": 3811088635
+    },
+    {
+      "start": 3811088636,
+      "end_inclusive": 3811479085
+    },
+    {
+      "start": 3811479086,
+      "end_inclusive": 3811868684
+    },
+    {
+      "start": 3811868685,
+      "end_inclusive": 3812258766
+    },
+    {
+      "start": 3812258767,
+      "end_inclusive": 3812648578
+    },
+    {
+      "start": 3812648579,
+      "end_inclusive": 3813039026
+    },
+    {
+      "start": 3813039027,
+      "end_inclusive": 3813428701
+    },
+    {
+      "start": 3813428702,
+      "end_inclusive": 3813817990
+    },
+    {
+      "start": 3813817991,
+      "end_inclusive": 3814207582
+    },
+    {
+      "start": 3814207583,
+      "end_inclusive": 3814597447
+    },
+    {
+      "start": 3814597448,
+      "end_inclusive": 3814987832
+    },
+    {
+      "start": 3814987833,
+      "end_inclusive": 3815377909
+    },
+    {
+      "start": 3815377910,
+      "end_inclusive": 3815767483
+    },
+    {
+      "start": 3815767484,
+      "end_inclusive": 3816156637
+    },
+    {
+      "start": 3816156638,
+      "end_inclusive": 3816546552
+    },
+    {
+      "start": 3816546553,
+      "end_inclusive": 3816936946
+    },
+    {
+      "start": 3816936947,
+      "end_inclusive": 3817327080
+    },
+    {
+      "start": 3817327081,
+      "end_inclusive": 3817717057
+    },
+    {
+      "start": 3817717058,
+      "end_inclusive": 3818106482
+    },
+    {
+      "start": 3818106483,
+      "end_inclusive": 3818496370
+    },
+    {
+      "start": 3818496371,
+      "end_inclusive": 3818886847
+    },
+    {
+      "start": 3818886848,
+      "end_inclusive": 3819277156
+    },
+    {
+      "start": 3819277157,
+      "end_inclusive": 3819667355
+    },
+    {
+      "start": 3819667356,
+      "end_inclusive": 3820056769
+    },
+    {
+      "start": 3820056770,
+      "end_inclusive": 3820446348
+    },
+    {
+      "start": 3820446349,
+      "end_inclusive": 3820836137
+    },
+    {
+      "start": 3820836138,
+      "end_inclusive": 3821226314
+    },
+    {
+      "start": 3821226315,
+      "end_inclusive": 3821616569
+    },
+    {
+      "start": 3821616570,
+      "end_inclusive": 3822005841
+    },
+    {
+      "start": 3822005842,
+      "end_inclusive": 3822395668
+    },
+    {
+      "start": 3822395669,
+      "end_inclusive": 3822785543
+    },
+    {
+      "start": 3822785544,
+      "end_inclusive": 3823175936
+    },
+    {
+      "start": 3823175937,
+      "end_inclusive": 3823566469
+    },
+    {
+      "start": 3823566470,
+      "end_inclusive": 3823955928
+    },
+    {
+      "start": 3823955929,
+      "end_inclusive": 3824345022
+    },
+    {
+      "start": 3824345023,
+      "end_inclusive": 3824734675
+    },
+    {
+      "start": 3824734676,
+      "end_inclusive": 3825124766
+    },
+    {
+      "start": 3825124767,
+      "end_inclusive": 3825514909
+    },
+    {
+      "start": 3825514910,
+      "end_inclusive": 3825904588
+    },
+    {
+      "start": 3825904589,
+      "end_inclusive": 3826293478
+    },
+    {
+      "start": 3826293479,
+      "end_inclusive": 3826683027
+    },
+    {
+      "start": 3826683028,
+      "end_inclusive": 3827072912
+    },
+    {
+      "start": 3827072913,
+      "end_inclusive": 3827463089
+    },
+    {
+      "start": 3827463090,
+      "end_inclusive": 3827853228
+    },
+    {
+      "start": 3827853229,
+      "end_inclusive": 3828242815
+    },
+    {
+      "start": 3828242816,
+      "end_inclusive": 3828631737
+    },
+    {
+      "start": 3828631738,
+      "end_inclusive": 3829021626
+    },
+    {
+      "start": 3829021627,
+      "end_inclusive": 3829412060
+    },
+    {
+      "start": 3829412061,
+      "end_inclusive": 3829802649
+    },
+    {
+      "start": 3829802650,
+      "end_inclusive": 3830192095
+    },
+    {
+      "start": 3830192096,
+      "end_inclusive": 3830581813
+    },
+    {
+      "start": 3830581814,
+      "end_inclusive": 3830971424
+    },
+    {
+      "start": 3830971425,
+      "end_inclusive": 3831361464
+    },
+    {
+      "start": 3831361465,
+      "end_inclusive": 3831752231
+    },
+    {
+      "start": 3831752232,
+      "end_inclusive": 3832142055
+    },
+    {
+      "start": 3832142056,
+      "end_inclusive": 3832531502
+    },
+    {
+      "start": 3832531503,
+      "end_inclusive": 3832921490
+    },
+    {
+      "start": 3832921491,
+      "end_inclusive": 3833311621
+    },
+    {
+      "start": 3833311622,
+      "end_inclusive": 3833701822
+    },
+    {
+      "start": 3833701823,
+      "end_inclusive": 3834091665
+    },
+    {
+      "start": 3834091666,
+      "end_inclusive": 3834481324
+    },
+    {
+      "start": 3834481325,
+      "end_inclusive": 3834871062
+    },
+    {
+      "start": 3834871063,
+      "end_inclusive": 3835261241
+    },
+    {
+      "start": 3835261242,
+      "end_inclusive": 3835651509
+    },
+    {
+      "start": 3835651510,
+      "end_inclusive": 3836041611
+    },
+    {
+      "start": 3836041612,
+      "end_inclusive": 3836431287
+    },
+    {
+      "start": 3836431288,
+      "end_inclusive": 3836820873
+    },
+    {
+      "start": 3836820874,
+      "end_inclusive": 3837211199
+    },
+    {
+      "start": 3837211200,
+      "end_inclusive": 3837601607
+    },
+    {
+      "start": 3837601608,
+      "end_inclusive": 3837991872
+    },
+    {
+      "start": 3837991873,
+      "end_inclusive": 3838381415
+    },
+    {
+      "start": 3838381416,
+      "end_inclusive": 3838771021
+    },
+    {
+      "start": 3838771022,
+      "end_inclusive": 3839161086
+    },
+    {
+      "start": 3839161087,
+      "end_inclusive": 3839551621
+    },
+    {
+      "start": 3839551622,
+      "end_inclusive": 3839942465
+    },
+    {
+      "start": 3839942466,
+      "end_inclusive": 3840332410
+    },
+    {
+      "start": 3840332411,
+      "end_inclusive": 3840722137
+    },
+    {
+      "start": 3840722138,
+      "end_inclusive": 3841112198
+    },
+    {
+      "start": 3841112199,
+      "end_inclusive": 3841502698
+    },
+    {
+      "start": 3841502699,
+      "end_inclusive": 3841893496
+    },
+    {
+      "start": 3841893497,
+      "end_inclusive": 3842283720
+    },
+    {
+      "start": 3842283721,
+      "end_inclusive": 3842673289
+    },
+    {
+      "start": 3842673290,
+      "end_inclusive": 3843063108
+    },
+    {
+      "start": 3843063109,
+      "end_inclusive": 3843453374
+    },
+    {
+      "start": 3843453375,
+      "end_inclusive": 3843844154
+    },
+    {
+      "start": 3843844155,
+      "end_inclusive": 3844234574
+    },
+    {
+      "start": 3844234575,
+      "end_inclusive": 3844624721
+    },
+    {
+      "start": 3844624722,
+      "end_inclusive": 3845013997
+    },
+    {
+      "start": 3845013998,
+      "end_inclusive": 3845404369
+    },
+    {
+      "start": 3845404370,
+      "end_inclusive": 3845794916
+    },
+    {
+      "start": 3845794917,
+      "end_inclusive": 3846185471
+    },
+    {
+      "start": 3846185472,
+      "end_inclusive": 3846576434
+    },
+    {
+      "start": 3846576435,
+      "end_inclusive": 3846966573
+    },
+    {
+      "start": 3846966574,
+      "end_inclusive": 3847356107
+    },
+    {
+      "start": 3847356108,
+      "end_inclusive": 3847745765
+    },
+    {
+      "start": 3847745766,
+      "end_inclusive": 3848135177
+    },
+    {
+      "start": 3848135178,
+      "end_inclusive": 3848524540
+    },
+    {
+      "start": 3848524541,
+      "end_inclusive": 3848913517
+    },
+    {
+      "start": 3848913518,
+      "end_inclusive": 3849301705
+    },
+    {
+      "start": 3849301706,
+      "end_inclusive": 3849482328
+    }
+  ],
+  "inventory_provenance_sha256": "f29b632ecaefa4f3308b336d1ef21c627dc4666312fe8c5c8ad678313c060104",
+  "code_sha256": {
+    "src/mcc5_download.py": "232523449a242af496ddea491b9fba880904a22ceb0b313e11183aae1974f93a",
+    "src/pronto_documents.py": "5d5630e872c3884ff377b8581665088c9dfb79217548f3d9a0db201e9fba14c9",
+    "scripts/download_mcc5.py": "4e95e2561a5a7bfb571bc84c0b83175a03474be1d7adc835cd7cf1a9245e7fb2"
+  },
+  "full_archive_downloaded": false,
+  "full_archive_lfs_sha256_verified": false,
+  "model_inference": false
+}

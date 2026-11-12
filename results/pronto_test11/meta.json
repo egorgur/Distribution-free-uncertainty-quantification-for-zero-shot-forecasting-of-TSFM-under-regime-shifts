@@ -1,0 +1,14 @@
+{
+  "original_sha256": "7306e4911963e112cee20abc778d3c981c835c464ed04df71b22597c4b7e2fda",
+  "artifacts": {
+    "results/pronto_test11/columns.csv": "9b25af8d7f9b95814512863e28f1b53fc2d12ec222377a1284a355e75a0f0485",
+    "results/pronto_test11/window_geometry.csv": "0f68621c50f733cc7bf26eb9aeca4ea1a1c76f98ce8cc3b8d3d63b2774a8bdf9",
+    "results/pronto_test11/audit.json": "2d87ac7320a1dfbfaad32ad763b97af5b21a0ad0e7f6d6bd19aa1f95cf903ef5",
+    "src/pronto_test11.py": "c61039da9785fe4eccca5afde5ec3195371f31c2db2352ec2c535fa443ac3370",
+    "src/pronto_documents.py": "5d5630e872c3884ff377b8581665088c9dfb79217548f3d9a0db201e9fba14c9",
+    "tests/test_pronto_test11.py": "425e71d9ac47f89c4b277655c737630cd5fdec0635a69422f8320fd64b2bf5aa",
+    "scripts/audit_pronto_test11.py": "a5a55278f509fad4a141821a0ff1e266d12ca8ef9be2967356a295e582ee929d"
+  },
+  "model_inference": false,
+  "nominal_grid_is_diagnostic_not_approved_preprocessing": true
+}

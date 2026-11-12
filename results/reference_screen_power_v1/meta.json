@@ -1,0 +1,47 @@
+{
+  "generated_at_utc": "2026-11-12T18:07:03.512082+00:00",
+  "python": "3.13.7",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "matplotlib": "3.11.2",
+  "elapsed_s": 113.35944179099897,
+  "data_seed": 20261113,
+  "bootstrap_seed": 20261114,
+  "panels": 100,
+  "channels_per_panel": 16,
+  "phis": [
+    0.0,
+    0.5,
+    0.9,
+    0.98
+  ],
+  "conditions": [
+    "stationary",
+    "linear_0.5",
+    "linear_2",
+    "mean_step_1",
+    "scale_step_2"
+  ],
+  "bootstraps": 1000,
+  "raw_real_data_read": false,
+  "model_inference": false,
+  "existing_screen_modified": false,
+  "new_gas_selection_authorized": false,
+  "interval_unit": "independent Monte Carlo panel; not sensor",
+  "code_sha256": {
+    "src/gas_reference.py": "859ff2062c07e93ba8b7c8536f4dadd54e05b04299316f53023a47f9488a7aba",
+    "src/gas_audit.py": "1f2a5c13664f28903594a5f1e50d9b7d4d0fec41fb9e45dc9267d15c269163ba",
+    "src/reference_screen_power.py": "07cdd5f7ad54d72a68499c6c1bbf2031d230d81e32917e7793e3cb3621450e85",
+    "scripts/check_reference_screen_power.py": "cd8386f7e15384c823797faf6ec53868867bbe838ee74d73326acf9c40af768e",
+    "tests/test_reference_screen_power.py": "1c6eb364c64be32d7db5349b502f647ed81d8e958eda185697e0a5fdd4e58fcb",
+    "docs/protocol_reference_screen_power.md": "449940d8fb842eea6338a39384cdf63e1bc5a2a0f326a9499a5a2ea4afd31375"
+  },
+  "artifact_sha256": {
+    "outcomes.csv": "513c07657c8463d1a56dca0e3d9acde9c3c775f45efae8bcf664ed574a632259",
+    "summary.csv": "bece823deb6dd6607ebf1f7ed120b03b62074b788b47a356449111c350cf9f73",
+    "criteria.csv": "817974dc4b850550ddd7c5b0c42c379b6a7879a8d07e78233f873b690016c3b8",
+    "mean_only_planning.csv": "3d20948965a3a0415ad1cd43b4befc928f50b18062d25fcfea163cd535b5f30d",
+    "acceptance.png": "38e0a837aee3249e05783c707ec1ca269dcb03fd56cd356691a31c4b72f33a54",
+    "summary.md": "9ce77693de889aa6571b17931b57a796dc616ea59390b309e3b964be0e88bd9d"
+  }
+}

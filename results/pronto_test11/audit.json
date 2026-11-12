@@ -1,0 +1,33 @@
+{
+  "logical_data_rows": 3601,
+  "columns_including_time": 70,
+  "header_start": "2018-06-26T11:00:00",
+  "header_end": "2018-06-26T12:00:00",
+  "raw_timestamp_unique": 3601,
+  "duplicate_timestamps": 0,
+  "nonpositive_time_steps": 0,
+  "exact_one_second_steps": 0,
+  "raw_time_step_seconds": {
+    "0.864": 3033,
+    "1.728": 567
+  },
+  "nominal_grid_consistent_with_5_decimal_rounding": true,
+  "nominal_endpoint_matches_header": true,
+  "max_abs_nominal_time_error_seconds": 0.432,
+  "finite_numeric_columns": 24,
+  "varying_finite_columns": 22,
+  "duplicate_column_pairs": [
+    {
+      "left_index": 9,
+      "right_index": 10,
+      "tag": "PT417/OUT.CV"
+    },
+    {
+      "left_index": 12,
+      "right_index": 32,
+      "tag": "PIC403/PID1/OUT.CV"
+    }
+  ],
+  "model_inference": false,
+  "stationarity_established": false
+}

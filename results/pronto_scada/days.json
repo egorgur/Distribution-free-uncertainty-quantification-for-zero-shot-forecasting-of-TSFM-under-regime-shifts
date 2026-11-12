@@ -1,0 +1,169 @@
+{
+  "0626Testday5.csv": {
+    "logical_data_rows": 3601,
+    "columns_including_time": 70,
+    "header_start_raw": "6/26/2018 11:00",
+    "header_end_raw": "6/26/2018 12:00",
+    "header_start": "2018-06-26T11:00:00",
+    "header_end": "2018-06-26T12:00:00",
+    "header_start_format": "24h",
+    "header_end_format": "24h",
+    "timestamp_encodings": {
+      "excel_serial": 3601
+    },
+    "unparsed_timestamps": 0,
+    "duplicate_raw_timestamps": 0,
+    "nonpositive_parsed_steps": 0,
+    "backwards_parsed_steps": 0,
+    "parsed_time_step_seconds": {
+      "0.864": 3033,
+      "1.728": 567
+    },
+    "nominal_consistent_rows": 3601,
+    "nominal_grid_consistent": true,
+    "nominal_endpoint_matches_header": true,
+    "first_inconsistent_index": null,
+    "finite_numeric_columns": 24,
+    "varying_finite_columns": 22,
+    "duplicate_column_pairs": [
+      {
+        "left_index": 9,
+        "right_index": 10,
+        "left_tag": "PT417/OUT.CV",
+        "right_tag": "PT419/DP.CV"
+      },
+      {
+        "left_index": 12,
+        "right_index": 32,
+        "left_tag": "PIC403/PID1/OUT.CV",
+        "right_tag": "PIC403/PID1/OUT.CV"
+      }
+    ],
+    "model_inference": false,
+    "stationarity_established": false,
+    "raw_time_modified": false
+  },
+  "0907Testday2.csv": {
+    "logical_data_rows": 18601,
+    "columns_including_time": 32,
+    "header_start_raw": "09/07/2017 11:50",
+    "header_end_raw": "9/7/2017  17:00:00 PM",
+    "header_start": "2017-09-07T11:50:00",
+    "header_end": "2017-09-07T17:00:00",
+    "header_start_format": "24h",
+    "header_end_format": "explicit_24h_with_redundant_suffix",
+    "timestamp_encodings": {
+      "text_minute": 18601
+    },
+    "unparsed_timestamps": 0,
+    "duplicate_raw_timestamps": 18290,
+    "nonpositive_parsed_steps": 18290,
+    "backwards_parsed_steps": 0,
+    "parsed_time_step_seconds": {
+      "0": 18290,
+      "6E+1": 310
+    },
+    "nominal_consistent_rows": 18601,
+    "nominal_grid_consistent": true,
+    "nominal_endpoint_matches_header": true,
+    "first_inconsistent_index": null,
+    "finite_numeric_columns": 31,
+    "varying_finite_columns": 30,
+    "duplicate_column_pairs": [],
+    "model_inference": false,
+    "stationarity_established": false,
+    "raw_time_modified": false
+  },
+  "0911Testday3.csv": {
+    "logical_data_rows": 25201,
+    "columns_including_time": 32,
+    "header_start_raw": "09/11/2017 10:00",
+    "header_end_raw": "9/11/2017  17:00:00 PM",
+    "header_start": "2017-09-11T10:00:00",
+    "header_end": "2017-09-11T17:00:00",
+    "header_start_format": "24h",
+    "header_end_format": "explicit_24h_with_redundant_suffix",
+    "timestamp_encodings": {
+      "text_minute": 22801,
+      "excel_serial": 2400
+    },
+    "unparsed_timestamps": 0,
+    "duplicate_raw_timestamps": 22420,
+    "nonpositive_parsed_steps": 22420,
+    "backwards_parsed_steps": 0,
+    "parsed_time_step_seconds": {
+      "0": 22420,
+      "6E+1": 380,
+      "1.248": 1,
+      "0.864": 2022,
+      "1.728": 377
+    },
+    "nominal_consistent_rows": 25201,
+    "nominal_grid_consistent": true,
+    "nominal_endpoint_matches_header": true,
+    "first_inconsistent_index": null,
+    "finite_numeric_columns": 31,
+    "varying_finite_columns": 28,
+    "duplicate_column_pairs": [
+      {
+        "left_index": 5,
+        "right_index": 28,
+        "left_tag": "FT102/OUT.CV",
+        "right_tag": "FIC102/PID1/PV.CV"
+      },
+      {
+        "left_index": 23,
+        "right_index": 26,
+        "left_tag": "FIC301/PID1/OUT.CV",
+        "right_tag": "FIC102/PID1/OUT.CV"
+      }
+    ],
+    "model_inference": false,
+    "stationarity_established": false,
+    "raw_time_modified": false
+  },
+  "0912Testday4.csv": {
+    "logical_data_rows": 14401,
+    "columns_including_time": 32,
+    "header_start_raw": "09/12/2017 10:00",
+    "header_end_raw": "9/12/2017  14:00:00 PM",
+    "header_start": "2017-09-12T10:00:00",
+    "header_end": "2017-09-12T14:00:00",
+    "header_start_format": "24h",
+    "header_end_format": "explicit_24h_with_redundant_suffix",
+    "timestamp_encodings": {
+      "text_minute": 14401
+    },
+    "unparsed_timestamps": 0,
+    "duplicate_raw_timestamps": 14160,
+    "nonpositive_parsed_steps": 14160,
+    "backwards_parsed_steps": 0,
+    "parsed_time_step_seconds": {
+      "0": 14160,
+      "6E+1": 240
+    },
+    "nominal_consistent_rows": 14401,
+    "nominal_grid_consistent": true,
+    "nominal_endpoint_matches_header": true,
+    "first_inconsistent_index": null,
+    "finite_numeric_columns": 31,
+    "varying_finite_columns": 31,
+    "duplicate_column_pairs": [
+      {
+        "left_index": 2,
+        "right_index": 25,
+        "left_tag": "FT302/OUT.CV",
+        "right_tag": "FIC301/PID1/PV.CV"
+      },
+      {
+        "left_index": 5,
+        "right_index": 28,
+        "left_tag": "FT102/OUT.CV",
+        "right_tag": "FIC102/PID1/PV.CV"
+      }
+    ],
+    "model_inference": false,
+    "stationarity_established": false,
+    "raw_time_modified": false
+  }
+}

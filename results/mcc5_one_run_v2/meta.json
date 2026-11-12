@@ -1,0 +1,40 @@
+{
+  "source_manifest_sha256": "0208cee4521bad5bb1fda35300ca919fc5835d138a986c7a56663f1601481c22",
+  "article_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12936562/fullTextXML",
+  "article_sha256": "28844f9666130d7c839a86431977167371bf1f69907bf2e0bd368873c4b7a9ab",
+  "code_sha256": {
+    "src/mcc5_audit.py": "d1b262394bd4642480a1643550729bef8fbdb725c253712831b8859b8e79caa4",
+    "scripts/audit_mcc5.py": "c8a2943fa67291a03791f4cfd61270b79f777e0f58cc0e6bff3a90e16ba70a3e",
+    "tests/test_mcc5_audit.py": "198c1935f0efb47efe925751b7bf4e94887a1eec9550cce3a4573b219b354c15",
+    "docs/protocol_mcc5_bounded_audit.md": "6887cbdef200a930894cb93776ae2a2917fc264ddd9a69f6c07e83d4576916d5"
+  },
+  "python": "3.13.7",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "audit_wall_seconds": 28.137835736000852,
+  "download": {
+    "passed": true,
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_20Nm_1000rpm_250702154813d.csv",
+    "bytes": 118663524,
+    "range_bytes": 44156674,
+    "full_archive_downloaded": false,
+    "model_inference": false
+  },
+  "diagnostic_only": true,
+  "stability_established": false,
+  "model_inference": false,
+  "artifacts_sha256": {
+    "article_passages.json": "6dbbff121eab8ba8709296de2098cd1aff44396f19aa51b5b0ea4cdfd94ca74c",
+    "channels.json": "d6f77294faeb9039ad972a3b3c592d959c8d0e9bb6807fd15494c595d21b9c8c",
+    "exact_duplicate_channels.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "fig_channels.png": "3355e4aecd601fc9650ccdbf627d5ed1981b47d54117c44b3d23991e30ba5f3e",
+    "fig_torque.png": "6d909f2c9bc0fb1714ea3864b9b60262765e33210101af19c28995ff22447a1f",
+    "geometry.json": "717bcc966981348f2f6c5f67772db86131b01ddb73416250908c6ad9fe65b9de",
+    "key_phase.json": "1e96362d0168d30dfd66482aed4d84a0f2a90b21aee843ed882d18bc34de17ed",
+    "plateaus.csv": "8de1e162be5baddeda34eb7b8d42a187dcff49e7a00607e19a30d7dc39f5c6a2",
+    "schema.json": "8a97d9236a6466f5105f64f6bab3e97e4c5ac6d97867264e23dc39de4409b16b",
+    "seconds.csv": "6124d9e00f351fbceedad125cbcadaf06c082fc09b5c5fc3acf3b4e5ba42a6ed",
+    "time.json": "5572049da68c09fc6620c4cc75a6e03610627c0d649baf68a85d46bba72b03b9",
+    "torque_quarters.csv": "bf838c43d5d3b1ec5d1a7bb9c9978667b597677f6940c5a60dc525a231288a38"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "source": "https://archive.ics.uci.edu/static/public/447/condition%2Bmonitoring%2Bof%2Bhydraulic%2Bsystems.zip",
+  "doi": "10.24432/C5CW21",
+  "article_doi": "10.1109/I2MTC.2015.7151267",
+  "archive": {
+    "path": "data/raw/uci447/condition_monitoring_of_hydraulic_systems.zip",
+    "size": 76601704,
+    "sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2"
+  },
+  "members": [
+    {
+      "name": "CE.txt",
+      "size": 911516,
+      "compressed_size": 220629,
+      "crc32": "7a58d188"
+    },
+    {
+      "name": "CP.txt",
+      "size": 779343,
+      "compressed_size": 139340,
+      "crc32": "96870479"
+    },
+    {
+      "name": "description.txt",
+      "size": 4044,
+      "compressed_size": 1752,
+      "crc32": "26bd1a01"
+    },
+    {
+      "name": "EPS1.txt",
+      "size": 87411594,
+      "compressed_size": 5963787,
+      "crc32": "7df374f4"
+    },
+    {
+      "name": "FS1.txt",
+      "size": 7581926,
+      "compressed_size": 1822302,
+      "crc32": "419ba2e5"
+    },
+    {
+      "name": "FS2.txt",
+      "size": 8271923,
+      "compressed_size": 1353203,
+      "crc32": "e131ba00"
+    },
+    {
+      "name": "profile.txt",
+      "size": 31196,
+      "compressed_size": 562,
+      "crc32": "f6d1e285"
+    },
+    {
+      "name": "PS1.txt",
+      "size": 91391892,
+      "compressed_size": 13958273,
+      "crc32": "0d5d1c64"
+    },
+    {
+      "name": "PS2.txt",
+      "size": 82373611,
+      "compressed_size": 13268963,
+      "crc32": "e12742d7"
+    },
+    {
+      "name": "PS3.txt",
+      "size": 69916801,
+      "compressed_size": 10282091,
+      "crc32": "439ce40f"
+    },
+    {
+      "name": "PS4.txt",
+      "size": 46698180,
+      "compressed_size": 5031431,
+      "crc32": "e710efb6"
+    },
+    {
+      "name": "PS5.txt",
+      "size": 77776429,
+      "compressed_size": 11765046,
+      "crc32": "2dd6cb89"
+    },
+    {
+      "name": "PS6.txt",
+      "size": 77875407,
+      "compressed_size": 11962951,
+      "crc32": "6b029331"
+    },
+    {
+      "name": "SE.txt",
+      "size": 824838,
+      "compressed_size": 164145,
+      "crc32": "035cfaf2"
+    },
+    {
+      "name": "TS1.txt",
+      "size": 904586,
+      "compressed_size": 138072,
+      "crc32": "b0cbaf13"
+    },
+    {
+      "name": "TS2.txt",
+      "size": 910594,
+      "compressed_size": 142687,
+      "crc32": "bf0b5f54"
+    },
+    {
+      "name": "TS3.txt",
+      "size": 908805,
+      "compressed_size": 121394,
+      "crc32": "8219ef36"
+    },
+    {
+      "name": "TS4.txt",
+      "size": 910127,
+      "compressed_size": 117953,
+      "crc32": "10518e19"
+    },
+    {
+      "name": "VS1.txt",
+      "size": 778499,
+      "compressed_size": 142586,
+      "crc32": "42874b00"
+    },
+    {
+      "name": "documentation.txt",
+      "size": 4719,
+      "compressed_size": 1991,
+      "crc32": "02359f89"
+    }
+  ],
+  "selected_members": [
+    "description.txt",
+    "documentation.txt",
+    "profile.txt",
+    "PS1.txt"
+  ],
+  "model_inference": false,
+  "selected_sha256": {
+    "description.txt": "a115e362976a4532bc7d28c471caa257514584bb3f4f6f06f760ca1236761a63",
+    "documentation.txt": "9fe5ce23d5b850df9bf38335588aa98601475b42b7551d10e84b1d075f7b62b4",
+    "profile.txt": "867987ca884b2f0fd607ad3918329eba887d095af2befa21122cea518eaa584a",
+    "PS1.txt": "168e2e663bb511043a15a9c978b93a6e0280b27b113133d0a26f738170af39c0"
+  },
+  "cycles_joined": false,
+  "stationarity_established": false,
+  "retrieved_at_utc": "2026-11-12T20:21:35.156748+00:00"
+}

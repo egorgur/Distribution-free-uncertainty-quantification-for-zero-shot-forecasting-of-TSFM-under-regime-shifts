@@ -1,0 +1,12 @@
+# Reference-screen power: generated tables
+
+phi,criterion,stable_acceptance_ok,strong_alternatives_ok,both_ok
+0.0,primary,False,True,False
+0.0,sensitivity,False,True,False
+0.5,primary,False,True,False
+0.5,sensitivity,False,True,False
+0.9,primary,False,True,False
+0.9,sensitivity,False,True,False
+0.98,primary,False,True,False
+0.98,sensitivity,False,True,False
+

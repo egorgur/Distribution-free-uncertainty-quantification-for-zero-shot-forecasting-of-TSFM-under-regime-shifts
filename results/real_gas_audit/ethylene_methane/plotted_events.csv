@@ -1,0 +1,6 @@
+event,row,time_s,old_gas_ppm,new_gas_ppm,old_ethylene_ppm,new_ethylene_ppm,gas_changed,ethylene_changed,pre_duration_s,post_duration_s,pre_rows,post_rows,edge_censored
+0,10000,100.01,0.0,133.33,0.0,0.0,True,False,100.01,99.99999999999999,10000,9974,True
+86,1062855,10629.01,176.67,0.0,0.0,0.0,True,False,97.0,188.0,9700,18800,False
+170,2039480,20399.01,0.0,100.0,0.0,0.0,True,False,312.0,86.0,31200,8601,False
+262,3061854,30623.01,220.0,220.0,10.0,0.0,False,True,76.0,42.0,7600,4200,False
+350,4167085,41676.01,183.33,0.0,0.0,0.0,True,False,100.0,114.19000000000233,10000,11419,True

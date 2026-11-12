@@ -1,0 +1,45 @@
+{
+  "source_archive": {
+    "id": "16ba8da9-3402-47b9-ad4b-606fc7210f9c",
+    "key": "PRONTO benchmark case study.zip",
+    "size": 1720560937,
+    "checksum": "md5:13b7464b88bd0a011c20cb26712e48e5",
+    "links": {
+      "self": "https://zenodo.org/api/records/1341583/files/PRONTO%20benchmark%20case%20study.zip/content"
+    }
+  },
+  "member": "PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Process Data/0626Testday5.csv",
+  "size": 1197062,
+  "sha256": "7306e4911963e112cee20abc778d3c981c835c464ed04df71b22597c4b7e2fda",
+  "crc32": "d8626a48",
+  "range_bytes": 388681,
+  "range_requests": [
+    {
+      "start": 1720560915,
+      "end_inclusive": 1720560936
+    },
+    {
+      "start": 1720560895,
+      "end_inclusive": 1720560914
+    },
+    {
+      "start": 1720480438,
+      "end_inclusive": 1720560914
+    },
+    {
+      "start": 325973309,
+      "end_inclusive": 325973338
+    },
+    {
+      "start": 325973339,
+      "end_inclusive": 325973436
+    },
+    {
+      "start": 325973437,
+      "end_inclusive": 326281470
+    }
+  ],
+  "full_archive_downloaded": false,
+  "full_archive_md5_verified": false,
+  "model_inference": false
+}

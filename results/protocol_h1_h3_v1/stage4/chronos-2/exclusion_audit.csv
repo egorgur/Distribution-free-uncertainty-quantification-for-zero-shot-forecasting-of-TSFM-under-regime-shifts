@@ -1,0 +1,145 @@
+horizon,subset,target,cls,n_input,n_valid,n_excluded,n_nonfinite_error,n_negative_error,n_invalid_reference,n_series_input,n_series_valid,reason
+16,все окна,mae_ratio,ALL,32300,32300,0,0,0,0.0,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_ratio,change,19950,19950,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_ratio,drift,5700,5700,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_ratio,anomaly,5700,5700,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_ratio,none,950,950,0,0,0,0.0,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mase,ALL,32300,32300,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mase,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mase,drift,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mase,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mase,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,crps_s,ALL,32300,32300,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,crps_s,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,crps_s,drift,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,crps_s,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,crps_s,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_fixed,ALL,32300,32300,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_fixed,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_fixed,drift,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_fixed,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,все окна,mae_fixed,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_ratio,ALL,31620,31620,0,0,0,0.0,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_ratio,change,19530,19530,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_ratio,drift,5580,5580,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_ratio,anomaly,5580,5580,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_ratio,none,930,930,0,0,0,0.0,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mase,ALL,31620,31620,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mase,change,19530,19530,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mase,drift,5580,5580,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mase,anomaly,5580,5580,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mase,none,930,930,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,crps_s,ALL,31620,31620,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,crps_s,change,19530,19530,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,crps_s,drift,5580,5580,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,crps_s,anomaly,5580,5580,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,crps_s,none,930,930,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_fixed,ALL,31620,31620,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_fixed,change,19530,19530,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_fixed,drift,5580,5580,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_fixed,anomaly,5580,5580,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без смены в горизонте,mae_fixed,none,930,930,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_ratio,ALL,5280,5280,0,0,0,0.0,330,330,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_ratio,change,3360,3360,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_ratio,drift,960,960,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_ratio,anomaly,960,960,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mase,ALL,5280,5280,0,0,0,,330,330,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mase,change,3360,3360,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mase,drift,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mase,anomaly,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",crps_s,ALL,5280,5280,0,0,0,,330,330,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",crps_s,change,3360,3360,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",crps_s,drift,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",crps_s,anomaly,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_fixed,ALL,5280,5280,0,0,0,,330,330,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_fixed,change,3360,3360,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_fixed,drift,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,"переход, 0 ≤ d < 128",mae_fixed,anomaly,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_ratio,ALL,26600,26600,0,0,0,0.0,280,280,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_ratio,change,19950,19950,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_ratio,anomaly,5700,5700,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_ratio,none,950,950,0,0,0,0.0,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mase,ALL,26600,26600,0,0,0,,280,280,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mase,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mase,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mase,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,crps_s,ALL,26600,26600,0,0,0,,280,280,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,crps_s,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,crps_s,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,crps_s,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_fixed,ALL,26600,26600,0,0,0,,280,280,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_fixed,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_fixed,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+16,без drift,mae_fixed,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_ratio,ALL,32300,32300,0,0,0,0.0,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_ratio,change,19950,19950,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_ratio,drift,5700,5700,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_ratio,anomaly,5700,5700,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_ratio,none,950,950,0,0,0,0.0,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mase,ALL,32300,32300,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mase,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mase,drift,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mase,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mase,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,crps_s,ALL,32300,32300,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,crps_s,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,crps_s,drift,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,crps_s,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,crps_s,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_fixed,ALL,32300,32300,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_fixed,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_fixed,drift,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_fixed,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,все окна,mae_fixed,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_ratio,ALL,29580,29580,0,0,0,0.0,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_ratio,change,18270,18270,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_ratio,drift,5220,5220,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_ratio,anomaly,5220,5220,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_ratio,none,870,870,0,0,0,0.0,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mase,ALL,29580,29580,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mase,change,18270,18270,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mase,drift,5220,5220,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mase,anomaly,5220,5220,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mase,none,870,870,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,crps_s,ALL,29580,29580,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,crps_s,change,18270,18270,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,crps_s,drift,5220,5220,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,crps_s,anomaly,5220,5220,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,crps_s,none,870,870,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_fixed,ALL,29580,29580,0,0,0,,340,340,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_fixed,change,18270,18270,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_fixed,drift,5220,5220,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_fixed,anomaly,5220,5220,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без смены в горизонте,mae_fixed,none,870,870,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_ratio,ALL,5280,5280,0,0,0,0.0,330,330,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_ratio,change,3360,3360,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_ratio,drift,960,960,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_ratio,anomaly,960,960,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mase,ALL,5280,5280,0,0,0,,330,330,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mase,change,3360,3360,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mase,drift,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mase,anomaly,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",crps_s,ALL,5280,5280,0,0,0,,330,330,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",crps_s,change,3360,3360,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",crps_s,drift,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",crps_s,anomaly,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_fixed,ALL,5280,5280,0,0,0,,330,330,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_fixed,change,3360,3360,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_fixed,drift,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,"переход, 0 ≤ d < 128",mae_fixed,anomaly,960,960,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_ratio,ALL,26600,26600,0,0,0,0.0,280,280,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_ratio,change,19950,19950,0,0,0,0.0,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_ratio,anomaly,5700,5700,0,0,0,0.0,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_ratio,none,950,950,0,0,0,0.0,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mase,ALL,26600,26600,0,0,0,,280,280,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mase,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mase,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mase,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,crps_s,ALL,26600,26600,0,0,0,,280,280,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,crps_s,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,crps_s,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,crps_s,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_fixed,ALL,26600,26600,0,0,0,,280,280,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_fixed,change,19950,19950,0,0,0,,210,210,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_fixed,anomaly,5700,5700,0,0,0,,60,60,nonfinite_or_negative_error_or_invalid_reference
+64,без drift,mae_fixed,none,950,950,0,0,0,,10,10,nonfinite_or_negative_error_or_invalid_reference

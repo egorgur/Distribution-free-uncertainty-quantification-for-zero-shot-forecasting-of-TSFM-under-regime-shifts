@@ -1,0 +1,3 @@
+L,H,L_before,H_after,LH_after,L_before_H_after,L_before_LH_after,L_before_H_after_strict,L_before_LH_after_strict
+128,16,67,123,63,61,5,0,0
+512,64,32,68,0,4,0,0,0

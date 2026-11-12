@@ -1,0 +1,467 @@
+{
+  "threshold_raw": 1.833065155,
+  "threshold_rule": "midpoint of full-run min/max; diagnostic only",
+  "rising_edges": 1487,
+  "rising_edges_per_s": 16.522222222222222,
+  "inter_edge_seconds_quantiles": [
+    0.059609375,
+    0.059765625,
+    0.060546875,
+    0.061015625,
+    0.061171875
+  ],
+  "rpm_derived": false,
+  "pulses_per_revolution_verified": false,
+  "per_second": [
+    {
+      "start_s": 0.0,
+      "stop_exclusive_s": 1.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 1.0,
+      "stop_exclusive_s": 2.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 2.0,
+      "stop_exclusive_s": 3.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 3.0,
+      "stop_exclusive_s": 4.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 4.0,
+      "stop_exclusive_s": 5.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 5.0,
+      "stop_exclusive_s": 6.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 6.0,
+      "stop_exclusive_s": 7.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 7.0,
+      "stop_exclusive_s": 8.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 8.0,
+      "stop_exclusive_s": 9.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 9.0,
+      "stop_exclusive_s": 10.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 10.0,
+      "stop_exclusive_s": 11.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 11.0,
+      "stop_exclusive_s": 12.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 12.0,
+      "stop_exclusive_s": 13.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 13.0,
+      "stop_exclusive_s": 14.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 14.0,
+      "stop_exclusive_s": 15.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 15.0,
+      "stop_exclusive_s": 16.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 16.0,
+      "stop_exclusive_s": 17.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 17.0,
+      "stop_exclusive_s": 18.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 18.0,
+      "stop_exclusive_s": 19.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 19.0,
+      "stop_exclusive_s": 20.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 20.0,
+      "stop_exclusive_s": 21.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 21.0,
+      "stop_exclusive_s": 22.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 22.0,
+      "stop_exclusive_s": 23.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 23.0,
+      "stop_exclusive_s": 24.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 24.0,
+      "stop_exclusive_s": 25.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 25.0,
+      "stop_exclusive_s": 26.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 26.0,
+      "stop_exclusive_s": 27.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 27.0,
+      "stop_exclusive_s": 28.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 28.0,
+      "stop_exclusive_s": 29.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 29.0,
+      "stop_exclusive_s": 30.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 30.0,
+      "stop_exclusive_s": 31.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 31.0,
+      "stop_exclusive_s": 32.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 32.0,
+      "stop_exclusive_s": 33.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 33.0,
+      "stop_exclusive_s": 34.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 34.0,
+      "stop_exclusive_s": 35.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 35.0,
+      "stop_exclusive_s": 36.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 36.0,
+      "stop_exclusive_s": 37.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 37.0,
+      "stop_exclusive_s": 38.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 38.0,
+      "stop_exclusive_s": 39.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 39.0,
+      "stop_exclusive_s": 40.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 40.0,
+      "stop_exclusive_s": 41.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 41.0,
+      "stop_exclusive_s": 42.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 42.0,
+      "stop_exclusive_s": 43.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 43.0,
+      "stop_exclusive_s": 44.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 44.0,
+      "stop_exclusive_s": 45.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 45.0,
+      "stop_exclusive_s": 46.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 46.0,
+      "stop_exclusive_s": 47.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 47.0,
+      "stop_exclusive_s": 48.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 48.0,
+      "stop_exclusive_s": 49.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 49.0,
+      "stop_exclusive_s": 50.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 50.0,
+      "stop_exclusive_s": 51.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 51.0,
+      "stop_exclusive_s": 52.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 52.0,
+      "stop_exclusive_s": 53.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 53.0,
+      "stop_exclusive_s": 54.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 54.0,
+      "stop_exclusive_s": 55.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 55.0,
+      "stop_exclusive_s": 56.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 56.0,
+      "stop_exclusive_s": 57.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 57.0,
+      "stop_exclusive_s": 58.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 58.0,
+      "stop_exclusive_s": 59.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 59.0,
+      "stop_exclusive_s": 60.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 60.0,
+      "stop_exclusive_s": 61.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 61.0,
+      "stop_exclusive_s": 62.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 62.0,
+      "stop_exclusive_s": 63.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 63.0,
+      "stop_exclusive_s": 64.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 64.0,
+      "stop_exclusive_s": 65.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 65.0,
+      "stop_exclusive_s": 66.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 66.0,
+      "stop_exclusive_s": 67.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 67.0,
+      "stop_exclusive_s": 68.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 68.0,
+      "stop_exclusive_s": 69.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 69.0,
+      "stop_exclusive_s": 70.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 70.0,
+      "stop_exclusive_s": 71.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 71.0,
+      "stop_exclusive_s": 72.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 72.0,
+      "stop_exclusive_s": 73.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 73.0,
+      "stop_exclusive_s": 74.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 74.0,
+      "stop_exclusive_s": 75.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 75.0,
+      "stop_exclusive_s": 76.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 76.0,
+      "stop_exclusive_s": 77.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 77.0,
+      "stop_exclusive_s": 78.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 78.0,
+      "stop_exclusive_s": 79.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 79.0,
+      "stop_exclusive_s": 80.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 80.0,
+      "stop_exclusive_s": 81.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 81.0,
+      "stop_exclusive_s": 82.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 82.0,
+      "stop_exclusive_s": 83.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 83.0,
+      "stop_exclusive_s": 84.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 84.0,
+      "stop_exclusive_s": 85.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 85.0,
+      "stop_exclusive_s": 86.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 86.0,
+      "stop_exclusive_s": 87.0,
+      "rising_edges": 16
+    },
+    {
+      "start_s": 87.0,
+      "stop_exclusive_s": 88.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 88.0,
+      "stop_exclusive_s": 89.0,
+      "rising_edges": 17
+    },
+    {
+      "start_s": 89.0,
+      "stop_exclusive_s": 90.0,
+      "rising_edges": 16
+    }
+  ]
+}

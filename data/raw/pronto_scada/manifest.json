@@ -1,0 +1,234 @@
+{
+  "source": "https://zenodo.org/api/records/1341583",
+  "doi": "10.5281/zenodo.1341583",
+  "archive": {
+    "id": "16ba8da9-3402-47b9-ad4b-606fc7210f9c",
+    "key": "PRONTO benchmark case study.zip",
+    "size": 1720560937,
+    "checksum": "md5:13b7464b88bd0a011c20cb26712e48e5",
+    "links": {
+      "self": "https://zenodo.org/api/records/1341583/files/PRONTO%20benchmark%20case%20study.zip/content"
+    }
+  },
+  "retrieved_at_utc": "2026-11-12T19:05:34.330322+00:00",
+  "files": [
+    {
+      "member": "PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Process Data/0912Testday4.csv",
+      "local_file": "0912Testday4.csv",
+      "size": 4920870,
+      "compressed_size": 1487131,
+      "crc32": "93744c28",
+      "sha256": "c97fd28ea57dd99d6c2338061358a09a428e1ece17cf2b8fadee18376ed20a0f"
+    },
+    {
+      "member": "PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Process Data/0626Testday5.csv",
+      "local_file": "0626Testday5.csv",
+      "size": 1197062,
+      "compressed_size": 308034,
+      "crc32": "d8626a48",
+      "sha256": "7306e4911963e112cee20abc778d3c981c835c464ed04df71b22597c4b7e2fda"
+    },
+    {
+      "member": "PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Process Data/0912Testday4.csv",
+      "local_file": "0912Testday4.csv",
+      "size": 4920870,
+      "compressed_size": 1487131,
+      "crc32": "93744c28",
+      "sha256": "c97fd28ea57dd99d6c2338061358a09a428e1ece17cf2b8fadee18376ed20a0f"
+    },
+    {
+      "member": "PRONTO benchmark case study/C1 Air Blockage/Test2/Process Data/0907Testday2.csv",
+      "local_file": "0907Testday2.csv",
+      "size": 6440042,
+      "compressed_size": 1917180,
+      "crc32": "e908f67d",
+      "sha256": "3ec29fa2f83745e1934d251a5e98be52039fb06a34358b4d378c5dc4ffb4ba45"
+    },
+    {
+      "member": "PRONTO benchmark case study/C1 Air Blockage/Test3/Process Data/0907Testday2.csv",
+      "local_file": "0907Testday2.csv",
+      "size": 6440042,
+      "compressed_size": 1917180,
+      "crc32": "e908f67d",
+      "sha256": "3ec29fa2f83745e1934d251a5e98be52039fb06a34358b4d378c5dc4ffb4ba45"
+    },
+    {
+      "member": "PRONTO benchmark case study/C2 Air Leakage/Test4/Process Data/0907Testday2.csv",
+      "local_file": "0907Testday2.csv",
+      "size": 6440042,
+      "compressed_size": 1917180,
+      "crc32": "e908f67d",
+      "sha256": "3ec29fa2f83745e1934d251a5e98be52039fb06a34358b4d378c5dc4ffb4ba45"
+    },
+    {
+      "member": "PRONTO benchmark case study/C2 Air Leakage/Test5/Process Data/0911Testday3.csv",
+      "local_file": "0911Testday3.csv",
+      "size": 8724815,
+      "compressed_size": 2519653,
+      "crc32": "19e58b93",
+      "sha256": "1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af"
+    },
+    {
+      "member": "PRONTO benchmark case study/C2 Air Leakage/Test6/Process Data/0911Testday3.csv",
+      "local_file": "0911Testday3.csv",
+      "size": 8724815,
+      "compressed_size": 2519653,
+      "crc32": "19e58b93",
+      "sha256": "1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af"
+    },
+    {
+      "member": "PRONTO benchmark case study/C3 Diverted flow/Test7/Process Data/0911Testday3.csv",
+      "local_file": "0911Testday3.csv",
+      "size": 8724815,
+      "compressed_size": 2519653,
+      "crc32": "19e58b93",
+      "sha256": "1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af"
+    },
+    {
+      "member": "PRONTO benchmark case study/C3 Diverted flow/Test8/Process Data/0911Testday3.csv",
+      "local_file": "0911Testday3.csv",
+      "size": 8724815,
+      "compressed_size": 2519653,
+      "crc32": "19e58b93",
+      "sha256": "1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af"
+    }
+  ],
+  "range_bytes": 19194112,
+  "range_requests": [
+    {
+      "start": 1720560915,
+      "end_inclusive": 1720560936
+    },
+    {
+      "start": 1720560895,
+      "end_inclusive": 1720560914
+    },
+    {
+      "start": 1720480438,
+      "end_inclusive": 1720560914
+    },
+    {
+      "start": 41203025,
+      "end_inclusive": 41203054
+    },
+    {
+      "start": 41203055,
+      "end_inclusive": 41203152
+    },
+    {
+      "start": 41203153,
+      "end_inclusive": 42690283
+    },
+    {
+      "start": 325973309,
+      "end_inclusive": 325973338
+    },
+    {
+      "start": 325973339,
+      "end_inclusive": 325973436
+    },
+    {
+      "start": 325973437,
+      "end_inclusive": 326281470
+    },
+    {
+      "start": 357811160,
+      "end_inclusive": 357811189
+    },
+    {
+      "start": 357811190,
+      "end_inclusive": 357811286
+    },
+    {
+      "start": 357811287,
+      "end_inclusive": 359298417
+    },
+    {
+      "start": 656982298,
+      "end_inclusive": 656982327
+    },
+    {
+      "start": 656982328,
+      "end_inclusive": 656982406
+    },
+    {
+      "start": 656982407,
+      "end_inclusive": 658899586
+    },
+    {
+      "start": 723786506,
+      "end_inclusive": 723786535
+    },
+    {
+      "start": 723786536,
+      "end_inclusive": 723786614
+    },
+    {
+      "start": 723786615,
+      "end_inclusive": 725703794
+    },
+    {
+      "start": 782751806,
+      "end_inclusive": 782751835
+    },
+    {
+      "start": 782751836,
+      "end_inclusive": 782751913
+    },
+    {
+      "start": 782751914,
+      "end_inclusive": 784669093
+    },
+    {
+      "start": 822499213,
+      "end_inclusive": 822499242
+    },
+    {
+      "start": 822499243,
+      "end_inclusive": 822499320
+    },
+    {
+      "start": 822499321,
+      "end_inclusive": 825018973
+    },
+    {
+      "start": 889223739,
+      "end_inclusive": 889223768
+    },
+    {
+      "start": 889223769,
+      "end_inclusive": 889223846
+    },
+    {
+      "start": 889223847,
+      "end_inclusive": 891743499
+    },
+    {
+      "start": 978001358,
+      "end_inclusive": 978001387
+    },
+    {
+      "start": 978001388,
+      "end_inclusive": 978001467
+    },
+    {
+      "start": 978001468,
+      "end_inclusive": 980521120
+    },
+    {
+      "start": 1081065089,
+      "end_inclusive": 1081065118
+    },
+    {
+      "start": 1081065119,
+      "end_inclusive": 1081065198
+    },
+    {
+      "start": 1081065199,
+      "end_inclusive": 1083584851
+    }
+  ],
+  "full_archive_downloaded": false,
+  "full_archive_md5_verified": false,
+  "model_inference": false
+}

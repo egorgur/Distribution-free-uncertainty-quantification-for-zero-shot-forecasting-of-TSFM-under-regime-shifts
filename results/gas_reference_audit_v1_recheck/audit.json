@@ -1,0 +1,37 @@
+{
+  "generated_at_utc": "2026-11-12T17:54:26.342778+00:00",
+  "python": "3.13.7",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "seed": 0,
+  "bootstraps": 1000,
+  "elapsed_s": 28.581217971994192,
+  "model_inference": false,
+  "stationarity_proven": false,
+  "reference_approved": false,
+  "seconds_verified_against_raw": true,
+  "controls": "post-hoc implementation/power diagnostic, no threshold changes; iid seed777",
+  "independence": "sensors, adjacent events and rolling windows are dependent",
+  "code_sha256": {
+    "src/gas_reference.py": "859ff2062c07e93ba8b7c8536f4dadd54e05b04299316f53023a47f9488a7aba",
+    "scripts/audit_gas_reference.py": "129ef703566a7e281eb9396e6a5d4fce0d03d35ae03e54f33384a0dd4e43bd25",
+    "tests/test_gas_reference.py": "fa652d613cf8e5bb4cf48d79e10859516496259abc2b1ecec755c4079e1f07f6",
+    "docs/protocol_gas_reference_audit.md": "bdf110545eeaeedf07f56ac6f594a3e08cab5907d91d721f9822d30beb94e063"
+  },
+  "inputs_sha256": {
+    "/home/master/Work/ereyna/Distribution-free-uncertainty-quantification-for-zero-shot-forecasting-of-TSFM-under-regime-shifts/results/real_gas_audit/audit.json": "2f9ff08be9fc034b231c6d36c016fc8f91a2012a107e98d438acee0815c95181",
+    "/home/master/Work/ereyna/Distribution-free-uncertainty-quantification-for-zero-shot-forecasting-of-TSFM-under-regime-shifts/results/real_gas_audit/ethylene_CO/seconds.csv.gz": "fb056b78717e1833890a64d68f70cff7cecf3996966179e76450c5ca4d625cfd",
+    "/home/master/Work/ereyna/Distribution-free-uncertainty-quantification-for-zero-shot-forecasting-of-TSFM-under-regime-shifts/results/real_gas_audit/ethylene_CO/segments.csv": "6d9081fce0892e22fb3228e993ba1701480beaa16b7b8b60f5324c6747ffb09a",
+    "/home/master/Work/ereyna/Distribution-free-uncertainty-quantification-for-zero-shot-forecasting-of-TSFM-under-regime-shifts/results/real_gas_audit/ethylene_methane/seconds.csv.gz": "4ffd27a9c7d280b33bff31728ca89a2d58e6ca7959080721bd595789beac1b6a",
+    "/home/master/Work/ereyna/Distribution-free-uncertainty-quantification-for-zero-shot-forecasting-of-TSFM-under-regime-shifts/results/real_gas_audit/ethylene_methane/segments.csv": "b36baa46d0267ad038fc7bd9d4ed9276ec30d0427dede1c6272bcd5ffd885a8e"
+  },
+  "artifacts_sha256": {
+    "eligibility.csv": "a6e584c5d4981b6dbdeae0ee3e4b92fd2c7806cf7c3045206c76a214e670eaf9",
+    "diagnostics.csv": "b658b9b19b91d1800e51fb0766e2d77eba67a540c032f66337ce86e8ffd2bab0",
+    "candidates.csv": "c2f66561c1cf5370d2219493d8c6d07550143b26b0a96dfa97b8a53f60c1d50c",
+    "events.csv": "a837c45dbd794ea1a6f92dea623e4ee17c894fd1f4782fae1d5cdea19e0f81c4",
+    "counts.csv": "0d9c6cfad8753688c43e6a8336f595e2a70cf823ef34bc883ccc32df4b5d6b23",
+    "event_counts.csv": "0d9c6cfad8753688c43e6a8336f595e2a70cf823ef34bc883ccc32df4b5d6b23",
+    "implementation_controls.csv": "a19bcc72ab42ae66cdff010d650aed96a64c87239ce8129cf54d6255bfb849c5"
+  }
+}

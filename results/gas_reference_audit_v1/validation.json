@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "diagnostics_checked": 3424,
+  "event_channel_pairs_checked": 11568,
+  "model_inference": false,
+  "stationarity_proven": false,
+  "reference_approved": false,
+  "raw_means_recomputed_during_audit": true
+}

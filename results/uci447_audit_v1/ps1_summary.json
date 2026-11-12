@@ -1,0 +1,9 @@
+{
+  "cycles": 2205,
+  "samples_per_cycle": 6000,
+  "sample_rate_hz": 100,
+  "cycle_seconds": 60,
+  "finite_values": 13230000,
+  "continuity_between_cycles_established": false,
+  "stationarity_established": false
+}

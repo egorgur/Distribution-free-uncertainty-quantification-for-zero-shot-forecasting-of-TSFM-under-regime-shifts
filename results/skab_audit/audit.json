@@ -1,0 +1,79 @@
+{
+  "dataset": "SKAB v0.9",
+  "commit": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "totals": {
+    "files": 35,
+    "labeled_episodes": 34,
+    "rows": 46806,
+    "cp_marks": 129,
+    "anomaly_onsets": 34,
+    "anomaly_offsets": 32,
+    "time_non1s_steps": 2549,
+    "nonfinite_sensor_values": 0
+  },
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2"
+  },
+  "configurations": [
+    {
+      "L": 512,
+      "H": 64,
+      "stride": 8
+    },
+    {
+      "L": 128,
+      "H": 16,
+      "stride": 8
+    }
+  ],
+  "definitions": {
+    "indices": "zero-based; [start, stop)",
+    "origin": "t=L-1+8k per file; target t+1..t+H",
+    "strict": "all L+H-1 adjacent timestamp intervals exactly 1 second",
+    "same_cp": "no CP in (start,stop); a CP at start belongs to the right segment",
+    "anomaly0": "all L+H observed labels are zero; missing labels are NOT filled",
+    "geometry": "pre=[previous_CP,CP), post=[CP,next_CP), file edges censored",
+    "tail128": "absolute difference of means of halves / population std of last128; no stability threshold"
+  },
+  "illustrations": [
+    "data/anomaly-free/anomaly-free.csv",
+    "data/other/1.csv",
+    "data/valve1/0.csv",
+    "data/valve2/0.csv"
+  ],
+  "model_inference": false,
+  "protocol_selected": false,
+  "manifest_sha256": "024b278801970af0447ef82d1e32987265c9d5403650b909ee1d1723471d4f0c",
+  "code_sha256": {
+    "scripts/audit_skab.py": "39c6e24abd0fad2d8c18943ff814f09e524782756caee5e69ff1288580d219b1",
+    "src/skab_audit.py": "4e102e7825586de51ec089d84708f9907d524c097fd390e5323c15448d803698",
+    "tests/test_skab_audit.py": "311d3582c800608c3d87345cbb59399cfff7811fd90c6aeb77624c6a675749de"
+  },
+  "elapsed_seconds": 4.091,
+  "artifact_sha256": {
+    "anomaly_runs.csv": "d49a34c48893753ff81a7100c1847dbb818fb11991a2f8549e5b7c624221e749",
+    "anomaly_transitions.csv": "e9c110d6d241909ddce58ac3b18629c16178071c94d6ea8dad0bf21097ba8813",
+    "columns.csv": "4c48db11ebc78f1e6ce8259cbe2a547a0eb531894a43a75f48e2e97643fec476",
+    "continuous_runs.csv": "7d7ea73414e51be2eae03b8335a10fcd9226cb3508accf9ba4201ef4221320f9",
+    "cp_marks.csv": "db7e788bcade637f959f2484365f83172aedd2f0e916dd785984531f712ba02d",
+    "cp_segments.csv": "51196c675e341f8e447b02201d2c1ed95dc41988b63fa9834d751b028fc7740b",
+    "cross_file_overlaps.csv": "c0561244454f93ad7f88e458535767077aff72edd2d5b7b9f26973a5ebaab333",
+    "dt_histogram.csv": "4781c8218b1daf23cda560665319e42baeb687e42c0c7705f929527e22ddd561",
+    "event_geometry.csv": "c9ad6825e3d5c48b019810d6af6c5526255c92701b5f056790e191b77e8afa1a",
+    "fig_anomaly-free_anomaly-free.png": "e0ddc90f8915bd93f5a8c1cf390f2c3284498cfdfb28b5e50f596d88ec3b7fda",
+    "fig_other_1.png": "735daee51dbb53dbfa2f649559b58b2bebbea9b6adc5058c6887fe28ad94680a",
+    "fig_valve1_0.png": "56e92d1bcdb6d284343d79042f858d2ce709d334ab7790dd0a66ff7ba3d75ab1",
+    "fig_valve2_0.png": "5271c8a9f7ddcee58b45d3839f112b5f37abbcec929b8fbc2c218a9fc54f01f4",
+    "files.csv": "95cfc4dddaf9621d43c103ce71fb33daaf99a7004f7f2053991e263fafefc211",
+    "geometry_totals.csv": "7b2ca645b865d28e22c8e5a0a795de36221f66aef8b6e272f906cb7ebfecb30c",
+    "integrity.csv": "0ed38ad429bd7f25c924560657cc7828b72aadab08740b54bfbed36ad8aff164",
+    "tail128.csv": "ba3776ed4f58d5f56ac5ad4239068c878aaf627996bb90d98e138d2b3d6769f1",
+    "time_gaps.csv": "7720915538119307a960fe63dabf952a76ce27b6b9ade7640b74f7f0b8d5260a",
+    "window_counts.csv": "bc71c1a3e74e6d882cbfb23a69bd0feef75249df771cf9e229c6dc9d7db25044",
+    "window_totals.csv": "42184975c9607d13a4456a7e9b48a1604a9ff9aa72eeb356aa18ba846cbb936f",
+    "windows.csv": "356884b523f1241f73e0616c5f926f81ea0b8baa4178c3a8084cf1ab72549008"
+  }
+}

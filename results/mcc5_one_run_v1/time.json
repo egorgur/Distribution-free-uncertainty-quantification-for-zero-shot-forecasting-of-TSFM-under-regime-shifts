@@ -1,0 +1,14 @@
+{
+  "timestamp_present": true,
+  "sample_rate_documented_hz": 12800,
+  "first_s": 0.0,
+  "last_s": 89.999921875,
+  "count_divided_by_fs_s": 90.0,
+  "dt_min_s": 7.812499998749445e-05,
+  "dt_max_s": 7.81250000017053e-05,
+  "dt_zero": 0,
+  "dt_negative": 0,
+  "max_abs_deviation_from_nominal_s": 0.0,
+  "hardware_continuity_verified": false,
+  "bins_basis": "row-index / documented fs; compare separately against raw time"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "sample_rate_hz": 1,
+    "samples_per_cycle": 60,
+    "needed_samples": 576,
+    "full_windows_per_cycle_stride1": 0,
+    "full_window_seconds": 576.0,
+    "length_seconds": 512.0,
+    "horizon_seconds": 64.0
+  },
+  {
+    "sample_rate_hz": 10,
+    "samples_per_cycle": 600,
+    "needed_samples": 576,
+    "full_windows_per_cycle_stride1": 25,
+    "full_window_seconds": 57.6,
+    "length_seconds": 51.2,
+    "horizon_seconds": 6.4
+  },
+  {
+    "sample_rate_hz": 100,
+    "samples_per_cycle": 6000,
+    "needed_samples": 576,
+    "full_windows_per_cycle_stride1": 5425,
+    "full_window_seconds": 5.76,
+    "length_seconds": 5.12,
+    "horizon_seconds": 0.64
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "verified_originals": 38,
+  "verified_csv_files": 35,
+  "independently_checked_file_configurations": 70,
+  "independently_checked_rolling_windows": 8592,
+  "geometry_predicates_checked": 516,
+  "code_hashes_verified": true,
+  "artifacts_verified": 21,
+  "physical_stability_proven": false,
+  "model_inference": false
+}

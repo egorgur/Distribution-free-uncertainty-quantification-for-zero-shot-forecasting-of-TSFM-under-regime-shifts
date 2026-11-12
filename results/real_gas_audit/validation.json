@@ -1,0 +1,29 @@
+{
+  "verified_at_utc": "2026-11-12T17:54:04.681107+00:00",
+  "status": "passed",
+  "recordings": [
+    {
+      "file": "ethylene_CO.txt",
+      "rows": 4208261,
+      "events": 372,
+      "status": "passed"
+    },
+    {
+      "file": "ethylene_methane.txt",
+      "rows": 4178504,
+      "events": 351,
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    "raw SHA256 and sizes",
+    "ZIP CRC",
+    "audit source hashes",
+    "column/segment/second row totals",
+    "event boundaries",
+    "timestamp histogram count and span",
+    "censoring",
+    "figures exist"
+  ],
+  "scope": "Internal consistency, not physical stability or approved H1-H3 protocol"
+}

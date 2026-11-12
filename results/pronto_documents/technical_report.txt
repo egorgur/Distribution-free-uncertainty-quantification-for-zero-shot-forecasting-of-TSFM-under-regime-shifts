@@ -1,0 +1,713 @@
+Multiphase flow facility case study
+technical report
+Benchmark with heterogeneous data
+
+
+Authors: Ruomu Tan (Imperial College London, email: r.tan@imperial.ac.uk)
+         Anna Stief (ABB Corporate Research Krakow, email: anna.stief@pl.abb.com)
+         Yi Cao (Zhejiang University)
+         James R. Ottewill (ABB Corporate Research Krakow)
+Executive summary
+         This is a supplementary technical report for the Multiphase Flow Facility Case Study to
+facilitate the understanding of the process and the experiment and give support to get started with
+the benchmark dataset. The report starts with a brief overview of the facility, describing tests
+under different operating conditions and induced faults. Heterogeneous data was collected from
+various sources, including process data, high frequency ultrasonic data, high frequency pressure
+data, alarm, event and change data and videos. Each data acquisition system is described in
+detail. All tested scenarios are introduced; the operation sequences conducted to induce the faults
+manually and corresponding observations during the experiment are included. We continue with
+a summary of the dataset and it is stored for each of the tested scenarios. Some issues that may
+arise during data analysis and algorithm validation, and our recommendations of how to deal with
+them, are presented afterwards.
+         The work was conducted within the PRONTO project, which has received funding from the
+European Union’s Horizon 2020 research and innovation programme under the Marie
+Skłodowska-Curie grant agreement No. 675215, for which the authors are grateful. The
+benchmark case fits the scope of PRONTO, as the collected datasets are suitable for algorithm
+development and validation of fault detection, fault identification, fault classification, fault severity
+evaluation, monitoring of fault evolution and prognostics using both quantitative and qualitative
+data from disparate sources. The datasets can be used to generate and visualize information-rich
+statistics concerning equipment condition and process performance.
+
+
+
+
+                                                                                                       2
+Table of contents
+EXECUTIVE SUMMARY                                                                                                                                                             2
+
+TABLE OF CONTENTS                                                                                                                                                             3
+
+OVERVIEW                                                                                                                                                                      5
+  MULTIPHASE FLOW FACILITY ..........................................................................................................................................5
+  MEASUREMENT SPECIFICATION ......................................................................................................................................6
+
+MEASUREMENT AVAILABILITY                                                                                                                                                      6
+  PROCESS DATA.............................................................................................................................................................6
+  ALARMS, EVENTS AND CHANGES .....................................................................................................................................7
+  DOPPLER ULTRASONIC DATA ..........................................................................................................................................8
+  HIGH FREQUENCY PRESSURE DATA ..................................................................................................................................8
+  VIDEOS.......................................................................................................................................................................9
+
+TESTED SCENARIOS                                                                                                                                                              9
+  NORMAL OPERATING CONDITIONS (0912 TEST9)..............................................................................................................9
+  SLUGGING (0912 TEST10) ............................................................................................................................................9
+     OPERATION SEQUENCE ......................................................................................................................................... 10
+     EXPECTED OUTCOME / OBSERVED OUTCOME............................................................................................................ 10
+  NORMAL OPERATING CONDITIONS (TEST11) ................................................................................................................. 11
+  AIR LEAKAGE (0911 TEST4/5/6) ................................................................................................................................ 11
+     OPERATION SEQUENCE ......................................................................................................................................... 12
+     OBSERVED OUTCOME ........................................................................................................................................... 13
+  AIR BLOCKAGE (0907 TEST2/3) .................................................................................................................................. 13
+     OPERATION SEQUENCE ......................................................................................................................................... 14
+     OBSERVED OUTCOME ........................................................................................................................................... 15
+  DIVERTED FLOW (0911 TEST7/8) ............................................................................................................................... 15
+     OPERATION SEQUENCE ......................................................................................................................................... 15
+     OBSERVED OUTCOME ........................................................................................................................................... 16
+
+DATASETS                                                                                                                                                                    16
+  DATA SUMMARY ....................................................................................................................................................... 16
+  DATASET LAYOUT ...................................................................................................................................................... 17
+
+REMARKS FOR DATA ANALYSIS                                                                                                                                                   18
+  SWITCHING BETWEEN TWO INPUT VALVES ..................................................................................................................... 18
+  DISTINGUISHING BETWEEN HEALTHY/SLUGGING CONDITIONS ........................................................................................... 18
+  DEALING WITH THE ULTRASONIC DATA .......................................................................................................................... 18
+  DEALING WITH HIGH FREQUENCY DATA ......................................................................................................................... 18
+  ALARMS AND EVENTS ................................................................................................................................................. 19
+  DATA SEGMENTATION................................................................................................................................................ 19
+  TIMESTAMPS ............................................................................................................................................................ 19
+
+ACKNOWLEDGMENTS                                                                                                                                                             19
+
+APPENDIX                                                                                                                                                                    20
+  EXTRA PROCESS DATA ................................................................................................................................................ 20
+  DELTAV SCREENSHOTS ................................................................................................... ERROR! BOOKMARK NOT DEFINED.
+
+                                                                                                                                                                             3
+4
+Overview
+Multiphase flow facility
+The benchmark case study is conducted on a multiphase flow facility in the Process System
+Engineering lab of Cranfield University. In this experiment, water and air are mixed to flow through
+the horizontal section and then separated. A number of different testing scenarios are
+implemented in order to generate data for both normal and faulty states. Figure 1 provides an
+overview of the configuration of pipelines and instrumentation of the test facility. The feed air and
+water flows are the inputs to the facility and their flow rates are controlled for implementing
+different operating conditions. Input flows are mixed in the mixing zone and directed through a
+horizontal pipeline to the 2” vertical riser, which has an S shape section connected midway along
+the riser. After reaching the top of the riser, the mixed flow is separated by two separators in
+sequence; the water flow returns to the storage tank and the air flow is exhausted to atmosphere
+after separation. The facility is instrumented with various pressure, flow rate, temperature and
+density sensors; all of the 17 process variables recorded in the tests are shown in Figure 1. The
+high frequency pressure sensors are distributed along the pipelines from the mixing zone to the
+riser top while the ultrasonic sensor is located at the riser top, as shown in Figure 1. Additionally,
+two transparent sections are installed on the riser bottom and top for observation of the flow
+regime. For more detailed information, such as additional tags and control loops, please refer to
+DeltaV Screenshots section in Appendix.
+
+
+
+
+                                   Figure 1. Process schematic
+
+                                                                                                    5
+Measurement specification
+Sensors measuring different variables with different sampling rates have been installed on the
+test facility in order to obtain real-time data for both on-line monitoring and further off-line data
+analysis. Sensor readings are collected and stored along with their time stamps and alarm
+information during each experiment. Table 1 summarizes the data recorded in this case study.
+
+
+                  Table 1 Data availability through the experiment
+
+          Measured variable                    Sampling rate    Availability     Platform
+          Process variables                    1 Hz             Continuous       DeltaV
+          Alarm, event, change logs            Event driven     Discrete event   DeltaV
+          Doppler ultrasonic sensor            10 kHz           60 s             LabView
+          High frequency pressure sensors      5 kHz            60 s             LabView
+          Videos                               -                30-60 s          Camera
+
+
+
+
+Measurement availability
+In this section an overview of the data types available throughout the experiment, a summary of
+which can be found at Table 1, are given.
+
+Process data
+Process data was collected using DeltaV, which is a SCADA system provided by Emerson
+Process Management. It is responsible for the control of the process and provides a way to
+retrieve process data. DeltaV samples all of the connected sensors at 1 Hz. The selected process
+variables are listed in Table 2 with their corresponding tag and unit.
+
+
+                                 Table 2 Process variables
+
+         Sensor tag               Measured process variable                          Unit
+         FT305/302                Input air flow rate                                Sm3/h
+         FT305                    Input air temperature                              °C
+         PT312                    Air delivery pressure                              barg
+         FT102/104                Input water flow rate                              kg/s
+         FT102                    Input water temperature                            °C
+         FT102                    Input water density                                kg/m3
+         PT417                    Pressure in the mixing zone                        barg
+         PT408                    Pressure at the riser top                          barg
+         PT403                    Pressure in the top separator                      barg
+         FT404                    Top separator output air flow rate                 m3/h
+         FT406                    Top separator output water flow rate               kg/s
+
+                                                                                                   6
+         PT501                    Pressure in the 3-phase separator                  barg
+         PIC501                   Air outlet valve 3-phase separator                 %
+         LI502                    Water-oil 3- level phase separator                 %
+         LI503                    Water coalescer level                              %
+         LVC502-SR                Water coalescer outlet valve                       %
+         LI101                    Water tank Level                                   m
+         FIC302/PID1/OUT.CV       Inlet air flow rate controller 1 valve opening     %
+         FIC302/PID1/SP.CV        Inlet air flow rate controller 1 set point         Sm3/h
+         FIC302/PID1/PV.CV        Inlet air flow rate controller 1 process value     Sm3/h
+         FIC301/PID1/OUT.CV       Inlet air flow rate controller 2 valve opening     %
+         FIC301/PID1/SP.CV        Inlet air flow rate controller 2 set point         Sm3/h
+         FIC301/PID1/PV.CV        Inlet air flow rate controller 2 process value     Sm3/h
+         FIC102/PID1/OUT.CV       Inlet water flow rate controller 1 valve opening   %
+         FIC102/PID1/SP.CV        Inlet water flow rate controller 1 set point       kg/s
+         FIC102/PID1/PV.CV        Inlet water flow rate controller 1 process value   kg/s
+         FIC101/PID1/OUT.CV       Inlet water flow rate controller 2 valve opening   %
+         FIC101/PID1/SP.CV        Inlet water flow rate controller 2 set point       kg/s
+         FIC101/PID1/PV.CV        Inlet water flow rate controller 2 process value   kg/s
+
+
+Alarms, events and changes
+Alarms, events and changes were logged during the whole operation of the process. The alarm
+data consist of two types of alarms: critical value alarms monitor if sensor measurements exceed
+their critical values; module alarms indicate the health state of the sensors and their connectivity
+to the DeltaV system. The event data consist of logs of I/O related sensor failure events. Change
+data consist of a log of changes that the user made to the system or to the process, such as
+adjusting a valve position, acknowledging an alarm, changing the set point of a control valve and
+changing the critical value for a sensor.
+The data is stored in .csv format, the timestamp of the logs are in decreasing order. One log
+consists of the parameters described in Table 3.
+
+
+                  Table 3 Alarm, event and change log parameters
+
+     Parameter name        Parameter description
+     Date/Time*            Date and time in decreasing order (in ms second accuracy)
+     Event Type            Alarm/Event/Change
+     Category              Instrument/Process/User/Device
+     Area                  Test Section/Metering Section/Separation/Area A (user changes)
+     Node                  Name of the information node: Node1/JJ45Q0J
+     Unit                  Empty field
+     Module                Tag names
+     Module Description    Description: e.g “Air flow rate controller via FR302”
+     Parameter             A parameter of the alarm/event/change if applicable
+     State                 Active/Inactive/Acknowledged/Unacknowledged
+     Level                 Info/Advisory/Warning/Critical
+     Desc1                 Description 1 (extended tag names)
+     Desc2                 Description 2 (Error code/new values/etc.)
+
+                                                                                                  7
+In case of some sensor tags, only module alarms were enabled. The alarm interface for sensor
+tag FIC301 air flowrate controller is shown below on Figure 3 as an example. Although there is a
+list of possible alarms listed under the Alarms tab only the Module Alarm was enabled with a
+critical priority. We are currently investigating the case of Module Alarms to have a better
+understanding on which occasion they are getting triggered.
+
+One may refer to the Alarm settings in DeltaV.xlsx in Technical Documents folder for further
+information about the alarm settings for the tags. As shown in Figure 4, the alarm limits are
+presented in meters for water and oil tank levels. For the alarm limits in percentage, their scales
+are provided for converting percentages into real values for the limits. Other information, such
+as the enabling status, is also included in the Remarks column.
+
+
+
+
+                                      Figure 4. Alarm information
+
+Doppler ultrasonic data
+A Continuous Wave Doppler Ultrasound non-invasive, clamp-on sensor was used for the
+experiment. The sensor has two crystal transducers. One of the transducers emits an ultrasonic
+signal at 500 KHz, while the other transducer receives the reflected signal from the multiphase
+flow. The received output signal is then conditioned by the sensor electronics, which provides the
+Doppler frequency shift as an output voltage signal in the range of ± 10V. The Doppler ultrasonic
+data was recorded with LabView at a 10 KHz sampling rate for 60 seconds for all flow rates, valve
+openings and seeded fault scenarios during steady state operation. The recordings were
+manually synchronized with the process data from DeltaV. The ultrasound beam angle is directed in
+a 58 degree with respect to the pipe axis of the vertical riser. The sensor provides the Doppler frequency
+shift in the form of an output voltage signal. Assuming that all the scatterers have the same velocity v,
+then the Doppler shift fd of the transmitted ultrasound is given by
+                                            𝑣                         𝑓d 𝑐
+                                   𝑓d = 2𝑓t 𝑐𝑜𝑠𝜃        →      𝑣=
+                                            𝑐                      2𝑓t 𝑐𝑜𝑠𝜃
+where 𝑓d is the Doppler frequency shift, 𝑓t is the transmitted ultrasound frequency, 𝑣 is the flow velocity
+average, 𝑐 is the velocity of sound in the liquid and 𝜃 is the angle between the flow velocity and the
+ultrasound beam.
+
+
+
+High frequency pressure data
+For all tested scenarios, high frequency pressure data was recorded using LabView at a 5 kHz
+sampling rate for 60 seconds during steady-state operation. The location of the 9 pressure
+sensors is given in Figure 2, while the sensors are listed in Table 4. The measurements are given
+in units of barg. The recordings were manually synchronized with the process data from DeltaV.
+System times of LabView computers and DeltaV computer were synchronized in advance and
+the action of recording was synchronized by hand according to the system time. As there are no
+process measurements through the horizontal pipeline, vertical riser and S-shape riser in the
+DeltaV system, the high frequency pressure data provides a better insight into the pressure
+fluctuations at the horizontal pipeline and the riser.
+Table 4 provides an overview of the collected pressure variables, their tag names on the process
+schematic and their corresponding tag names in the .csv files.
+                                                                                                8
+                                Table 4 Pressure variables
+
+         Sensor tag    Measured pressure variable                                Excel tag
+         B14           Before horizontal line                                    P4
+         B13           After horizontal line, before riser base                  P5
+         B12           Riser base                                                P6
+         B11           Vertical riser after transparent pipe beyond riser base   P7
+         B10           The middle of vertical riser, before S shape              P8
+         B20           Top of S shape                                            P13
+         B08           Middle of inclining part of S shape                       P14
+         B09           Bottom of S shape                                         P15
+         B05           After S shape riser and riser top                         P17
+
+
+
+Videos
+The 2” pipeline has a transparent section at both the top and the bottom of the riser. Videos were
+taken for a period of 30-60 seconds during different tested scenarios, for educational purposes
+and to provide a better understanding of the flow regimes.
+
+
+
+
+TESTED SCENARIOS
+The experiment was conducted under 5 different scenarios. In addition to normal operating
+conditions, 4 different incipient or intermittent faults were tested. These faults were designed to
+simulate real process malfunctions, such as leakage, blockage or incorrect operation of the
+system. In the following section a detailed description is given for each tested scenario.
+
+Normal operating conditions (0912 Test9)
+When developing algorithms and methods for process monitoring, a representative normal
+training dataset is essential for the success of the algorithms. In this benchmark case study
+normal data was collected with a continuous, stable flow regime. The corresponding air and water
+flow rate combinations are shown in Table 5. 13 normal datasets were recorded. The high
+frequency measurements were taken once the flow stabilized. Videos are recorded from the
+transparent section at the riser top.
+
+Slugging (0912 Test10)
+Slugging is an intermittent fault. The liquid builds up at the bottom of the riser blocking the gas
+flow. The pressure increases at the riser bottom till it is sufficient to push the air and water slug
+up to the riser top, at which point the water falls down and the cycle starts again. 7 slugging
+datasets were collected through the experiment, the set points of which are shown in Table 4.
+Videos are recorded from the transparent section at the riser top.
+
+
+
+                                                                                                   9
+Operation sequence
+The sheet named Operation Log 0912 in Operation log.xlsx records the operations (set point
+changes of input flow rates) during the flow condition test. As a demonstration of operation
+sequence during the flow condition test, input water (FT102/104) and air flow rates (FT305/302)
+after preliminary pre-processing are presented in Figure 5.
+
+
+
+
+                        Figure 5. Input flow sequences for flow condition test
+
+For each flow combination, data was recorded only after the flow regime stabilized; this was
+typically 5-7 minutes after adjusting the set point of input flow rates. The high frequency pressure
+and ultrasonic measurement were collected for 1 minute along while the flow regime video
+recorded at the riser top. Afterwards, the input flow rate was adjusted and the same procedure
+was repeated.
+
+
+
+Expected outcome / Observed outcome
+
+Table 5 presents the operating conditions (normal or slugging) determined by observing the flow
+regimes in pipelines under different combinations of input water and air flow rates. The operation
+log also specifies the operating conditions which were expected (presented in separate sheets)
+ahead of the experiment according to the flow regime map obtained in a similar experimental set
+up on the same rig.
+
+
+                               Table 5 Operating conditions
+
+                                                Water flow rate (kg/s)
+                                0,1         0,5        1          2         3,5
+                            20 slugging     slugging slugging slugging      normal
+                 Air rate
+                 (sm3/h)
+
+
+
+
+                            50 slugging     slugging slugging normal        normal
+                            100 normal      normal     normal     normal    normal
+                            200 normal      normal     normal
+
+                                                                                                 10
+Figure 6 shows time-series plots of selected data from different sources for the slugging case of
+20 Sm3/h air, 0,1 kg/s water flow rate. The data is scaled to have values between zero and 1 to
+represent the data trends. The top three signals are process variables sampled at 1 Hz. The fourth
+signal shows the ultrasonic sensor sampled at 10 kHz, the fifth signal is a module alarm, which is
+triggered twice during the 60 second measurement period. The last signal shows a pressure
+signal sampled at 5 kHz.
+
+Normal operating conditions (Test11)
+Since more healthy data under the same flow conditions are preferred as the training set for
+detecting the manually seeded faults (leakage, blockage and diverted flow), extra process
+measurement data under these two flow conditions specified by Table 6/8/10 without any fault
+are collected in a follow-up experiment. The operation log of this day can also be found in
+Operation log.xlsx. The alarm and event log was also collected for this period.
+
+Air leakage (0911 Test4/5/6)
+The aim of this seeded fault scenario is to simulate a gradually developing air leakage in the input
+air pipeline. By opening valve V10 manually the air is partially leaked to the atmosphere. The
+valve was opened gradually simulating an incipient leakage with the valve positions being
+recorded along with the data. The set points of the air and water flow rates chosen for the air
+leakage tests are shown in Table 4 (“normal & faults”). Two tests were carried out, with high
+frequency measurements being taken once the flow had stabilized at its given set point for the
+selected valve position.
+
+
+
+
+                                                                                                 11
+                  Figure 7. Manual valve V10 used for simulating air leakage
+
+Operation sequence
+Data was obtained for two healthy flow conditions for air leakage fault, as shown in Table 6. All
+tests were conducted after the flow condition stabilized.
+
+
+
+                    Table 6 Flow conditions for air leakage test
+
+                                                     Test5 Test4/6
+                              Air flow rate (sm3/h)  120   150
+                              Water flow rate (kg/s) 0.1   0.5
+
+
+For each test, valve V10 was opened gradually; the valve openings are shown in Table 7. Once
+the flow regime had stabilized after adjusting V10, high frequency pressure and ultrasonic sensor
+measurements were collected simultaneously for 1 min and if the phenomena were deemed
+interesting, videos of the flow regime at riser bottom and riser base were recorded.
+
+
+
+
+                                                                                              12
+                  Table 7 Valve opening sequences for air leakage test
+
+                                           Valve opening (°)
+                                     Test4 0 10 20 30 15* 25 40 90
+                                     Test5 0 5 10 15
+                                     Test6 0 5 10 15 20 25
+*: The valve opening was reduced because a significant change was observed when it was switched from 20° to
+30°: the flow in the pipeline disappeared due to insufficient air. Therefore, 25° valve opening was tested in Test4
+and a smaller step size was selected in Test6.
+
+All tests were stopped when a full air leakage was observed, i.e. there was no air in the riser.
+Higher input air flow rate in Test6 resulted in a larger final valve opening when the air was fully
+leaked.
+
+Observed outcome
+
+At the beginning of each test with a fixed air and water flow rate the valve was fully closed resulting
+in normal flow conditions. With the development of the air leakage, the flow regime in the riser
+shifts from normal to slugging. As the amount of input air is reduced an intermittent cyclic
+behaviour appears: first there is normal flow present, then the flow disappears, then water
+appears with big air bubbles, then the cycle starts again. This behaviour is very similar to severe
+slugging, although the reason behind it is not only due to the reduced air flow rate but also due to
+the pressure drop caused by the leakage. Once all of the input air leaked out, the pressure drops
+and only the water stays, leading to a continuous liquid only flow regime. Videos were recorded
+from the transparent section at the riser top to study this phenomenon.
+
+Air blockage (0907 Test2/3)
+The aim of this fault scenario is to simulate a gradually developing blockage in the input airline by
+manually closing valve V11. Initially for each set point with a fixed air and water flow rate the valve
+was fully open with normal flow conditions. The valve was then gradually closed. Similarly to the
+case of air leakage fault, the set points are shown in Table 8. The high frequency measurements
+were taken once the flow stabilized at its given set point for the selected valve position.
+
+
+
+
+                                                                                                                      13
+                  Figure 8. Manual valve V11 used for simulating air blockage
+
+Operation sequence
+The input airline blockage test was conducted under two healthy flow conditions, specified by
+Table 8. The same valve opening sequence of V11 for both conditions were used, from fully
+opening (90°) to 10°. Once the flow regime stabilized after adjusting V11, high frequency pressure
+and ultrasonic sensor measurements were acquired simultaneously for 1 min. There is no video
+record for this tested scenario. The sheet named Operation Log 0907 in Operation log.xlsx
+records the operations along with brief descriptions of observations.
+
+
+                    Table 8 Flow conditions for air blockage test
+
+                                                      Test2 Test3
+                               Air flow rate (sm3/h)  120   150
+                               Water flow rate (kg/s) 0.1   0.5
+
+
+
+
+             Table 9 Valve opening sequences for air blockage test
+
+                                                                                               14
+                                      Valve opening (°)
+                                Test2 90 80 70 60 50 40 30 20 10
+                                Test3 90 80 70 60 50 40 30 20 10
+
+
+Observed outcome
+The flow regime for air blockage is different from the leakage case: as there is no pressure drop
+in the system the flow remains continuous, although mild slugging is observed.
+
+Diverted flow (0911 Test7/8)
+The aim of this fault scenario is to simulate a case of a mixed diverted flow. In real processes this
+fault could be caused by the incorrect operation of the system. The U39 bypass valve was
+gradually opened. The mixed flow is partially directed straight to the riser and partially directed
+into the horizontal pipeline before joining the riser. The set points are the same, as for the previous
+seeded faults, as shown in Table 4. The high frequency measurements were taken once the flow
+stabilized at a certain set point with a certain valve position.
+
+
+
+
+  Figure 9. Manual valve U39 used for simulating diverted (U38 is open in normal conditions)
+
+Operation sequence
+
+The valve opening and brief descriptions of observations can be found in “Operation Log 0911”
+in Operation log.xlsx. U39 was opened gradually while U38 remained unchanged. Once the flow
+regime stabilized after adjusting U39, high frequency pressure and ultrasonic sensor
+measurements were collected simultaneously for 1 min and if the phenomena were deemed
+interesting, videos of the flow regime at riser bottom and riser base were recorded.
+
+
+
+
+                    Table 10 Flow conditions for air blockage test
+
+                                                         Test7 Test8
+
+                                                                                                    15
+                                     Air flow rate (sm3/h)  120                    150
+                                     Water flow rate (kg/s) 0.1                    0.5
+
+
+                Table 11 Valve opening sequences for air blockage test
+
+                                              Valve opening (°)
+                                     Test7 5 10 15 20 30 40 50* 60
+                                     Test8 10 20 30 40 45 50 60
+
+*: high frequency measurements/videos were not collected in this valve opening, as the flow regime did not change
+significantly. However, the process data and alarms/events log are collected indifferently. Operation log records the
+time of valve adjustments.
+
+
+Observed outcome
+This seeded fault is different from the previous two faults, as there is no change in the flow regime
+in the riser and it is not observable at the riser top. However, at the riser bottom, at the transparent
+section the change is visible. With increasing the opening of U39 the air disappears from the
+transparent section showing that most of the air flow is directed straight to the riser. As the
+diverted flow fault is introduced between the beginning of the horizontal pipeline and the riser
+base, the high frequency pressure sensors are able to detect the change in the flow. Videos were
+recorded from the transparent section at the riser bottom.
+
+
+Datasets
+Data summary
+
+                                         Table 12 Data summary
+
+  Fault        No.
+                                           High-freq
+                          Process data                    Ultrasonic data           Alarms & Events           Videos
+                                           pressure
+     Air        Test2                    0907Test2        0907Test2_UT
+  Blockage      Test3     0907Testday2   0907Test3        0907Test3_UT            0907Testday2_AlmEvt           N/A
+                Test4                    0907Test4        0907Test4_UT
+      Air
+                Test5                    0911Test5        0911Test5_UT                                  0911Test5_VID
+   Leakage
+                Test6                    0911Test6        0911Test6_UT                                  0911Test6_VID
+                          0911Testday3                                            0911Testday3_AlmEvt
+   Diverted     Test7                    0911Test7        0911Test7_UT                                  0911Test7_VID
+     Flow       Test8                    0911Test8        0911Test8_UT                                  0911Test8_VID
+                Test9                    0912Test9        0912Test9_UT                                  0912Test9_VID
+     Flow                 0912Testday4                                            0912Testday4_AlmEvt
+                Test10                   0912Test10       0912Test10_UT                                 0912Test10_VID
+  conditions
+                Test 11   0626Testday5   --------------   ---------------------   0626TestDay5_AlmEvt   ----------------------
+        File type         .csv           .csv             .csv                    .csv                  .mp4
+
+
+Table 12 summarizes the data sets collected from aforementioned tested scenarios. The process
+data and alarms/events logs are continuously available for a whole day of test. High frequency
+measurements (pressure and Ultrasonic sensor) are available in 60-sec length segments that
+were recorded after every adjustment specified by operating sequences in previous section and
+operation logs. Videos at riser top and riser bottom are also available when a significant change
+in flow regime was observed.
+
+
+                                                                                                                             16
+Dataset layout
+Once the zip file is downloaded and extracted the user will find the following folder structure in
+the root directory:
+
+
+
+
+                                    Figure 10. Dataset layout
+
+
+
+
+                                                                                               17
+Remarks for data analysis
+Switching between two input valves
+According to Fig 1, two parallel valves and corresponding control loops are applied to control the
+input water and air flow rates. For each individual time point, only one valve controls each input
+flow; switching between the two valves depends on the set point: VC102/301 is used when the
+input water/air flow rates are relatively high; otherwise, VC101/302 is used for smaller flow rates.
+The following switching rules apply for most tests. Moreover, the control valves for larger flow
+rates also have a larger variance of the controlled variables.
+
+             𝑉𝐶102   𝑖𝑓 𝑆𝑃𝑤𝑎𝑡𝑒𝑟 ≥ 1 𝑘𝑔/𝑠                                    3
+𝑉𝑤𝑎𝑡𝑒𝑟 = {                               ,   𝑉𝑎𝑖𝑟 = {𝑉𝐶301 𝑖𝑓 𝑆𝑃𝑎𝑖𝑟 > 150 𝑠𝑚 /ℎ
+             𝑉𝐶101            𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒              𝑉𝐶302            𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒
+
+As shown in Figure 2 and Table 3, it is reasonable to combine the two FT readings as one input
+flow rate measurement for both water and air. One may observe that the reading of the FT on
+one control valve is not zero when the other valve is controlling the process. Therefore, a simple
+summation may not be the best way of combining the readings.
+
+Distinguishing between healthy/slugging conditions
+It is necessary to highlight that, in the flow condition test, the expected and observed operating
+conditions are not always consistent with each other. The results in Table 4 are obtained by
+observing the flow regimes during testing, while the occurrence of slug should be determined by
+calculating superficial velocity of the fluid in the pipeline. Therefore, the flow conditions presented
+in Table 4 are only the suggestions of the authors and one is encouraged to conduct other
+clustering/classification methods on the data sets for better labelling of the flow combinations.
+
+Dealing with the ultrasonic data
+For some measurements, instead of 60 seconds being recorded, a 70-second measurement is
+available. This is due to a data acquisition issue in LabView. For simplicity the last 10-second
+measurement can be ignored for those cases if the aim is to process the data together with the
+high frequency pressure data, however they were not removed from the datasets. The .csv files
+contain three columns: the first column is the timestamp in seconds; the second column is the
+Doppler frequency shift, recorded in the form of an output voltage signal. The readings from the
+third column are not used for analysis.
+
+Dealing with high frequency data
+The .csv file for the pressure data contains a row with ‘Offset” values and a row with “Slopes”
+values. These values should be used for the calibration of the raw variables in the following way:
+                                 𝑋calibrated = Slopes ∙ 𝑋raw + Offset
+This calibration step is needed for each of the measurement values.
+The first column of the .csv file is time stamp, given in seconds, counted from the timestamp
+mentioned in the header of the file. The .csv files contain 20 measurements altogether, however
+
+
+                                                                                                    18
+only those 9 which are listed in Table 4 should be considered for data analysis. The other
+measurements either contain zero values or false readings.
+It has to be noted that the synchronization between the ultrasonic and high frequency pressure
+data recordings was conducted through manual triggering of the data acquisition. A 0.5 -1 second
+difference is possible at the start time of these measurements.
+The authors propose to extract features for each second from the high frequency data. In this way
+the features can be processed together with the process data and the synchronization issue will
+not cause problems. Possible feature extraction methods include: moving average, standard
+deviation for window, spectrum decomposition, etc.
+
+Alarms and events
+Alarm, event and changed data is stored in .csv format with a decreasing timestamp. The data
+are stored for each experiment day in two files. The first file contains all the alarms, events and
+changes, whilst the second file contains only the alarms from the same day.
+The authors note that the alarm data may converted into binary vectors ahead of further
+processing.
+
+Data segmentation
+The data sets are collected according to different acquisition parameters. The process data is
+available continuously at a lower sampling rate (1 Hz) while high frequency pressure and
+ultrasonic measurements are collected in 60-sec segments at much high sampling rates after
+each adjustment. Videos may or may not be taken simultaneously when the high frequency
+measurements are collected. The operation and alarm/event logs are event-triggered.
+
+The authors recommend that the dispersed data sets should be segmented properly in order to
+allow them to be combined for analysis. For example, the 60-sec length segments of process
+data, which are synchronized with high frequency measurements, can be obtained by comparing
+their time stamps using operation logs. Other segment approaches can be considered as well.
+
+Timestamps
+The format of time stamp in process data is “mm/dd/yyyy hh:mm”. Microsoft Excel may interpret
+it incorrectly; however, it should not influence data importing into other software.
+One may also notice that the time stamps in 0911Testday3.csv after 09/11/2017 16:20:00 are not
+interpretable. Nevertheless, sensor readings are still reliable despite of the time stamp issue.
+
+
+
+Acknowledgments
+Financial support from the European Union’s Horizon 2020 research and innovation programme
+is gratefully appreciated.
+
+We would also like to thank our colleagues at Cranfield University for their generous help in
+experiment design, operating the rig, and data analysis: Dr Liyun Lao, Stan Collins, Henry
+Tandoh, Prafull Sharma, Godfrey Nnabuife and Joseph Inok.
+
+
+
+
+                                                                                                19
+Appendix
+Extra process data
+In addition to the process variables relevant to the tested scenarios in this case study (specified
+by Table 2), extra process variables (specified by Table 13) are also collected from DeltaV
+system and stored in the similar format for potential usages such as controller performance
+assessment. These extra process data files can be found in the “Extra Data” folder of the
+shared drive.
+
+
+                              Table 13 Extra data summary
+
+  Tag                             Description
+  PIC401/PID1/OUT.CV              2-phase separator pressure control valve opening
+  PIC401/PID1/PV.CV               2-phase separator pressure control valve process value
+  PIC403/PID1/OUT.CV              2-phase separator inlet valve opening
+  PIC403/PID1/PV.CV               2-phase separator inlet valve process value
+  LI405/OUT.CV                    Oil-gas interface 3-phase separator
+  LIC402/PID1/OUT.CV              2-phase separator liquid level control valve opening
+  LIC402/PID1/PV.CV               2-phase separator liquid level control valve process value
+  PIC501/PID1/PV.CV               3-phase separator pressure control valve process value
+  LVC502-SR/PID1/PV.CV            3-phase separator water-oil interface control valve process
+                                  value
+  LIC507/PID1/OUT.CV              Water coalescer oil-water interface control valve opening
+  LIC507/PID1/PV.CV               Water coalescer oil-water interface control valve process
+                                  variable
+  LI505/OUT.CV                    Oil coalescer oil-water interface level
+  LVC504/PID1/OUT.CV              Oil coalescer oil-water interface control valve opening
+  LVC504/PID1/PV.CV               Oil coalescer oil-water interface control valve process
+                                  variable
+  LI101/OUT.CV                    Water storage tank level
+  LI201/OUT.CV                    Oil storage tank level
+  LI504/OUT.CV                    3-phase separator oil-water interface
+  TT313/OUT.CV                    Input air temperature
+  PUMP1_SUPPORT/CURRE             Water pump current
+  NT.CV
+  PUMP1_SUPPORT/MOTOR             Water pump motor speed
+  _SPEED.CV
+  PUMP1_SUPPORT/FREQ_             Water pump frequency set point
+  SETPOINT.CV
+
+
+
+
+                                                                                                 20
+

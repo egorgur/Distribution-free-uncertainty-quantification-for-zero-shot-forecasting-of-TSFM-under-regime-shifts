@@ -1,0 +1,10 @@
+{
+  "python": "3.13.7 (main, Aug 28 2025, 17:07:40) [Clang 20.1.4 ]",
+  "code_sha256": {
+    "src/uci447_audit.py": "6608d0109ee469938319a9cf7977539d481ed5d19a39989ec0c5dd9f0f0f5403",
+    "scripts/audit_uci447.py": "ba5fc192762ac2a6e1d665565fdc260f04dc4ea4011d1118a08d4b5b9ce52656",
+    "tests/test_uci447_audit.py": "ffee46552535cde3801cbfe59bdb9c225db770cb5b12cd76f21da7d84684d74c"
+  },
+  "archive_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+  "scope": "profile, documentation and PS1 only; other channels not audited"
+}

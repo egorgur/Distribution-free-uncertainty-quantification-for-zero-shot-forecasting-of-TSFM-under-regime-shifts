@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "archive_size": 76601704,
+  "cycles": 2205,
+  "ps1_values": 13230000,
+  "cycle_seconds": 60,
+  "stable_flag_counts": {
+    "0": 1449,
+    "1": 756
+  },
+  "continuity_between_cycles_established": false,
+  "stationarity_established": false,
+  "model_inference": false
+}

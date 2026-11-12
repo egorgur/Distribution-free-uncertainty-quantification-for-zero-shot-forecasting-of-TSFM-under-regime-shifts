@@ -1,0 +1,11 @@
+member,local_file,size,compressed_size,crc32,sha256
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test10/Process Data/0912Testday4.csv,0912Testday4.csv,4920870,1487131,93744c28,c97fd28ea57dd99d6c2338061358a09a428e1ece17cf2b8fadee18376ed20a0f
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test11/Process Data/0626Testday5.csv,0626Testday5.csv,1197062,308034,d8626a48,7306e4911963e112cee20abc778d3c981c835c464ed04df71b22597c4b7e2fda
+PRONTO benchmark case study/C0 Normal and Slugging conditions/Test9/Process Data/0912Testday4.csv,0912Testday4.csv,4920870,1487131,93744c28,c97fd28ea57dd99d6c2338061358a09a428e1ece17cf2b8fadee18376ed20a0f
+PRONTO benchmark case study/C1 Air Blockage/Test2/Process Data/0907Testday2.csv,0907Testday2.csv,6440042,1917180,e908f67d,3ec29fa2f83745e1934d251a5e98be52039fb06a34358b4d378c5dc4ffb4ba45
+PRONTO benchmark case study/C1 Air Blockage/Test3/Process Data/0907Testday2.csv,0907Testday2.csv,6440042,1917180,e908f67d,3ec29fa2f83745e1934d251a5e98be52039fb06a34358b4d378c5dc4ffb4ba45
+PRONTO benchmark case study/C2 Air Leakage/Test4/Process Data/0907Testday2.csv,0907Testday2.csv,6440042,1917180,e908f67d,3ec29fa2f83745e1934d251a5e98be52039fb06a34358b4d378c5dc4ffb4ba45
+PRONTO benchmark case study/C2 Air Leakage/Test5/Process Data/0911Testday3.csv,0911Testday3.csv,8724815,2519653,19e58b93,1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af
+PRONTO benchmark case study/C2 Air Leakage/Test6/Process Data/0911Testday3.csv,0911Testday3.csv,8724815,2519653,19e58b93,1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af
+PRONTO benchmark case study/C3 Diverted flow/Test7/Process Data/0911Testday3.csv,0911Testday3.csv,8724815,2519653,19e58b93,1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af
+PRONTO benchmark case study/C3 Diverted flow/Test8/Process Data/0911Testday3.csv,0911Testday3.csv,8724815,2519653,19e58b93,1d210163647600b7bb4273e1a01476508b8390cb84fbeed189f1978d91c703af

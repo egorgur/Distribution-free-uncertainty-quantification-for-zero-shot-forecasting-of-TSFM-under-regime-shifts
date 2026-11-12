@@ -1,0 +1,17 @@
+L,horizon,percentile,role,raw_quantile,threshold,n_series,n_d,control_seed,search_start,search_end,smooth,model,control_cache,control_dataset_hash
+64,16,95,primary,1.0453775633528901,1.0453775633528901,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+64,16,90,sensitivity,1.0038466672437363,1.0038466672437363,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+64,64,95,primary,1.0312554395571749,1.0312554395571749,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+64,64,90,sensitivity,0.99699433887393452,1,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+128,16,95,primary,1.1136457310232475,1.1136457310232475,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+128,16,90,sensitivity,1.0890851344052364,1.0890851344052364,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+128,64,95,primary,1.0467268441267552,1.0467268441267552,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+128,64,90,sensitivity,1.018936699452321,1.018936699452321,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+256,16,95,primary,1.0953281349244588,1.0953281349244588,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+256,16,90,sensitivity,1.0690945493595121,1.0690945493595121,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+256,64,95,primary,1.0909430189995775,1.0909430189995775,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+256,64,90,sensitivity,1.0460771345136739,1.0460771345136739,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+512,16,95,primary,1.0954914463167049,1.0954914463167049,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+512,16,90,sensitivity,1.0738546610299802,1.0738546610299802,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+512,64,95,primary,1.0207355246370002,1.0207355246370002,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b
+512,64,90,sensitivity,1.0098000423872262,1.0098000423872262,10,64,1,0,504,3,amazon/chronos-2,results/cache/synth_v1_seed1,816e98e9289b

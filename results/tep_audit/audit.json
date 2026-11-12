@@ -1,0 +1,51 @@
+{
+  "dataset": "TEP classic MIT (NOT Rieth 2017)",
+  "totals": {
+    "numeric_files": 44,
+    "rows": 31700,
+    "process_variables": 52,
+    "nonfinite": 0,
+    "testing_fault_scenarios": 21
+  },
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0"
+  },
+  "model_inference": false,
+  "stationarity_proven": false,
+  "protocol_selected": false,
+  "onset": "test fault: zero-based row160 after160 baseline rows, documentation-derived; row159 sensitivity unresolved",
+  "time": "180s from temain_mod.f.txt, no timestamps in DAT; not independently verified measurement clock",
+  "train_onset": "not inferred; filename fault is scenario, not pointwise label",
+  "configurations": [
+    {
+      "L": 512,
+      "H": 64,
+      "stride": 8
+    },
+    {
+      "L": 128,
+      "H": 16,
+      "stride": 8
+    }
+  ],
+  "manifest_sha256": "4b62817963001cbfc27840f8ff520581333dcdf4f5be031fde0818402f45ec11",
+  "code_sha256": {
+    "src/tep_audit.py": "84faca3de5d4bc22d37d3418b0bd6cbe796921a6e645503d945469ed2bc97413",
+    "scripts/audit_tep.py": "ce1a0644cfebf73e9b8fde4f10a823e9fbe1ac29552f01be4f92e91b3748a1fe"
+  },
+  "artifact_sha256": {
+    "columns.csv": "480218ee316adeeb8bf20724090022475159f23a273816844fc7fe1724c416df",
+    "fig_00.png": "5686764476b885edc32cf2d1916ab0353793e4ce746ae6f03ae9eb37144d5073",
+    "fig_01.png": "697de488784dbd6d91cbfc7e0764829855335464a462f037cbb3bb5d1c26b945",
+    "fig_08.png": "7fdac48742a070cfe4130cc76cf718974489449b90e6f1c0d63c14bcfb38948b",
+    "fig_13.png": "7f38e8d78a37c91afc9a809741f9135c3abbd97b7e0f5d174b86347a82f41e8e",
+    "files.csv": "f390a516524fe024abe141c78c719bd26541fe95cee22588f7ac193454791316",
+    "integrity.csv": "1bc06f0f1445909d0ed112fdff712fdf6b66b9c96f59cced89b59a7cc2d974ac",
+    "run_comparisons.csv": "fd7fc1feb2ef9c6708b12699ff30de5c7ee3acfe1f4536251347fbf89e8669ad",
+    "tail128.csv": "9cb0ac762b02abc1414076b14dcfd2f3dd3d1c0c5e98aaf85919cd69519f366e",
+    "windows.csv": "fa8b9f8eb4ae510bf469c3b5ff3fea7d66c6bb6b63fb1a39f2e5019d42f80478"
+  },
+  "elapsed_seconds": 1.214
+}

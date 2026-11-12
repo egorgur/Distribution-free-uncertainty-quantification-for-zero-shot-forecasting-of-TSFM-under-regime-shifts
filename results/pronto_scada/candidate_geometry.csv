@@ -1,0 +1,7 @@
+file,sheet,start_cell,stop_cell,basis,start_index,stop_exclusive,samples,length,horizon,stride,rolling_windows_global_phase,first_origin,last_origin,max_disjoint_target_blocks,independent_replicates
+0907Testday2.csv,Operation Log 0907,C26,K25,measurement_to_next_action,6180,6480,300,512,64,8,0,,,0,not_established
+0907Testday2.csv,Operation Log 0907,C197,K196,measurement_to_next_action,16020,16320,300,512,64,8,0,,,0,not_established
+0911Testday3.csv,Operation Log 0911,C11,K18,measurement_to_next_action,2040,2400,360,512,64,8,0,,,0,not_established
+0912Testday4.csv,Operation Log 0912 ,C86,L82,measurement_to_next_action,11520,11880,360,512,64,8,0,,,0,not_established
+0626Testday5.csv,Operation log 180626,A4,A6,reaches_setpoint_not_explicitly_stabled,1080,1980,900,512,64,8,41,1591,1911,6,not_established
+0626Testday5.csv,Operation log 180626,A8,A10,explicit_system_stabled,2220,3120,900,512,64,8,41,2735,3055,6,not_established

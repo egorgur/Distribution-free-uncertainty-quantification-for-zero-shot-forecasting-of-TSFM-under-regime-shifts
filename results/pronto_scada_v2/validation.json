@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "archive_members": 10,
+  "unique_files": 4,
+  "full_archive_md5_verified": false,
+  "model_inference": false,
+  "tables_replayed": 7,
+  "candidate_intervals": 6,
+  "stationarity_established": false,
+  "reference_selected": false
+}

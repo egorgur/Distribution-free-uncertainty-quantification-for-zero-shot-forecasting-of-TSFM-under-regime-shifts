@@ -1,0 +1,9 @@
+phi,mean_margin,illustrative_points_per_block,illustrative_total_points,known_variance,not_a_power_guarantee
+0.0,0.25,223,669,True,True
+0.0,0.5,56,168,True,True
+0.5,0.25,667,2001,True,True
+0.5,0.5,166,498,True,True
+0.9,0.25,4223,12669,True,True
+0.9,0.5,1049,3147,True,True
+0.98,0.25,22001,66003,True,True
+0.98,0.5,5463,16389,True,True

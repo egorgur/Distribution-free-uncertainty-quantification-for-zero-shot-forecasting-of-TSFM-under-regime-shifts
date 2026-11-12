@@ -1,0 +1,37 @@
+{
+  "protocol_sha256": "22bae05a71811c6cf7c17b2bac1d3a80ff106f010f2eff3cabd612bb816e8dc1",
+  "checks": [
+    {
+      "model": "chronos-bolt-small",
+      "h1_h3_matched_rows": 64600,
+      "recovery_statuses_and_control_quantiles": "passed"
+    },
+    {
+      "model": "chronos-2",
+      "h1_h3_matched_rows": 64600,
+      "recovery_statuses_and_control_quantiles": "passed"
+    },
+    {
+      "model": "chronos-bolt-small",
+      "unchanged_descriptive_metric_rows": 6426,
+      "primary_error_exclusions": 0,
+      "bad_label_share": 0.1,
+      "paired_criteria_and_input_hashes": "passed"
+    },
+    {
+      "model": "chronos-2",
+      "unchanged_descriptive_metric_rows": 6426,
+      "primary_error_exclusions": 0,
+      "bad_label_share": 0.1,
+      "paired_criteria_and_input_hashes": "passed"
+    },
+    {
+      "model": "synth_v1_seed1/chronos-bolt-small",
+      "unchanged_descriptive_metric_rows": 6426,
+      "primary_error_exclusions": 0,
+      "bad_label_share": 0.1,
+      "paired_criteria_and_input_hashes": "passed"
+    }
+  ],
+  "status": "passed"
+}

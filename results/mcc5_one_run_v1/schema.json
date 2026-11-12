@@ -1,0 +1,17 @@
+{
+  "columns": 9,
+  "header": null,
+  "data_rows": 1152000,
+  "names_from_article_table4": [
+    "time",
+    "key_phase",
+    "torque",
+    "vibration_x",
+    "vibration_y",
+    "vibration_z",
+    "current_a",
+    "current_b",
+    "current_c"
+  ],
+  "unit_conversion_applied": false
+}

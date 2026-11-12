@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "data_rows": 1152000,
+  "columns": 9,
+  "timestamp_present": true,
+  "duration_count_over_fs_s": 90.0,
+  "finite_signal_values": 9216000,
+  "replayed_torque_intervals": 15,
+  "one_run_only": true,
+  "stability_established": false,
+  "model_inference": false
+}

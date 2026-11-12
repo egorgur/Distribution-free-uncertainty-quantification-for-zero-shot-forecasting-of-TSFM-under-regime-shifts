@@ -1,0 +1,30 @@
+[
+  {
+    "sample_rate_hz": 12800,
+    "length_seconds": 0.04,
+    "horizon_seconds": 0.005,
+    "full_window_seconds": 0.045,
+    "nominal_full_windows_in_20s_stride1": 255425
+  },
+  {
+    "sample_rate_hz": 100,
+    "length_seconds": 5.12,
+    "horizon_seconds": 0.64,
+    "full_window_seconds": 5.76,
+    "nominal_full_windows_in_20s_stride1": 1425
+  },
+  {
+    "sample_rate_hz": 10,
+    "length_seconds": 51.2,
+    "horizon_seconds": 6.4,
+    "full_window_seconds": 57.6,
+    "nominal_full_windows_in_20s_stride1": 0
+  },
+  {
+    "sample_rate_hz": 1,
+    "length_seconds": 512.0,
+    "horizon_seconds": 64.0,
+    "full_window_seconds": 576.0,
+    "nominal_full_windows_in_20s_stride1": 0
+  }
+]

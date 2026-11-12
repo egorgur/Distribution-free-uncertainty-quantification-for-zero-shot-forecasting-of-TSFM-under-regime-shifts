@@ -1,0 +1,4 @@
+candidate_hz,L512_seconds,H64_seconds,interior_plateaus_L_plus_H,events_both_sides_L,events_old640_new705
+100,5.12,0.64,368,364,363
+10,51.2,6.4,341,319,313
+1,512,64,1,0,0

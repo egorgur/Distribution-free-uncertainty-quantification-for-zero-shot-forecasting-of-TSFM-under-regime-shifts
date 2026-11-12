@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "decision_rows": 64000,
+  "cells": 20,
+  "independent_panels_per_cell": 100,
+  "replayed_panels": 4,
+  "real_data_read": false,
+  "model_inference": false,
+  "screen_suitability_confirmed": false
+}

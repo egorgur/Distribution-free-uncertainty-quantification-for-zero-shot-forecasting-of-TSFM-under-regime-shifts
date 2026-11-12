@@ -1,0 +1,7 @@
+scope,L,H,row_order,strict_1s,same_cp,same_cp_strict,anomaly0,anomaly0_strict,same_cp_anomaly0,same_cp_anomaly0_strict
+34_labeled_episodes,128,16,4083,0,2509,0,1916,0,1916,0
+34_labeled_episodes,512,64,2247,0,31,0,31,0,31,0
+normal_unlabeled,128,16,1158,0,0,0,0,0,0,0
+normal_unlabeled,512,64,1104,0,0,0,0,0,0,0
+all35,128,16,5241,0,2509,0,1916,0,1916,0
+all35,512,64,3351,0,31,0,31,0,31,0

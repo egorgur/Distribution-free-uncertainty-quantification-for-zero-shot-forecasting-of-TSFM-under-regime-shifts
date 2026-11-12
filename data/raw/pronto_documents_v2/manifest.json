@@ -1,0 +1,114 @@
+{
+  "retrieved_at_utc": "2026-11-12T18:46:13.856302+00:00",
+  "source": "https://zenodo.org/api/records/1341583",
+  "doi": "10.5281/zenodo.1341583",
+  "archive": {
+    "id": "16ba8da9-3402-47b9-ad4b-606fc7210f9c",
+    "key": "PRONTO benchmark case study.zip",
+    "size": 1720560937,
+    "checksum": "md5:13b7464b88bd0a011c20cb26712e48e5",
+    "links": {
+      "self": "https://zenodo.org/api/records/1341583/files/PRONTO%20benchmark%20case%20study.zip/content"
+    }
+  },
+  "full_archive_downloaded": false,
+  "full_archive_md5_verified": false,
+  "range_bytes": 112184,
+  "range_requests": [
+    {
+      "start": 1720560915,
+      "end_inclusive": 1720560936
+    },
+    {
+      "start": 1720560895,
+      "end_inclusive": 1720560914
+    },
+    {
+      "start": 1720480438,
+      "end_inclusive": 1720560914
+    },
+    {
+      "start": 1169302876,
+      "end_inclusive": 1169302905
+    },
+    {
+      "start": 1169302906,
+      "end_inclusive": 1169302966
+    },
+    {
+      "start": 1169302967,
+      "end_inclusive": 1169333119
+    },
+    {
+      "start": 1257604579,
+      "end_inclusive": 1257604608
+    },
+    {
+      "start": 1257604609,
+      "end_inclusive": 1257604709
+    },
+    {
+      "start": 1257604710,
+      "end_inclusive": 1257605224
+    },
+    {
+      "start": 1720479663,
+      "end_inclusive": 1720479692
+    },
+    {
+      "start": 1720479693,
+      "end_inclusive": 1720479730
+    },
+    {
+      "start": 1720479731,
+      "end_inclusive": 1720480437
+    }
+  ],
+  "files": [
+    {
+      "path": "members/PRONTO benchmark case study/Operation logs/Operation log.xlsx",
+      "member": "PRONTO benchmark case study/Operation logs/Operation log.xlsx",
+      "size": 35692,
+      "sha256": "36676c5e73b91b0d029e96643d7b3f9d7748df802c367fe785cee16734a2ab82",
+      "crc32": "575941cc"
+    },
+    {
+      "path": "members/PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/readme.txt",
+      "member": "PRONTO benchmark case study/Pre-processed data/Aligned and labelled alarm and process data/readme.txt",
+      "size": 1113,
+      "sha256": "1efa39c7cf68d8bb7435992d01d06193a2e90f7e0c9328a1a3610554ebd4e1b1",
+      "crc32": "d45a4e0b"
+    },
+    {
+      "path": "members/PRONTO benchmark case study/README.txt",
+      "member": "PRONTO benchmark case study/README.txt",
+      "size": 1254,
+      "sha256": "13b0cb0a1534e7f9e84564e1fea5a6d92169458055f357cced4a1eeb117787b6",
+      "crc32": "b7af597b"
+    },
+    {
+      "path": "Multiphase flow facility case study technical report.pdf",
+      "member": "",
+      "size": 1347505,
+      "sha256": "a6d5454113f86130af7f34c3fbebe1c5143d5e45ea6b10608c7c33fe961b5ba3",
+      "published_checksum": "md5:0ac786139a3ed25c4744324d5a3fc499"
+    },
+    {
+      "path": "README.txt",
+      "member": "",
+      "size": 1254,
+      "sha256": "13b0cb0a1534e7f9e84564e1fea5a6d92169458055f357cced4a1eeb117787b6",
+      "published_checksum": "md5:1563040a20914162aae43ac4a733bea7"
+    }
+  ],
+  "artifacts": {
+    "data/raw/pronto_documents_v2/zenodo_record.json": "65a7fbe17871124f577ac91a4ebaaf3071dc2d69705998bdbd4d44fb46f62713",
+    "results/pronto_documents_v2/archive_inventory.csv": "c410944085d344ba27c1fd065c6d164a904b4f8fc5b5de5a6cac0a8c3d19b447",
+    "results/pronto_documents_v2/log_cells.csv": "cf3ee4149049f942e7d03287fb7c18574b87261ad3f025eae8954612141449b5",
+    "results/pronto_documents_v2/log_sheets.json": "d708bd107fa9b113758fdeb5c34222746fcc671ddab0fc444f2093bdfc9e3311",
+    "src/pronto_documents.py": "5d5630e872c3884ff377b8581665088c9dfb79217548f3d9a0db201e9fba14c9",
+    "scripts/audit_pronto_documents.py": "bdcc7115fba1556f2f27db1db9813d5b03137abca7484829a740f3ac243b8589"
+  },
+  "model_inference": false,
+  "sensor_data_downloaded": false
+}

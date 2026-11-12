@@ -1,0 +1,17 @@
+L,horizon,percentile,role,raw_quantile,threshold,n_series,n_d,control_seed,search_start,search_end,smooth,model,control_cache,control_dataset_hash
+64,16,95,primary,1.055390646431835,1.055390646431835,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+64,16,90,sensitivity,1.0376399124448334,1.0376399124448334,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+64,64,95,primary,1.0263635982714494,1.0263635982714494,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+64,64,90,sensitivity,0.98809726238191431,1,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+128,16,95,primary,1.1139120290346805,1.1139120290346805,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+128,16,90,sensitivity,1.1018510894895803,1.1018510894895803,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+128,64,95,primary,1.0310773885506386,1.0310773885506386,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+128,64,90,sensitivity,1.0140817969416593,1.0140817969416593,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+256,16,95,primary,1.0771590917047991,1.0771590917047991,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+256,16,90,sensitivity,1.0625417428578823,1.0625417428578823,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+256,64,95,primary,1.0904620642261025,1.0904620642261025,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+256,64,90,sensitivity,1.0517648168187215,1.0517648168187215,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+512,16,95,primary,1.0893734365343839,1.0893734365343839,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+512,16,90,sensitivity,1.0723278996819738,1.0723278996819738,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+512,64,95,primary,1.04619704753357,1.04619704753357,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b
+512,64,90,sensitivity,1.0238729193346474,1.0238729193346474,10,64,1,0,504,3,amazon/chronos-bolt-small,results/cache/synth_v1_seed1,816e98e9289b

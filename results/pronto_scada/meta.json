@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-11-12T19:09:51.341321+00:00",
+  "inputs": {
+    "data/raw/pronto_scada/manifest.json": "1a46994d4ed9f0bef4af3755d7d6e14f389ca559187eebc0fd35c3995eff0519",
+    "results/pronto_documents_v2/log_cells.csv": "cf3ee4149049f942e7d03287fb7c18574b87261ad3f025eae8954612141449b5",
+    "results/pronto_documents_v2/archive_inventory.csv": "c410944085d344ba27c1fd065c6d164a904b4f8fc5b5de5a6cac0a8c3d19b447",
+    "src/pronto_scada.py": "76e299748514aa41b21dc1b65c60344296d0343397a2f0bc9f24004debd916ce",
+    "src/pronto_test11.py": "c61039da9785fe4eccca5afde5ec3195371f31c2db2352ec2c535fa443ac3370",
+    "src/pronto_documents.py": "5d5630e872c3884ff377b8581665088c9dfb79217548f3d9a0db201e9fba14c9",
+    "scripts/download_pronto_scada.py": "bec532ab4355c5a4e99d01704b89c324f21fd9d938ccbdb78644b8d7b646cb77",
+    "scripts/audit_pronto_documents.py": "bdcc7115fba1556f2f27db1db9813d5b03137abca7484829a740f3ac243b8589",
+    "tests/test_pronto_scada.py": "6bdc39375dfc8d455d5c2da09c21f70362b061be8dfb83fa0cd30b0836a2b85b",
+    "scripts/audit_pronto_scada.py": "b44c0256905d8073f46437d6116631954392be32e7e0369f63c0a198d5dc31c2",
+    "results/pronto_scada/decisions_snapshot.md": "ee20e717047d7240227df4fcd2d2ddde3db4d98b732b55d10a94e268871b4d14"
+  },
+  "outputs": {
+    "days.json": "2750d4a0b3d2fff4d2fc26ea1801bdc1ea3d71a51b1a77136ff4c316c923daae",
+    "columns.csv": "2c52d261ce79d047608ae808a4115119146c5941b5f8fa6a91858ce4090699d4",
+    "time_runs.csv": "239df80ea81727ebd82353f4e1855f7c720028d92b909b155057c2e372fc7a2a",
+    "journal_rows.csv": "0ff3d9f980df680839cf9be9976b2165698f9628bf406afa7a98d2e28bd53b1c",
+    "timeline.csv": "e5c377242c16ee14c2a5c0a7f3c504d6ebadf7d97909c59e8365977af4ee09fa",
+    "candidate_geometry.csv": "e8997cb53aaa7fa4c329fe24f58afbd0830ed6de04e989c7084e4318aea00630",
+    "archive_aliases.csv": "63dbb18208af33abc7ac24071fc70017c5766940aeaa4dd9bc5599227434550f"
+  },
+  "model_inference": false,
+  "reference_selection": false
+}

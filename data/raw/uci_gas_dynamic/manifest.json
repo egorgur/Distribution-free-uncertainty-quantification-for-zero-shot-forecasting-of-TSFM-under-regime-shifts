@@ -1,0 +1,26 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/322/gas+sensor+array+under+dynamic+gas+mixtures.zip",
+  "doi": "10.24432/C5WP4C",
+  "verified_at_utc": "2026-11-12T16:08:10.455992+00:00",
+  "archive": {
+    "name": "gas_sensor_array_under_dynamic_gas_mixtures.zip",
+    "bytes": 369001314,
+    "sha256": "8b6323b801363e11343ba1a5a7718e76666b715e753b3a40dbdfd1838d953fe7"
+  },
+  "files": [
+    {
+      "name": "ethylene_CO.txt",
+      "bytes": 642945087,
+      "sha256": "eb979ebf40f22bb7206b4fdd335fad6da51ad0289d2a37fdb1fff2f6e425487e",
+      "zip_crc32": "1d31fb5e"
+    },
+    {
+      "name": "ethylene_methane.txt",
+      "bytes": 638311247,
+      "sha256": "a00f383f2734850cf61370dc687cb09e9b400648549567a2f6a43e5c6a99aaf2",
+      "zip_crc32": "bc622413"
+    }
+  ],
+  "source_headers": {},
+  "hash_note": "SHA256 values computed locally; not trusted upstream hashes."
+}

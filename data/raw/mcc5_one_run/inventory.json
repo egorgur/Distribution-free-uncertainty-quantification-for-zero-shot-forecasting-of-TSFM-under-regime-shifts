@@ -1,0 +1,1162 @@
+[
+  {
+    "member": "MCC5-THU Motor_torque_circulation/",
+    "size": 0,
+    "compressed_size": 0,
+    "crc32": "00000000",
+    "header_offset": 0,
+    "compression": 0
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_H_torque_circulation_20Nm_1000rpm_250707135802d.csv",
+    "size": 118623039,
+    "compressed_size": 43882033,
+    "crc32": "ebd25a8d",
+    "header_offset": 96,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_H_torque_circulation_20Nm_2000rpm_250707140027d.csv",
+    "size": 118665111,
+    "compressed_size": 44986771,
+    "crc32": "4054c324",
+    "header_offset": 43882305,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_H_torque_circulation_20Nm_3000rpm_250707140229d.csv",
+    "size": 118701061,
+    "compressed_size": 45107933,
+    "crc32": "13ce4c77",
+    "header_offset": 88869252,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_H_torque_circulation_40Nm_1000rpm_250707140440d.csv",
+    "size": 118634336,
+    "compressed_size": 44315022,
+    "crc32": "39550a04",
+    "header_offset": 133977361,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_H_torque_circulation_40Nm_2000rpm_250707142821d.csv",
+    "size": 118678084,
+    "compressed_size": 45433016,
+    "crc32": "d4f1ca0f",
+    "header_offset": 178292559,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_H_torque_circulation_40Nm_3000rpm_250707143025d.csv",
+    "size": 118700517,
+    "compressed_size": 45510612,
+    "crc32": "215b3738",
+    "header_offset": 223725751,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_L_torque_circulation_20Nm_1000rpm_250707153516d.csv",
+    "size": 118654349,
+    "compressed_size": 43923623,
+    "crc32": "3d114439",
+    "header_offset": 269236539,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_L_torque_circulation_20Nm_2000rpm_250707153733d.csv",
+    "size": 118699733,
+    "compressed_size": 44961665,
+    "crc32": "7207181a",
+    "header_offset": 313160338,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_L_torque_circulation_20Nm_3000rpm_250707153938d.csv",
+    "size": 118720277,
+    "compressed_size": 45322075,
+    "crc32": "4f0a4665",
+    "header_offset": 358122179,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_L_torque_circulation_40Nm_1000rpm_250707154144d.csv",
+    "size": 118655972,
+    "compressed_size": 44385117,
+    "crc32": "4d711ba9",
+    "header_offset": 403444430,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_L_torque_circulation_40Nm_2000rpm_250707154410d.csv",
+    "size": 118694831,
+    "compressed_size": 45394600,
+    "crc32": "0f5537bc",
+    "header_offset": 447829723,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_ball_L_torque_circulation_40Nm_3000rpm_250707154630d.csv",
+    "size": 118725709,
+    "compressed_size": 45532382,
+    "crc32": "575c3cde",
+    "header_offset": 493224499,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_H_torque_circulation_20Nm_1000rpm_250704084736d.csv",
+    "size": 118678795,
+    "compressed_size": 44527014,
+    "crc32": "13e734d9",
+    "header_offset": 538757057,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_H_torque_circulation_20Nm_2000rpm_250704084956d.csv",
+    "size": 118706038,
+    "compressed_size": 45422482,
+    "crc32": "a3f056e0",
+    "header_offset": 583284248,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_H_torque_circulation_20Nm_3000rpm_250704085209d.csv",
+    "size": 118707766,
+    "compressed_size": 45662490,
+    "crc32": "7f2934b8",
+    "header_offset": 628706907,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_H_torque_circulation_40Nm_1000rpm_250704085422d.csv",
+    "size": 118679699,
+    "compressed_size": 44969206,
+    "crc32": "c5df1e52",
+    "header_offset": 674369574,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_H_torque_circulation_40Nm_2000rpm_250704085637d.csv",
+    "size": 118703567,
+    "compressed_size": 45877709,
+    "crc32": "0f92ea3a",
+    "header_offset": 719338957,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_H_torque_circulation_40Nm_3000rpm_250704085907d.csv",
+    "size": 118720417,
+    "compressed_size": 46015389,
+    "crc32": "0431ced4",
+    "header_offset": 765216843,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_L_torque_circulation_20Nm_1000rpm_250707112415d.csv",
+    "size": 118661894,
+    "compressed_size": 44503276,
+    "crc32": "891676e4",
+    "header_offset": 811232409,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_L_torque_circulation_20Nm_2000rpm_250707112622d.csv",
+    "size": 118702051,
+    "compressed_size": 45433898,
+    "crc32": "b952bfc5",
+    "header_offset": 855735862,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_L_torque_circulation_20Nm_3000rpm_250707112823d.csv",
+    "size": 118717746,
+    "compressed_size": 46020134,
+    "crc32": "ee92afe2",
+    "header_offset": 901169937,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_L_torque_circulation_40Nm_1000rpm_250707113035d.csv",
+    "size": 118666212,
+    "compressed_size": 45149370,
+    "crc32": "0e65e463",
+    "header_offset": 947190248,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_L_torque_circulation_40Nm_2000rpm_250707113243d.csv",
+    "size": 118698899,
+    "compressed_size": 45842708,
+    "crc32": "99c49dcd",
+    "header_offset": 992339795,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_inner_L_torque_circulation_40Nm_3000rpm_250707113444d.csv",
+    "size": 118726588,
+    "compressed_size": 46286671,
+    "crc32": "12ea5417",
+    "header_offset": 1038182680,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_and_inner_H_torque_circulation_20Nm_1000rpm_250702143147d.csv",
+    "size": 117844192,
+    "compressed_size": 44463755,
+    "crc32": "a3267fc9",
+    "header_offset": 1084469528,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_and_inner_H_torque_circulation_20Nm_2000rpm_250702143340d.csv",
+    "size": 117878262,
+    "compressed_size": 45379450,
+    "crc32": "8bb2c50c",
+    "header_offset": 1128933472,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_and_inner_H_torque_circulation_20Nm_3000rpm_250702143700d.csv",
+    "size": 117907407,
+    "compressed_size": 45806841,
+    "crc32": "c3801b08",
+    "header_offset": 1174313111,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_and_inner_H_torque_circulation_40Nm_1000rpm_250702144057d.csv",
+    "size": 117850831,
+    "compressed_size": 44972772,
+    "crc32": "914058d8",
+    "header_offset": 1220120141,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_and_inner_H_torque_circulation_40Nm_2000rpm_250702144421d.csv",
+    "size": 117881262,
+    "compressed_size": 45744542,
+    "crc32": "e26a2cdf",
+    "header_offset": 1265093102,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_and_inner_H_torque_circulation_40Nm_3000rpm_250702144702d.csv",
+    "size": 117900358,
+    "compressed_size": 46094057,
+    "crc32": "6f9df9b7",
+    "header_offset": 1310837833,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_torque_circulation_20Nm_1000rpm_250707103949d.csv",
+    "size": 118661445,
+    "compressed_size": 44052603,
+    "crc32": "0955d0b1",
+    "header_offset": 1356932079,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_torque_circulation_20Nm_2000rpm_250707103802d.csv",
+    "size": 118695784,
+    "compressed_size": 45123708,
+    "crc32": "69df022f",
+    "header_offset": 1400984859,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_torque_circulation_20Nm_3000rpm_250821175544.csv",
+    "size": 118713854,
+    "compressed_size": 47132468,
+    "crc32": "a6d7a0b6",
+    "header_offset": 1446108744,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_torque_circulation_40Nm_1000rpm_250707104154d.csv",
+    "size": 118655421,
+    "compressed_size": 44647317,
+    "crc32": "34bfd74e",
+    "header_offset": 1493241388,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_torque_circulation_40Nm_2000rpm_250707104408d.csv",
+    "size": 118699701,
+    "compressed_size": 45625791,
+    "crc32": "0bca47cb",
+    "header_offset": 1537888882,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_H_torque_circulation_40Nm_3000rpm_250707104611d.csv",
+    "size": 118715319,
+    "compressed_size": 45697069,
+    "crc32": "c6983891",
+    "header_offset": 1583514850,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_L_torque_circulation_20Nm_1000rpm_250708093600d.csv",
+    "size": 118662877,
+    "compressed_size": 44254445,
+    "crc32": "87bca702",
+    "header_offset": 1629212096,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_L_torque_circulation_20Nm_2000rpm_250708093806d.csv",
+    "size": 118690771,
+    "compressed_size": 45048581,
+    "crc32": "2491cafe",
+    "header_offset": 1673466718,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_L_torque_circulation_20Nm_3000rpm_250708094011d.csv",
+    "size": 118711403,
+    "compressed_size": 45264951,
+    "crc32": "00e82e85",
+    "header_offset": 1718515476,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_L_torque_circulation_40Nm_1000rpm_250708094205d.csv",
+    "size": 118667952,
+    "compressed_size": 44666597,
+    "crc32": "aaa389b5",
+    "header_offset": 1763780604,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_L_torque_circulation_40Nm_2000rpm_250708094403d.csv",
+    "size": 118689060,
+    "compressed_size": 45491817,
+    "crc32": "1d86d617",
+    "header_offset": 1808447378,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bearing_outer_L_torque_circulation_40Nm_3000rpm_250708094556d.csv",
+    "size": 118711125,
+    "compressed_size": 45659676,
+    "crc32": "7fbc3896",
+    "header_offset": 1853939372,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bend_torque_circulation_20Nm_1000rpm_250702191500d.csv",
+    "size": 119800931,
+    "compressed_size": 44172757,
+    "crc32": "bc778b81",
+    "header_offset": 1899599225,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bend_torque_circulation_20Nm_2000rpm_250702191813d.csv",
+    "size": 119845021,
+    "compressed_size": 45241594,
+    "crc32": "4a26f755",
+    "header_offset": 1943772148,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bend_torque_circulation_20Nm_3000rpm_250702192548d.csv",
+    "size": 119869355,
+    "compressed_size": 45498279,
+    "crc32": "7f9b4655",
+    "header_offset": 1989013908,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bend_torque_circulation_40Nm_1000rpm_250702194020d.csv",
+    "size": 119792005,
+    "compressed_size": 44700061,
+    "crc32": "a7227d14",
+    "header_offset": 2034512353,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bend_torque_circulation_40Nm_2000rpm_250702193812d.csv",
+    "size": 119839832,
+    "compressed_size": 45751189,
+    "crc32": "e41f5310",
+    "header_offset": 2079212580,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/bend_torque_circulation_40Nm_3000rpm_250821094657.csv",
+    "size": 119862396,
+    "compressed_size": 45819467,
+    "crc32": "f0d1044b",
+    "header_offset": 2124963935,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_inner_H_torque_circulation_20Nm_1000rpm_250705114401d.csv",
+    "size": 119818114,
+    "compressed_size": 44674447,
+    "crc32": "173e38c0",
+    "header_offset": 2170783567,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_inner_H_torque_circulation_20Nm_2000rpm_250705114622d.csv",
+    "size": 119848128,
+    "compressed_size": 45857595,
+    "crc32": "14dc4600",
+    "header_offset": 2215458206,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_inner_H_torque_circulation_20Nm_3000rpm_250705114846d.csv",
+    "size": 119869352,
+    "compressed_size": 46195955,
+    "crc32": "8cfe3c62",
+    "header_offset": 2261315993,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_inner_H_torque_circulation_40Nm_1000rpm_250705115053d.csv",
+    "size": 119820244,
+    "compressed_size": 45141953,
+    "crc32": "dc78e068",
+    "header_offset": 2307512140,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_inner_H_torque_circulation_40Nm_2000rpm_250705115303d.csv",
+    "size": 119853636,
+    "compressed_size": 46229191,
+    "crc32": "c9853e94",
+    "header_offset": 2352654285,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_inner_H_torque_circulation_40Nm_3000rpm_250705115517d.csv",
+    "size": 119868376,
+    "compressed_size": 46445894,
+    "crc32": "070cedb0",
+    "header_offset": 2398883668,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_outer_H_torque_circulation_20Nm_1000rpm_250705203013d.csv",
+    "size": 119818969,
+    "compressed_size": 44481613,
+    "crc32": "bc0a5c71",
+    "header_offset": 2445329754,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_outer_H_torque_circulation_20Nm_2000rpm_250705203208d.csv",
+    "size": 119857546,
+    "compressed_size": 45704862,
+    "crc32": "e0d2485f",
+    "header_offset": 2489811559,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_outer_H_torque_circulation_20Nm_3000rpm_250705203410d.csv",
+    "size": 119869869,
+    "compressed_size": 46099471,
+    "crc32": "f1cfc63b",
+    "header_offset": 2535516613,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_outer_H_torque_circulation_40Nm_1000rpm_250705203618d.csv",
+    "size": 119824289,
+    "compressed_size": 44916430,
+    "crc32": "a9bac4d9",
+    "header_offset": 2581616276,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_outer_H_torque_circulation_40Nm_2000rpm_250705203815d.csv",
+    "size": 119858613,
+    "compressed_size": 46171682,
+    "crc32": "cb34de13",
+    "header_offset": 2626532898,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_and_bearing_outer_H_torque_circulation_40Nm_3000rpm_250705204012d.csv",
+    "size": 119871703,
+    "compressed_size": 46403135,
+    "crc32": "754dafdb",
+    "header_offset": 2672704772,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_torque_circulation_20Nm_1000rpm_250703083538d.csv",
+    "size": 119789189,
+    "compressed_size": 44207041,
+    "crc32": "1a33f30a",
+    "header_offset": 2719108099,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_torque_circulation_20Nm_2000rpm_250703083743d.csv",
+    "size": 119842700,
+    "compressed_size": 45205762,
+    "crc32": "38c5e9cb",
+    "header_offset": 2763315312,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_torque_circulation_20Nm_3000rpm_250703084001d.csv",
+    "size": 119860831,
+    "compressed_size": 45345423,
+    "crc32": "8742db89",
+    "header_offset": 2808521246,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_torque_circulation_40Nm_1000rpm_250703084212d.csv",
+    "size": 119802331,
+    "compressed_size": 44657590,
+    "crc32": "ae7e3fe0",
+    "header_offset": 2853866841,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_torque_circulation_40Nm_2000rpm_250703084446d.csv",
+    "size": 119844512,
+    "compressed_size": 45746278,
+    "crc32": "0bc41a3c",
+    "header_offset": 2898524603,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/broken_bar_torque_circulation_40Nm_3000rpm_250703084659d.csv",
+    "size": 119866730,
+    "compressed_size": 45809310,
+    "crc32": "9de989e6",
+    "header_offset": 2944271053,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_inner_H_torque_circulation_20Nm_1000rpm_250705095902d.csv",
+    "size": 118681825,
+    "compressed_size": 44516567,
+    "crc32": "4b5262d7",
+    "header_offset": 2990080535,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_inner_H_torque_circulation_20Nm_2000rpm_250705100115d.csv",
+    "size": 118715975,
+    "compressed_size": 45680463,
+    "crc32": "b471623b",
+    "header_offset": 3034597304,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_inner_H_torque_circulation_20Nm_3000rpm_250705100328d.csv",
+    "size": 118739211,
+    "compressed_size": 45857482,
+    "crc32": "b442c7d3",
+    "header_offset": 3080277969,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_inner_H_torque_circulation_40Nm_1000rpm_250705100532d.csv",
+    "size": 118678563,
+    "compressed_size": 45008238,
+    "crc32": "3bd42738",
+    "header_offset": 3126135653,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_inner_H_torque_circulation_40Nm_2000rpm_250705100747d.csv",
+    "size": 118698455,
+    "compressed_size": 45956735,
+    "crc32": "91758664",
+    "header_offset": 3171144093,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_inner_H_torque_circulation_40Nm_3000rpm_250705101113d.csv",
+    "size": 118749208,
+    "compressed_size": 46271955,
+    "crc32": "dc87011a",
+    "header_offset": 3217101030,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_outer_H_torque_circulation_20Nm_1000rpm_250703192113d.csv",
+    "size": 118667617,
+    "compressed_size": 44488015,
+    "crc32": "f510b8ef",
+    "header_offset": 3263373187,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_outer_H_torque_circulation_20Nm_2000rpm_250703192336d.csv",
+    "size": 118697862,
+    "compressed_size": 45639364,
+    "crc32": "4be7531d",
+    "header_offset": 3307861404,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_outer_H_torque_circulation_20Nm_3000rpm_250703192600d.csv",
+    "size": 118714929,
+    "compressed_size": 45766034,
+    "crc32": "e5337e6d",
+    "header_offset": 3353500970,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_outer_H_torque_circulation_40Nm_1000rpm_250703192816d.csv",
+    "size": 118666353,
+    "compressed_size": 44912400,
+    "crc32": "134ecc1f",
+    "header_offset": 3399267206,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_outer_H_torque_circulation_40Nm_2000rpm_250703193011d.csv",
+    "size": 118689907,
+    "compressed_size": 45976020,
+    "crc32": "6a0399e3",
+    "header_offset": 3444179808,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_and_bearing_outer_H_torque_circulation_40Nm_3000rpm_250703193320d.csv",
+    "size": 118711872,
+    "compressed_size": 46121460,
+    "crc32": "f8012d32",
+    "header_offset": 3490156030,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_torque_circulation_20Nm_1000rpm_250702171601d.csv",
+    "size": 118627355,
+    "compressed_size": 43776662,
+    "crc32": "ba6afddc",
+    "header_offset": 3536277692,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_torque_circulation_20Nm_2000rpm_250702171840d.csv",
+    "size": 118676782,
+    "compressed_size": 44924495,
+    "crc32": "36f720a8",
+    "header_offset": 3580054536,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_torque_circulation_20Nm_3000rpm_250702172126d.csv",
+    "size": 118718589,
+    "compressed_size": 45141331,
+    "crc32": "2ee9ce82",
+    "header_offset": 3624979213,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_torque_circulation_40Nm_1000rpm_250702172352d.csv",
+    "size": 118638560,
+    "compressed_size": 44314497,
+    "crc32": "03f969c5",
+    "header_offset": 3670120726,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_torque_circulation_40Nm_2000rpm_250702172630d.csv",
+    "size": 118679292,
+    "compressed_size": 45366772,
+    "crc32": "997b4049",
+    "header_offset": 3714435405,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/dynamic_eccentricity_torque_circulation_40Nm_3000rpm_250702172855d.csv",
+    "size": 118723115,
+    "compressed_size": 45549130,
+    "crc32": "9ca21396",
+    "header_offset": 3759802359,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_20Nm_1000rpm_250702154813d.csv",
+    "size": 118663524,
+    "compressed_size": 44130506,
+    "crc32": "d888ea1c",
+    "header_offset": 3805351671,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_20Nm_2000rpm_250702155521d.csv",
+    "size": 118691358,
+    "compressed_size": 45055221,
+    "crc32": "72944bee",
+    "header_offset": 3849482345,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_20Nm_3000rpm_250702155743d.csv",
+    "size": 118721205,
+    "compressed_size": 45210538,
+    "crc32": "3a50b53c",
+    "header_offset": 3894537734,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_40Nm_1000rpm_250702161315d.csv",
+    "size": 118661518,
+    "compressed_size": 44568555,
+    "crc32": "ff49f469",
+    "header_offset": 3939748440,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_40Nm_2000rpm_250702161114d.csv",
+    "size": 118690193,
+    "compressed_size": 45516658,
+    "crc32": "4b7c4cb5",
+    "header_offset": 3984317163,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/health_torque_circulation_40Nm_3000rpm_250702160849d.csv",
+    "size": 118716560,
+    "compressed_size": 45600494,
+    "crc32": "a290e3e5",
+    "header_offset": 4029833989,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_inner_H_torque_circulation_20Nm_1000rpm_250704101105d.csv",
+    "size": 119824475,
+    "compressed_size": 44697857,
+    "crc32": "724fa250",
+    "header_offset": 4075434651,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_inner_H_torque_circulation_20Nm_2000rpm_250704101357d.csv",
+    "size": 119865838,
+    "compressed_size": 45674757,
+    "crc32": "c523a18a",
+    "header_offset": 4120132711,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_inner_H_torque_circulation_20Nm_3000rpm_250704101604d.csv",
+    "size": 119875768,
+    "compressed_size": 45936055,
+    "crc32": "5474f6c3",
+    "header_offset": 4165807671,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_inner_H_torque_circulation_40Nm_1000rpm_250704101831d.csv",
+    "size": 119826103,
+    "compressed_size": 45149253,
+    "crc32": "1f106d2b",
+    "header_offset": 4211743929,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_inner_H_torque_circulation_40Nm_2000rpm_250704102041d.csv",
+    "size": 119873589,
+    "compressed_size": 46206442,
+    "crc32": "69721d97",
+    "header_offset": 4256893385,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_inner_H_torque_circulation_40Nm_3000rpm_250704102319d.csv",
+    "size": 119880972,
+    "compressed_size": 46298389,
+    "crc32": "9dd58a33",
+    "header_offset": 4303100030,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_outer_H_torque_circulation_20Nm_1000rpm_250705085702d.csv",
+    "size": 119840565,
+    "compressed_size": 44520000,
+    "crc32": "cfd4d07f",
+    "header_offset": 4349398622,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_outer_H_torque_circulation_20Nm_2000rpm_250705085905d.csv",
+    "size": 119859807,
+    "compressed_size": 45447205,
+    "crc32": "ae26a8a1",
+    "header_offset": 4393918825,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_outer_H_torque_circulation_20Nm_3000rpm_250705090120d.csv",
+    "size": 119870813,
+    "compressed_size": 45663896,
+    "crc32": "a38276ab",
+    "header_offset": 4439366233,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_outer_H_torque_circulation_40Nm_1000rpm_250705091221d.csv",
+    "size": 119842025,
+    "compressed_size": 44977453,
+    "crc32": "33226e6e",
+    "header_offset": 4485030332,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_outer_H_torque_circulation_40Nm_2000rpm_250705091511d.csv",
+    "size": 119859802,
+    "compressed_size": 45928373,
+    "crc32": "667c1595",
+    "header_offset": 4530007988,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_and_bearing_outer_H_torque_circulation_40Nm_3000rpm_250705091722d.csv",
+    "size": 119874581,
+    "compressed_size": 46098492,
+    "crc32": "79258942",
+    "header_offset": 4575936564,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_torque_circulation_20Nm_1000rpm_250703163850d.csv",
+    "size": 119804194,
+    "compressed_size": 44069557,
+    "crc32": "28fa09ae",
+    "header_offset": 4622035259,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_torque_circulation_20Nm_2000rpm_250703164146d.csv",
+    "size": 119848285,
+    "compressed_size": 45200879,
+    "crc32": "4c742f71",
+    "header_offset": 4666104999,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_torque_circulation_20Nm_3000rpm_250703164427d.csv",
+    "size": 119872969,
+    "compressed_size": 45323311,
+    "crc32": "6bd6af07",
+    "header_offset": 4711306061,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_torque_circulation_40Nm_1000rpm_250703164651d.csv",
+    "size": 119810378,
+    "compressed_size": 44573043,
+    "crc32": "bc85a678",
+    "header_offset": 4756629555,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_torque_circulation_40Nm_2000rpm_250703164920d.csv",
+    "size": 119852112,
+    "compressed_size": 45747332,
+    "crc32": "a573d554",
+    "header_offset": 4801202781,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_H_torque_circulation_40Nm_3000rpm_250703165153d.csv",
+    "size": 119869298,
+    "compressed_size": 45849856,
+    "crc32": "f26619f5",
+    "header_offset": 4846950296,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_L_torque_circulation_20Nm_1000rpm_250703154032d.csv",
+    "size": 119792208,
+    "compressed_size": 44019648,
+    "crc32": "bc0e5d69",
+    "header_offset": 4892800335,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_L_torque_circulation_20Nm_2000rpm_250703154300d.csv",
+    "size": 119843159,
+    "compressed_size": 45229189,
+    "crc32": "3a3fabe7",
+    "header_offset": 4936820166,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_L_torque_circulation_20Nm_3000rpm_250703154615d.csv",
+    "size": 119865570,
+    "compressed_size": 45396141,
+    "crc32": "08f145c7",
+    "header_offset": 4982049538,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_L_torque_circulation_40Nm_1000rpm_250703154942d.csv",
+    "size": 119812016,
+    "compressed_size": 44514033,
+    "crc32": "4481d79a",
+    "header_offset": 5027445862,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_L_torque_circulation_40Nm_2000rpm_250703155156d.csv",
+    "size": 119848046,
+    "compressed_size": 45761531,
+    "crc32": "7231097d",
+    "header_offset": 5071960078,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/static_eccentricity_L_torque_circulation_40Nm_3000rpm_250703155408d.csv",
+    "size": 119865018,
+    "compressed_size": 45876662,
+    "crc32": "f199b8f4",
+    "header_offset": 5117721792,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/voltage_unbalance_L_torque_circulation_20Nm_1000rpm_250703134035d.csv",
+    "size": 118668906,
+    "compressed_size": 44343881,
+    "crc32": "7b5d55af",
+    "header_offset": 5163598637,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/voltage_unbalance_L_torque_circulation_20Nm_2000rpm_250703134356d.csv",
+    "size": 118701808,
+    "compressed_size": 45467901,
+    "crc32": "b6711d14",
+    "header_offset": 5207942699,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/voltage_unbalance_L_torque_circulation_20Nm_3000rpm_250703134630d.csv",
+    "size": 118720249,
+    "compressed_size": 45660617,
+    "crc32": "ce37e48c",
+    "header_offset": 5253410781,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/voltage_unbalance_L_torque_circulation_40Nm_1000rpm_250703134903d.csv",
+    "size": 118671568,
+    "compressed_size": 44849669,
+    "crc32": "eb3740ba",
+    "header_offset": 5299071579,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/voltage_unbalance_L_torque_circulation_40Nm_2000rpm_250703135219d.csv",
+    "size": 118699026,
+    "compressed_size": 45897694,
+    "crc32": "648312ee",
+    "header_offset": 5343921429,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/voltage_unbalance_L_torque_circulation_40Nm_3000rpm_250703135733d.csv",
+    "size": 118721323,
+    "compressed_size": 46125769,
+    "crc32": "1375ba89",
+    "header_offset": 5389819304,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_inner_H_torque_circulation_20Nm_1000rpm_250705185836d.csv",
+    "size": 118667072,
+    "compressed_size": 43917623,
+    "crc32": "9ed698b7",
+    "header_offset": 5435945254,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_inner_H_torque_circulation_20Nm_2000rpm_250705190045d.csv",
+    "size": 118696655,
+    "compressed_size": 44834863,
+    "crc32": "32ae9412",
+    "header_offset": 5479863068,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_inner_H_torque_circulation_20Nm_3000rpm_250705190252d.csv",
+    "size": 118720951,
+    "compressed_size": 45058402,
+    "crc32": "eea092e1",
+    "header_offset": 5524698122,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_inner_H_torque_circulation_40Nm_1000rpm_250705190503d.csv",
+    "size": 118665724,
+    "compressed_size": 44399021,
+    "crc32": "cd356eb0",
+    "header_offset": 5569756715,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_inner_H_torque_circulation_40Nm_2000rpm_250705190713d.csv",
+    "size": 118694437,
+    "compressed_size": 45305346,
+    "crc32": "4d800ac3",
+    "header_offset": 5614155927,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_inner_H_torque_circulation_40Nm_3000rpm_250705190921d.csv",
+    "size": 118723378,
+    "compressed_size": 45481670,
+    "crc32": "c62fcf9c",
+    "header_offset": 5659461464,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_outer_H_torque_circulation_20Nm_1000rpm_250705105952d.csv",
+    "size": 118670317,
+    "compressed_size": 44205496,
+    "crc32": "6a612afe",
+    "header_offset": 5704943325,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_outer_H_torque_circulation_20Nm_2000rpm_250705110203d.csv",
+    "size": 118690976,
+    "compressed_size": 44935974,
+    "crc32": "bb7f2141",
+    "header_offset": 5749149012,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_outer_H_torque_circulation_20Nm_3000rpm_250705110537d.csv",
+    "size": 118694975,
+    "compressed_size": 45132501,
+    "crc32": "43711155",
+    "header_offset": 5794085177,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_outer_H_torque_circulation_40Nm_1000rpm_250705110745d.csv",
+    "size": 118665298,
+    "compressed_size": 44670820,
+    "crc32": "41138df0",
+    "header_offset": 5839217869,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_outer_H_torque_circulation_40Nm_2000rpm_250705111001d.csv",
+    "size": 118686607,
+    "compressed_size": 45471792,
+    "crc32": "8ea3b223",
+    "header_offset": 5883888880,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_and_bearing_outer_H_torque_circulation_40Nm_3000rpm_250705111351d.csv",
+    "size": 118701524,
+    "compressed_size": 45587076,
+    "crc32": "097b72cd",
+    "header_offset": 5929360863,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_torque_circulation_20Nm_1000rpm_250703105212d.csv",
+    "size": 118662707,
+    "compressed_size": 44091508,
+    "crc32": "e82b57b4",
+    "header_offset": 5974948130,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_torque_circulation_20Nm_2000rpm_250703105522d.csv",
+    "size": 118693175,
+    "compressed_size": 44848730,
+    "crc32": "2fb14aa1",
+    "header_offset": 6019039809,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_torque_circulation_20Nm_3000rpm_250703105805d.csv",
+    "size": 118724011,
+    "compressed_size": 45010573,
+    "crc32": "f1faa32f",
+    "header_offset": 6063888710,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_torque_circulation_40Nm_1000rpm_250703110024d.csv",
+    "size": 118659769,
+    "compressed_size": 44494728,
+    "crc32": "ba694f91",
+    "header_offset": 6108899454,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_torque_circulation_40Nm_2000rpm_250703110249d.csv",
+    "size": 118693662,
+    "compressed_size": 45383100,
+    "crc32": "bdc3a787",
+    "header_offset": 6153394353,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_H_torque_circulation_40Nm_3000rpm_250703110555d.csv",
+    "size": 118721399,
+    "compressed_size": 45445438,
+    "crc32": "5418aed5",
+    "header_offset": 6198777624,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_L_torque_circulation_20Nm_1000rpm_250703100823d.csv",
+    "size": 118659716,
+    "compressed_size": 44062474,
+    "crc32": "697afa8b",
+    "header_offset": 6244223233,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_L_torque_circulation_20Nm_2000rpm_250703101713d.csv",
+    "size": 118690409,
+    "compressed_size": 44876291,
+    "crc32": "7bfaef3f",
+    "header_offset": 6288285878,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_L_torque_circulation_20Nm_3000rpm_250703102025d.csv",
+    "size": 118722764,
+    "compressed_size": 44998102,
+    "crc32": "1a37fa7c",
+    "header_offset": 6333162340,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_L_torque_circulation_40Nm_1000rpm_250703102319d.csv",
+    "size": 118661835,
+    "compressed_size": 44523914,
+    "crc32": "ed303948",
+    "header_offset": 6378160613,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_L_torque_circulation_40Nm_2000rpm_250703102544d.csv",
+    "size": 118692886,
+    "compressed_size": 45400310,
+    "crc32": "ed0d03df",
+    "header_offset": 6422684698,
+    "compression": 8
+  },
+  {
+    "member": "MCC5-THU Motor_torque_circulation/winding_L_torque_circulation_40Nm_3000rpm_250703102900d.csv",
+    "size": 118719238,
+    "compressed_size": 45438494,
+    "crc32": "dceb0150",
+    "header_offset": 6468085179,
+    "compression": 8
+  }
+]

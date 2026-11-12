@@ -1,0 +1,6 @@
+left_file,right_file,overlap_start,overlap_end,overlap_span_s,shared_timestamp_pairs,identical_8sensor_timestamp_pairs,anomaly_labels_comparable,anomaly_conflicts_on_identical_rows
+data/anomaly-free/anomaly-free.csv,data/other/5.csv,2020-02-08 16:06:48,2020-02-08 16:16:47,599.0,572,572,False,
+data/other/10.csv,data/other/11.csv,2020-02-08 18:10:42,2020-02-08 18:11:02,20.0,21,21,True,0.0
+data/other/12.csv,data/other/13.csv,2020-02-08 18:47:32,2020-02-08 18:54:54,442.0,349,349,True,178.0
+data/other/2.csv,data/other/3.csv,2020-03-01 16:43:54,2020-03-01 16:45:59,125.0,120,120,True,0.0
+data/other/3.csv,data/other/4.csv,2020-03-01 16:59:53,2020-03-01 17:03:52,239.0,228,228,True,57.0
