@@ -1,0 +1,48 @@
+{
+  "protocol": "aligned_v1",
+  "date": "2026-11-18 02:29",
+  "model": "amazon/chronos-bolt-small",
+  "horizon": 16,
+  "report_hash": "fe05ceb1dac3",
+  "n_windows": 32980,
+  "n_eval": 32300,
+  "fallback_scale_windows": 220,
+  "fallback_scale_eval": 220,
+  "no_hindcast_eval": 0,
+  "trim_crop_share": {
+    "det_trim": 0.17119466343238327,
+    "oracle_trim": 0.49120679199514855,
+    "rag": 0.26961795027289265
+  },
+  "criterion": {
+    "tg64": -0.045824092618136136,
+    "tg64_lo": -0.05776353195850792,
+    "tg64_hi": -0.033955299844126596,
+    "sh": 0.08677165675412324,
+    "sh_lo": 0.06630312099817592,
+    "sh_hi": 0.10992638720536263,
+    "tg_ok": false,
+    "sh_ok": false,
+    "vs_L64": {
+      "ratio": 0.9056899862921454,
+      "lo": 0.8871494797945465,
+      "hi": 0.9246154754186477,
+      "ok": true
+    },
+    "vs_det_trim": {
+      "ratio": 1.0447379132327073,
+      "lo": 1.0324524161103779,
+      "hi": 1.0571003336629885,
+      "ok": false
+    },
+    "part1": false,
+    "part2": false,
+    "passed": false
+  },
+  "thresholds_v1": {
+    "95": 1.089373436534384,
+    "90": 1.0723278996819738
+  },
+  "n_boot": 1000,
+  "seconds_total": 23.7
+}

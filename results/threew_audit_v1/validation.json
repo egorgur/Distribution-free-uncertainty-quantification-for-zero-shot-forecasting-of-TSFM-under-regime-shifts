@@ -1,0 +1,25 @@
+{
+  "manifest_check": "passed",
+  "n_files": 1119,
+  "expected_files": 1119,
+  "counts_match_paper": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true
+  },
+  "wells": 40,
+  "paper_wells": 42,
+  "all_monotonic": true,
+  "files_with_duplicates": 0,
+  "files_all_steps_1s": 1119,
+  "time_overlaps_same_well": 910,
+  "adjacent_files_same_well": 1,
+  "passed": true
+}

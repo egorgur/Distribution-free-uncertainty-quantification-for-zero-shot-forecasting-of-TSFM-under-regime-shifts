@@ -1,0 +1,69 @@
+{
+  "protocol": "component_v1",
+  "date": "2026-11-18 03:18",
+  "model": "amazon/chronos-2",
+  "horizon": 16,
+  "thresholds_seed1_none_q95": {
+    "level": 0.7283640293643695,
+    "scale": 0.4072569667972317,
+    "trend": 1.8880157939395048,
+    "freq": 0.19391291205589048
+  },
+  "n_threshold_windows": 950,
+  "false_alarm_none_seed0": 0.17578947368421052,
+  "n_eval": 32300,
+  "criterion": {
+    "best_uniform": "uni_level",
+    "uniform_mean_log_ratio": {
+      "uni_level": 0.011656132268158767,
+      "uni_scale": 0.013311282059978372,
+      "uni_trend": 0.09017633378706133,
+      "uni_short": 0.10444330187489109
+    },
+    "primary": {
+      "ratio": 1.0012229653622866,
+      "lo": 0.9820514238040046,
+      "hi": 1.0210564795262962
+    },
+    "primary_passed": false,
+    "detected_tg64": [
+      -0.021910016411314404,
+      -0.03776169014452435,
+      -0.006190282273272896
+    ],
+    "detected_sh": [
+      0.05585703207888404,
+      0.030442262766980477,
+      0.0843350814679471
+    ],
+    "detected_passed": false,
+    "pairs": {
+      "comp_oracle/uni_level": {
+        "ratio": 1.0012229653622866,
+        "lo": 0.9820514238040046,
+        "hi": 1.0210564795262962
+      },
+      "comp_oracle/comp_oracle_type": {
+        "ratio": 1.014752547775902,
+        "lo": 0.9994997645243924,
+        "hi": 1.030522485218182
+      },
+      "comp_oracle_type/comp_detected": {
+        "ratio": 0.9768327016487641,
+        "lo": 0.967015499984466,
+        "hi": 0.9877327537060964
+      },
+      "comp_oracle_h8/comp_oracle": {
+        "ratio": 0.9922092841584722,
+        "lo": 0.9794104135116363,
+        "hi": 1.0059780174732542
+      },
+      "comp_detected/sel_align_h8": {
+        "ratio": 0.9966704155541253,
+        "lo": 0.9806752304962318,
+        "hi": 1.010360945610269
+      }
+    }
+  },
+  "seconds_total": 15.3
+}

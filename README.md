@@ -1,6 +1,27 @@
 # Distribution-free-uncertainty-quantification-for-zero-shot-forecasting-of-TSFM-under-regime-shifts
 
-Модели вроде Chronos или TimesFM прогнозируют временные ряды без дообучения, но не умеют сообщать, когда их прогнозу нельзя верить. Хуже всего они работают в моменты смены режима процесса: при переходе от одного состояния к другому ошибка резко растёт, а прогнозные интервалы перестают покрывать реальные значения.
+Исследование адаптации замороженных Time-Series Foundation Models к смене режима без дообучения весов. В переходах могут ухудшаться точечный прогноз и покрытие интервалов; форма деградации зависит от типа смены. Старая история не обязательно бесполезна: выполненные эксперименты показали, что простая обрезка не улучшает точечный прогноз в среднем.
+
+## Актуальный план v3 — 2026-11-18
+
+По [инструкции по дальнейшей работе](Инструкция%20по%20дальнейшей%20работе.docx) исследуются четыре направления:
+
+1. **Multi-Context:** адаптивный выбор или смешивание прогнозов по L64/128/256/512.
+2. **Regime-Aligned Context:** коррекция уровня, масштаба или тренда старой истории; выбор через прогноз назад по известным наблюдениям.
+3. **Regime-Component Adaptation:** определение изменившейся компоненты и специализированная реакция, включая No Adaptation.
+4. **Adaptive Uncertainty:** коррекция ширины/центра интервалов, затем последовательная conformal-коррекция и несколько масштабов памяти.
+
+Полная постановка, H7–H9, метрики и порядок работы — [план адаптации](docs/adaptation_plan.md). Правила и текущий статус — [CLAUDE.md](CLAUDE.md), термины — [GLOSSARY.md](GLOSSARY.md), решения — [журнал](docs/decisions.md).
+
+**Ближайший шаг:** согласовать протокол небольшого синтетического пилота Multi-Context, затем переиспользовать подходящие готовые кеши. Конкретные веса, hindcast, критерии, нормировка и бюджет ещё не утверждены. Четыре новых метода пока не реализованы; команды ниже воспроизводят существующую инфраструктуру v2, а не запускают адаптацию v3.
+
+Веса TSFM остаются замороженными во всех направлениях. Направление 4 использует уже созревшие ошибки целевого ряда и является **внешней онлайн-калибровкой**: прежнее условие «без целевой калибровки» не относится ко всей v3. Формальных distribution-free/conformal-гарантий для зависимых данных со сменами не заявляем.
+
+### Что уже получено
+
+На синтетике выполнены анализ риска/покрытия, сравнение сигналов надёжности, локализация и каскад. H5 остаётся отрицательной по прежнему критерию; новые гипотезы не проверены. Выводы — [этап 3](docs/results/stage3_failures.md), [этап 4](docs/results/stage4_signals.md), [этап B](docs/results/stage5_localization.md), [каскад](docs/results/stage6_cascade.md). [Протокол H1/H3 v1](docs/protocol_h1_h3.md) и старые результаты сохраняются без переопределения.
+
+Реальных прогнозов ещё нет: аудиты шести кандидатов не установили готовый строгий пилот с устойчивыми эталонами. Это ограничение не отменено, но больше не блокирует первый синтетический эксперимент адаптации. Отчёт на 13 ноября — [исторический срез](docs/interim_status_2026-11-13.md); актуальная очередь — план v3.
 
 ## Установка
 
@@ -195,6 +216,48 @@ python -m scripts.stage5_localization                                           
 ```
 
 Пробный прогон на части ячеек: `--cells change-mean-strong,none --out /tmp/stage5_pilot`.
+
+## Реальные данные: Petrobras 3W
+
+Загрузка 1119 реальных экземпляров (516 МБ, ~1 ч, проверка git-blob SHA1) и описательный аудит. Протокол — `docs/protocol_3w_audit.md`, выводы — `docs/results/threew_audit.md`. Нужен `pyarrow`:
+
+```bash
+python -m scripts.download_3w             # → data/raw/3w/files/ (вне git), манифест data/raw/3w/manifest.json
+python -m scripts.download_3w --check     # без сети: сверка файлов с манифестом
+python -m scripts.audit_3w                # → results/threew_audit_v1/, ~1 мин
+```
+
+## Пилот Multi-Context (H7, план v3)
+
+Выбор и смешивание прогнозов L64…L512 по готовому кешу, без инференса. Протокол — `docs/protocol_v3_multicontext.md`, выводы — `docs/results/adapt_multicontext.md`. Нужны кеши обоих seed, `cascade.npz`, `localization.npz`, `results/stage5/meta.json` и пороги `results/protocol_h1_h3_v1/stage3/`:
+
+```bash
+python -m scripts.adapt_multicontext                                          # Bolt H64 → results/adapt_multicontext_v1/chronos-bolt-small/H64/, ~11 мин CPU
+python -m scripts.adapt_multicontext --horizon 16                             # ~3 мин
+python -m scripts.adapt_multicontext --model amazon/chronos-2 --horizon 64    # ~11 мин
+python -m scripts.adapt_multicontext --model amazon/chronos-2 --horizon 16
+```
+
+## Regime-Component (H9, план v3)
+
+Без нового инференса: нужны основной кеш, `aligned_v1` (H8) и результаты H7/H8. Протокол — `docs/protocol_v3_component.md`, выводы — `docs/results/adapt_components.md`:
+
+```bash
+python -m scripts.adapt_components                                            # Bolt H64 → results/adapt_components_v1/…, ~20 с
+python -m scripts.adapt_components --model amazon/chronos-2 --horizon 64
+```
+
+## Regime-Aligned Context (H8, план v3)
+
+Новые прогнозы по выровненным контекстам (12 на окно), затем оценка по кешу. Протокол — `docs/protocol_v3_aligned.md`, выводы — `docs/results/adapt_aligned.md`:
+
+```bash
+python -m scripts.cache_aligned                                               # Bolt, CPU, ~27 мин → results/cache/synth_v1/chronos-bolt-small/aligned_v1/
+python -m scripts.cache_aligned --model amazon/chronos-2 --device cuda        # ~39 мин на GTX 1070, оба горизонта
+python -m scripts.adapt_aligned                                               # Bolt H64 → results/adapt_aligned_v1/…, ~25 с
+python -m scripts.adapt_aligned --horizon 16
+python -m scripts.adapt_aligned --model amazon/chronos-2 --horizon 64
+```
 
 ## Каскад (H5)
 

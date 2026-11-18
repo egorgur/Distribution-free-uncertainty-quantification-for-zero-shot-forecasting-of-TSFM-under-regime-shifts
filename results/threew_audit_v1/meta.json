@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-18 04:39",
+  "protocol": "docs/protocol_3w_audit.md",
+  "commit": "c86cc7c70063646910be7292de8a54a6fb2a8399",
+  "scales": [
+    1,
+    10,
+    60
+  ],
+  "configs": [
+    [
+      512,
+      64
+    ],
+    [
+      128,
+      16
+    ]
+  ],
+  "seconds": 57.1,
+  "figures": [
+    "fig_class_0.png",
+    "fig_class_1.png",
+    "fig_class_2.png",
+    "fig_class_3.png",
+    "fig_class_4.png",
+    "fig_class_5.png",
+    "fig_class_6.png",
+    "fig_class_7.png",
+    "fig_class_8.png",
+    "fig_class_9.png"
+  ],
+  "env": "python 3.13.7, numpy 2.5.4, pandas 3.1.0, pyarrow 26.0.1"
+}

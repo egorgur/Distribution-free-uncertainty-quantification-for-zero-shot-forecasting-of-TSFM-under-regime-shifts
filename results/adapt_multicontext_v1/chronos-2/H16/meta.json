@@ -1,0 +1,106 @@
+{
+  "protocol": "multicontext_v1",
+  "date": "2026-11-18 01:50",
+  "model": "amazon/chronos-2",
+  "horizon": 16,
+  "primary_configuration": false,
+  "tune_cache": "results/cache/synth_v1_seed1",
+  "report_cache": "results/cache/synth_v1",
+  "tune_hash": "816e98e9289b",
+  "report_hash": "fe05ceb1dac3",
+  "n_windows": 32980,
+  "n_eval": 32300,
+  "n_fallback_eval": 0,
+  "n_fallback_all": 680,
+  "crossed_windows": 196,
+  "temperatures": {
+    "mix_hind": 0.5706941125310139,
+    "vin_hind": 0.28534705626550694,
+    "mix_width": 0.9540279548572745,
+    "vin_width": 0.9540279548572745,
+    "mix_cons": 0.2777694883582863,
+    "vin_cons": 0.13888474417914315
+  },
+  "c_grid": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "thresholds_v1": {
+    "95": 1.095491446316705,
+    "90": 1.0738546610299802
+  },
+  "own_control_q95": {
+    "L64": 1.3647555397254318,
+    "L128": 1.2727902955610217,
+    "L256": 1.1537576989338516,
+    "full": 1.095491446316705,
+    "mix_eq": 1.1682183642405743,
+    "vin_eq": 1.174053160954799,
+    "sel_hind": 1.1853071504657515,
+    "mix_hind": 1.1546530590872237,
+    "vin_hind": 1.1571237213563281,
+    "sel_width": 1.1370289564891018,
+    "mix_width": 1.1375397366807989,
+    "vin_width": 1.1410399801981768,
+    "sel_cons": 1.152571429629279,
+    "mix_cons": 1.1574451637766003,
+    "vin_cons": 1.1567491063227584
+  },
+  "trim_crop_share": {
+    "det_trim": 0.1951182534869618,
+    "oracle_trim": 0.49120679199514855,
+    "rag": 0.3009096422073984
+  },
+  "sh_tolerance": 0.01,
+  "n_boot": 1000,
+  "seed": 0,
+  "criterion": [
+    {
+      "method": "sel_hind",
+      "tg64": -0.018011221869446814,
+      "tg64_lo": -0.03404261985801016,
+      "tg64_hi": -0.001932914732694524,
+      "sh": 0.07613473107455859,
+      "sh_lo": 0.062292986628177394,
+      "sh_hi": 0.09069127231374141,
+      "tg_ok": false,
+      "sh_ok": false,
+      "passed": false
+    },
+    {
+      "method": "mix_hind",
+      "tg64": 0.0064088600915049865,
+      "tg64_lo": -0.007645290082322509,
+      "tg64_hi": 0.020190946398001786,
+      "sh": 0.054303401617938896,
+      "sh_lo": 0.03881997487203637,
+      "sh_hi": 0.06948303954988,
+      "tg_ok": false,
+      "sh_ok": false,
+      "passed": false
+    }
+  ],
+  "seconds_method": {
+    "mix_eq": 7.683132725000178,
+    "vin_eq": 0.035361561000172514,
+    "sel_hind": 0.006365897999785375,
+    "mix_hind": 7.221921346999807,
+    "vin_hind": 0.03810563599836314,
+    "sel_width": 0.006194299001435866,
+    "mix_width": 7.387676090998866,
+    "vin_width": 0.04087280000021565,
+    "sel_cons": 0.00678754899854539,
+    "mix_cons": 7.285921726999732,
+    "vin_cons": 0.039586548000443145
+  },
+  "seconds_total": 188.1,
+  "env": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "chronos-forecasting": "2.3.2"
+  }
+}

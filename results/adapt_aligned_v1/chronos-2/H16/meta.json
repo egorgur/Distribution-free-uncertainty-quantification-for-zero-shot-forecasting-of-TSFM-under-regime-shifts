@@ -1,0 +1,48 @@
+{
+  "protocol": "aligned_v1",
+  "date": "2026-11-18 03:07",
+  "model": "amazon/chronos-2",
+  "horizon": 16,
+  "report_hash": "fe05ceb1dac3",
+  "n_windows": 32980,
+  "n_eval": 32300,
+  "fallback_scale_windows": 220,
+  "fallback_scale_eval": 220,
+  "no_hindcast_eval": 0,
+  "trim_crop_share": {
+    "det_trim": 0.1951182534869618,
+    "oracle_trim": 0.49120679199514855,
+    "rag": 0.3009096422073984
+  },
+  "criterion": {
+    "tg64": -0.025323912307277707,
+    "tg64_lo": -0.04448799532025016,
+    "tg64_hi": -0.00724174214979989,
+    "sh": 0.11853206259134685,
+    "sh_lo": 0.09759575122704289,
+    "sh_hi": 0.14042250371850384,
+    "tg_ok": false,
+    "sh_ok": false,
+    "vs_L64": {
+      "ratio": 0.9236383064607044,
+      "lo": 0.9079540648711174,
+      "hi": 0.9407379658179255,
+      "ok": true
+    },
+    "vs_det_trim": {
+      "ratio": 1.0216778788590646,
+      "lo": 1.0034409238226185,
+      "hi": 1.0407043804660456,
+      "ok": false
+    },
+    "part1": false,
+    "part2": false,
+    "passed": false
+  },
+  "thresholds_v1": {
+    "95": 1.095491446316705,
+    "90": 1.0738546610299802
+  },
+  "n_boot": 1000,
+  "seconds_total": 21.8
+}

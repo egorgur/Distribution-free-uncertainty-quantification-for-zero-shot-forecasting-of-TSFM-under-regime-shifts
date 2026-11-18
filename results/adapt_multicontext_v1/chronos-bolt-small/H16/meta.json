@@ -1,0 +1,106 @@
+{
+  "protocol": "multicontext_v1",
+  "date": "2026-11-18 01:22",
+  "model": "amazon/chronos-bolt-small",
+  "horizon": 16,
+  "primary_configuration": false,
+  "tune_cache": "results/cache/synth_v1_seed1",
+  "report_cache": "results/cache/synth_v1",
+  "tune_hash": "816e98e9289b",
+  "report_hash": "fe05ceb1dac3",
+  "n_windows": 32980,
+  "n_eval": 32300,
+  "n_fallback_eval": 0,
+  "n_fallback_all": 680,
+  "crossed_windows": 137,
+  "temperatures": {
+    "mix_hind": 0.29061633239084317,
+    "vin_hind": 0.29061633239084317,
+    "mix_width": 1.0101661534640245,
+    "vin_width": 1.0101661534640245,
+    "mix_cons": 1.0053019016337061,
+    "vin_cons": 0.12566273770421327
+  },
+  "c_grid": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "thresholds_v1": {
+    "95": 1.089373436534384,
+    "90": 1.0723278996819738
+  },
+  "own_control_q95": {
+    "L64": 1.3143503564827874,
+    "L128": 1.2843918751488268,
+    "L256": 1.1405886985473228,
+    "full": 1.089373436534384,
+    "mix_eq": 1.156707555247531,
+    "vin_eq": 1.1631370752910861,
+    "sel_hind": 1.1490908128614512,
+    "mix_hind": 1.1343950836009624,
+    "vin_hind": 1.1395131697797505,
+    "sel_width": 1.1229368657163128,
+    "mix_width": 1.1309215428607091,
+    "vin_width": 1.1369322094630192,
+    "sel_cons": 1.1665604819056206,
+    "mix_cons": 1.1540761606411878,
+    "vin_cons": 1.155363772657475
+  },
+  "trim_crop_share": {
+    "det_trim": 0.17119466343238327,
+    "oracle_trim": 0.49120679199514855,
+    "rag": 0.26961795027289265
+  },
+  "sh_tolerance": 0.01,
+  "n_boot": 1000,
+  "seed": 0,
+  "criterion": [
+    {
+      "method": "sel_hind",
+      "tg64": -0.03408832772988668,
+      "tg64_lo": -0.04637912968659963,
+      "tg64_hi": -0.02256373411735324,
+      "sh": 0.07997125260640559,
+      "sh_lo": 0.06021627294051357,
+      "sh_hi": 0.10454089719457249,
+      "tg_ok": false,
+      "sh_ok": false,
+      "passed": false
+    },
+    {
+      "method": "mix_hind",
+      "tg64": -0.022038816652298898,
+      "tg64_lo": -0.03179815871585134,
+      "tg64_hi": -0.012960249895102693,
+      "sh": 0.05452311065478366,
+      "sh_lo": 0.04507223230410862,
+      "sh_hi": 0.06632868820704352,
+      "tg_ok": false,
+      "sh_ok": false,
+      "passed": false
+    }
+  ],
+  "seconds_method": {
+    "mix_eq": 7.227485338000406,
+    "vin_eq": 0.035299590999784414,
+    "sel_hind": 0.006339835999824572,
+    "mix_hind": 6.8192669979998755,
+    "vin_hind": 0.03652109899849165,
+    "sel_width": 0.006183794999742531,
+    "mix_width": 6.773475388999941,
+    "vin_width": 0.03623092199995881,
+    "sel_cons": 0.006450924000091618,
+    "mix_cons": 7.33132694500091,
+    "vin_cons": 0.03632647599988559
+  },
+  "seconds_total": 186.6,
+  "env": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "chronos-forecasting": "2.3.2"
+  }
+}
